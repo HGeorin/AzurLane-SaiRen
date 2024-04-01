@@ -1,0 +1,1366 @@
+﻿add_namespace = AL_event
+country_event = {
+	id = AL_event.1
+	title = AL_event.1.t
+	desc = AL_event.1.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.1.a
+		custom_effect_tooltip = AL_factory_3_1_get
+		add_to_variable = { AL_arms_factory = AL_arms_factory_once }
+		add_to_variable = { AL_industrial_complex = AL_industrial_complex_once }
+	}
+}
+
+country_event = {
+	id = AL_event.2
+	title = AL_event.2.t
+	desc = AL_event.2.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.2.a
+		add_manpower = 10000
+	}
+}
+
+country_event = {
+	id = AL_event.3
+	title = AL_event.3.t
+	desc = AL_event.3.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.3.a
+		add_manpower = 5000
+		add_tech_bonus = {
+			name = "村民的馈赠"
+			bonus = 1
+			uses = 1
+			category = nuclear
+		}
+		set_country_flag = AL_event_3
+	}
+}
+
+country_event = {
+	id = AL_event.4
+	title = AL_event.4.t
+	desc = AL_event.4.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.4.a
+		add_manpower = 5000
+		set_country_flag = AL_event_4
+	}
+}
+
+country_event = {
+	id = AL_event.5
+	title = AL_event.5.t
+	desc = AL_event.5.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.5.a
+		add_manpower = 10000
+		army_experience = 100
+		set_country_flag = AL_event_5
+	}
+}
+
+country_event = {
+	id = AL_event.6
+	title = AL_event.6.t
+	desc = AL_event.6.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.6.a
+		add_manpower = 5000
+		set_country_flag = AL_event_6
+		custom_effect_tooltip = AL_caidan_ura
+		country_event = { id = URAPD_event.0 days = 10 }
+	}
+	option = {
+		name = AL_event.6.b
+		add_manpower = 5000
+		set_country_flag = AL_event_6
+	}
+}
+
+country_event = {
+	id = AL_event.7
+	title = AL_event.7.t
+	desc = AL_event.7.d
+	picture = GFX_alpt_xmy
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.7.a
+		add_manpower = 5000
+		custom_effect_tooltip = get_alpt_xiaomeiyan
+		set_country_flag = AL_event_7
+		hidden_effect = {
+			TAN = {
+				alpt_xiaomeiyan = {
+					set_nationality = ROOT
+				}
+			}
+		}		
+	}
+	option = {
+		name = AL_event.7.b
+		set_country_flag = AL_event_7
+	}
+}
+
+country_event = {
+	id = AL_event.8
+	title = AL_event.8.t
+	desc = AL_event.8.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.8.a
+		add_manpower = 40000
+		add_equipment_to_stockpile = { type = infantry_equipment amount = 15000 }
+		add_equipment_to_stockpile = { type = support_equipment amount = 7000 }
+		add_equipment_to_stockpile = { type = artillery_equipment amount = 2500 }
+	}
+}
+
+country_event = {
+	id = AL_event.9
+	title = AL_event.9.t
+	desc = AL_event.9.d
+	picture = GFX_alpt_kaluo
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.9.a
+		set_country_flag = AL_event_9
+		custom_effect_tooltip = get_alpt_kaluo		
+		hidden_effect = {
+			TAN = {
+				alpt_kaluo = {
+					set_nationality = ROOT
+				}
+			}
+		}		
+	}
+	option = {
+		name = AL_event.9.b
+		set_country_flag = AL_event_9
+	}
+}
+
+country_event = {
+	id = AL_event.10
+	title = AL_event.10.t
+	desc = AL_event.10.d
+	picture = GFX_alpt_sd
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.10.a
+		set_country_flag = AL_event_10
+		custom_effect_tooltip = get_alpt_sd	
+		hidden_effect = {
+			TAN = {
+				alpt_sd = {
+					set_nationality = ROOT
+				}	
+			}
+		}		
+	}
+}
+
+country_event = {
+	id = AL_event.11
+	title = AL_event.11.t
+	desc = AL_event.11.d
+	picture = GFX_alpt_ln
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.11.a
+		set_country_flag = AL_event_11
+		custom_effect_tooltip = get_alpt_ln	
+		hidden_effect = {
+			TAN = {
+				alpt_ln = {
+					set_nationality = ROOT
+				}								
+			}
+		}		
+	}
+}
+
+
+country_event = {
+	id = AL_event.12
+	title = AL_event.12.t
+	desc = AL_event.12.d
+	picture = GFX_alpt_052Dcs
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.12.a
+		set_country_flag = AL_event_12
+		custom_effect_tooltip = get_alpt_052Dchangsha	
+		hidden_effect = {
+			TAN = {
+				alpt_052Dchangsha = {
+					set_nationality = ROOT
+				}								
+			}
+		}		
+	}
+}
+
+
+country_event = {
+	id = AL_event.13
+	title = AL_event.13.t
+	desc = AL_event.13.d
+	picture = GFX_alpt_052Dkm
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.13.a
+		set_country_flag = AL_event_13
+		custom_effect_tooltip = get_alpt_052Dkunming	
+		hidden_effect = {
+			TAN = {
+				alpt_052Dkunming = {
+					set_nationality = ROOT
+				}								
+			}
+		}		
+	}
+}
+
+country_event = {
+	id = AL_event.14
+	title = AL_event.14.t
+	desc = AL_event.14.d
+	picture = GFX_alpt_054Azs
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.14.a
+		set_country_flag = AL_event_14
+		custom_effect_tooltip = get_alpt_054Azhoushan	
+		hidden_effect = {
+			TAN = {
+				alpt_054Azhoushan = {
+					set_nationality = ROOT
+				}								
+			}
+		}		
+	}
+}
+
+country_event = {
+	id = AL_event.15
+	title = AL_event.15.t
+	desc = AL_event.15.d
+	picture = GFX_alpt_055nc
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.15.a
+		set_country_flag = AL_event_15
+		custom_effect_tooltip = get_alpt_055nanchang
+		hidden_effect = {
+			TAN = {
+				alpt_055nanchang = {
+					set_nationality = ROOT
+				}								
+			}
+		}		
+	}
+}
+
+country_event = {
+	id = AL_event.16
+	title = AL_event.16.t
+	desc = AL_event.16.d
+	picture = GFX_alpt_075
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.16.a
+		set_country_flag = AL_event_16
+		custom_effect_tooltip = get_alpt_075
+		hidden_effect = {
+			TAN = {
+				alpt_075 = {
+					set_nationality = ROOT
+				}								
+			}
+		}		
+	}
+}
+
+country_event = {
+	id = AL_event.19
+	title = AL_event.17.t
+	desc = AL_event.17.d
+	picture = GFX_alpt_094A
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.17.a
+		set_country_flag = AL_event_17
+		custom_effect_tooltip = get_alpt_094A
+		hidden_effect = {
+			TAN = {
+				alpt_094A = {
+					set_nationality = ROOT
+				}										
+			}
+			TAN = {
+			    alpt_094A_super = {
+			    	set_nationality = ROOT
+			    }	
+		    }
+			set_variable = {
+				var = 094A_nuke
+				value = 0
+			}   
+		}		
+	}
+}
+
+country_event = {
+	id = AL_event.18
+	title = AL_event.18.t
+	desc = AL_event.18.d
+	picture = GFX_alpt_dsd
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.18.a
+		set_country_flag = AL_event_18
+		custom_effect_tooltip = get_alpt_dsd	
+		hidden_effect = {
+			TAN = {
+				alpt_dsd = {
+					set_nationality = ROOT
+				}								
+			}
+		}		
+	}
+}
+
+#长征18 解除锁定！
+country_event = {
+	id = AL_event.31
+	title = AL_event.31.t
+	desc = AL_event.31.d
+	picture = GFX_alpt_hedan
+	is_triggered_only = yes
+	option = {
+		name = AL_event.31.a 
+		custom_effect_tooltip = nuke_ready_to_fire	  
+		set_country_flag = 094A_jiesuo	
+		set_variable = {
+			var = 094A_nuke
+			value = 10
+		}   
+	}	
+}
+#超饱和打击即将到达前线！
+country_event = {
+	id = AL_event.32
+	title = AL_event.32.t
+	desc = AL_event.32.d
+	picture = GFX_aze_sr1
+	is_triggered_only = yes
+	option = {
+		name = AL_event.35.a   		   
+	}	
+}
+#消模型
+country_event = {
+	id = AL_event.33
+	title = AL_event.33.t
+	desc = AL_event.33.d
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		destroy_entity = FROM.FROM.id			
+	}	
+}
+#从天而降的敌人！
+country_event = {
+	id = AL_event.34
+	title = AL_event.34.t
+	desc = AL_event.34.d
+	picture = GFX_aze_sr1
+	is_triggered_only = yes	
+	immediate = {
+		hidden_effect = {
+		    random_state = {
+		    	limit = {
+		    		state = FROM.FROM
+		    	}
+		    	SIR ={
+		    	transfer_state = PREV
+		    	}
+                AL_sir_tianjiang = yes					
+		    }
+			declare_war_on = {
+				target = SIR
+			}	
+	    }
+	}
+	option = {
+		name = AL_event.34.a   
+		   
+	}
+	
+}
+#超饱和打击即将到来！
+country_event = {
+	id = AL_event.35
+	title = AL_event.35.t
+	desc = AL_event.35.d
+	picture = GFX_aze_sr1
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.35.a      
+	}
+}
+######工业设计商
+country_event = {
+	id = AL_event.36
+	title = AL_event.36.t
+	desc = AL_event.36.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.36.a
+		remove_dynamic_modifier = {
+	    	modifier = AL_gongye_all_modifier 
+	    }        
+	}
+}
+
+######坦克设计商
+country_event = {
+	id = AL_event.37
+	title = AL_event.37.t
+	desc = AL_event.37.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.37.a	
+		remove_dynamic_modifier = {
+	    	modifier = AL_tank_all_modifier 
+	    }        
+        
+	}
+}
+
+######军需设计商
+country_event = {
+	id = AL_event.38
+	title = AL_event.38.t
+	desc = AL_event.38.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.38.a
+		remove_dynamic_modifier = {
+	    	modifier = AL_junxu_all_modifier 
+	    }
+	}
+}
+
+######飞机设计商
+country_event = {
+	id = AL_event.39
+	title = AL_event.39.t
+	desc = AL_event.39.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.39.a
+		remove_dynamic_modifier = {
+	    	modifier = AL_plane_all_modifier 
+	    }
+	}
+}
+
+######舰船设计商
+country_event = {
+	id = AL_event.40
+	title = AL_event.40.t
+	desc = AL_event.40.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.40.a
+		remove_dynamic_modifier = {
+	    	modifier = AL_ship_all_modifier 
+	    }	
+	}
+}
+
+######转移完成(东煌)
+country_event = {
+	id = AL_event.41
+	title = AL_event.41.t
+	desc = AL_event.41.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.41.a		
+	}
+}
+
+######转移完成(重樱)
+country_event = {
+	id = AL_event.42
+	title = AL_event.42.t
+	desc = AL_event.42.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.42.a		
+	}
+}
+
+######转移完成(撒丁)
+country_event = {
+	id = AL_event.43
+	title = AL_event.43.t
+	desc = AL_event.43.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.43.a		
+	}
+}
+
+######转移完成(铁血)
+country_event = {
+	id = AL_event.44
+	title = AL_event.44.t
+	desc = AL_event.44.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.44.a		
+	}
+}
+
+######转移完成(鸢尾)
+country_event = {
+	id = AL_event.45
+	title = AL_event.45.t
+	desc = AL_event.45.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.45.a		
+	}
+}
+
+######转移完成(白鹰)
+country_event = {
+	id = AL_event.46
+	title = AL_event.46.t
+	desc = AL_event.46.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.46.a		
+	}
+}
+
+######转移完成(北联)
+country_event = {
+	id = AL_event.47
+	title = AL_event.47.t
+	desc = AL_event.47.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.47.a		
+	}
+}
+
+######转移完成(皇家)
+country_event = {
+	id = AL_event.48
+	title = AL_event.48.t
+	desc = AL_event.48.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.48.a		
+	}
+}
+
+######提示
+country_event = {
+	id = AL_event.49
+	title = AL_event.49.t
+	desc = AL_event.49.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.49.a
+		custom_effect_tooltip = AL_zhuanyi_start
+	}
+}
+
+####失败
+country_event = {
+	id = AL_event.50
+	title = AL_event.50.t
+	desc = AL_event.50.d
+	picture = GFX_aze_sr1
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.50.a
+		random_state = {
+		    limit = {
+		        has_state_flag = AL_fight
+		    }
+			clr_state_flag = AL_fight
+		}
+		
+	}
+}
+
+
+####成功
+country_event = {
+	id = AL_event.51
+	title = AL_event.51.t
+	desc = AL_event.51.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.51.a		
+		ROOT = {
+			transfer_state = FROM.FROM
+		}
+		FROM.FROM = {		   			
+			create_unit = {
+			    division = "name = \"国际纵队\" division_template = \"国际纵队\" start_experience_factor = 1 start_equipment_factor = 0.9"
+			    owner = ROOT
+		    }
+		    create_unit = {
+		    	division = "name = \"国际纵队\" division_template = \"国际纵队\" start_experience_factor = 1 start_equipment_factor = 0.9"
+		    	owner = ROOT
+		    }
+			create_unit = {
+		    	division = "name = \"国际纵队\" division_template = \"国际纵队\" start_experience_factor = 1 start_equipment_factor = 0.9"
+		    	owner = ROOT
+		    }
+			AL_guojizongdui_zengyuan = yes
+		}
+	}
+}
+
+####开始学习
+country_event = {
+	id = AL_event.52
+	title = AL_event.52.t
+	desc = AL_event.52.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.52.a
+		country_event = AL_event.53
+	}
+	option = {
+		name = AL_event.52.b
+		country_event = AL_event.54
+	}
+	option = {
+		name = AL_event.52.c
+		country_event = AL_event.55
+	}
+}
+
+####政治
+country_event = {
+	id = AL_event.53
+	title = AL_event.53.t
+	desc = AL_event.53.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.53.a
+		trigger = {
+			not = {
+				has_country_leader_with_trait = AL_political_111
+			}
+		}
+		effect_tooltip = {
+			custom_effect_tooltip = bli_learn_get_1
+			if = {
+				limit = {
+					has_country_leader_with_trait = AL_political_1
+				}
+				swap_ruler_traits = { remove = AL_political_1 add = AL_political_11  } 
+			}
+			else_if = {
+				limit = {
+					has_country_leader_with_trait = AL_political_11
+				}
+				swap_ruler_traits = { remove = AL_political_11 add = AL_political_111  } 
+			}
+			else = {
+                add_country_leader_trait = AL_political_1
+			}			
+		}
+		set_country_flag = AL_bli_p_1
+	}
+	option = {
+		name = AL_event.53.b
+		trigger = {
+			not = {
+				has_country_leader_with_trait = AL_political_222
+			}
+		}
+		effect_tooltip = {
+			custom_effect_tooltip = bli_learn_get_1
+			if = {
+				limit = {
+					has_country_leader_with_trait = AL_political_2
+				}
+				swap_ruler_traits = { remove = AL_political_2 add = AL_political_22  } 
+			}
+			else_if = {
+				limit = {
+					has_country_leader_with_trait = AL_political_22
+				}
+				swap_ruler_traits = { remove = AL_political_22 add = AL_political_222  } 
+			}
+			else = {
+				add_country_leader_trait = AL_political_2
+			}			
+		}
+		set_country_flag = AL_bli_p_2
+	}
+	option = {
+		name = AL_event.53.c
+		trigger = {
+			not = {
+				has_country_leader_with_trait = AL_political_333
+			}
+		}
+		effect_tooltip = {
+			custom_effect_tooltip = bli_learn_get_1
+			if = {
+				limit = {
+					has_country_leader_with_trait = AL_political_3
+				}
+				swap_ruler_traits = { remove = AL_political_3 add = AL_political_33  } 
+			}
+			else_if = {
+				limit = {
+					has_country_leader_with_trait = AL_political_33
+				}
+				swap_ruler_traits = { remove = AL_political_33 add = AL_political_333  } 
+			}
+			else = {
+				add_country_leader_trait = AL_political_3
+			}			
+		}
+		set_country_flag = AL_bli_p_3
+	}
+	option = {
+		name = AL_event.52.e
+		country_event = AL_event.52
+	}
+}
+
+####生产建设
+country_event = {
+	id = AL_event.54
+	title = AL_event.54.t
+	desc = AL_event.54.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.54.a
+		trigger = {
+			not = {
+				has_country_leader_with_trait = AL_construction_111
+			}
+		}
+		effect_tooltip = {
+			custom_effect_tooltip = bli_learn_get_1
+			if = {
+				limit = {
+					has_country_leader_with_trait = AL_construction_1
+				}
+				swap_ruler_traits = { remove = AL_construction_1 add = AL_construction_11  } 
+			}
+			else_if = {
+				limit = {
+					has_country_leader_with_trait = AL_construction_11
+				}
+				swap_ruler_traits = { remove = AL_construction_11 add = AL_construction_111  } 
+			}
+			else = {
+				add_country_leader_trait = AL_construction_1
+			}			
+		}
+		set_country_flag = AL_bli_c_1
+	}
+	option = {
+		name = AL_event.54.b
+		trigger = {
+			not = {
+				has_country_leader_with_trait = AL_construction_222
+			}
+		}
+		effect_tooltip = {
+			custom_effect_tooltip = bli_learn_get_1
+			if = {
+				limit = {
+					has_country_leader_with_trait = AL_construction_2
+				}
+				swap_ruler_traits = { remove = AL_construction_2 add = AL_construction_22  } 
+			}
+			else_if = {
+				limit = {
+					has_country_leader_with_trait = AL_construction_22
+				}
+				swap_ruler_traits = { remove = AL_construction_22 add = AL_construction_222  } 
+			}
+			else = {
+				add_country_leader_trait = AL_construction_2
+			}			
+		}
+		set_country_flag = AL_bli_c_2
+	}
+	option = {
+		name = AL_event.54.c
+		trigger = {
+			not = {
+				has_country_leader_with_trait = AL_construction_333
+			}
+		}
+		effect_tooltip = {
+			custom_effect_tooltip = bli_learn_get_1
+			if = {
+				limit = {
+					has_country_leader_with_trait = AL_construction_3
+				}
+				swap_ruler_traits = { remove = AL_construction_3 add = AL_construction_33  } 
+			}
+			else_if = {
+				limit = {
+					has_country_leader_with_trait = AL_construction_33
+				}
+				swap_ruler_traits = { remove = AL_construction_33 add = AL_construction_333  } 
+			}
+			else = {
+				add_country_leader_trait = AL_construction_3
+			}			
+		}
+		set_country_flag = AL_bli_c_3
+	}
+	option = {
+		name = AL_event.52.e
+		country_event = AL_event.52
+	}
+}
+
+####军事
+country_event = {
+	id = AL_event.55
+	title = AL_event.55.t
+	desc = AL_event.55.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.55.a
+		trigger = {
+			not = {
+				has_country_leader_with_trait = AL_army_111
+			}
+		}
+		effect_tooltip = {
+			custom_effect_tooltip = bli_learn_get_1
+			if = {
+				limit = {
+					has_country_leader_with_trait = AL_army_1
+				}
+				swap_ruler_traits = { remove = AL_army_1 add = AL_army_11  } 
+			}
+			else_if = {
+				limit = {
+					has_country_leader_with_trait = AL_army_11
+				}
+				swap_ruler_traits = { remove = AL_army_11 add = AL_army_111  } 
+			}
+			else = {
+				add_country_leader_trait = AL_army_1
+			}			
+		}
+		set_country_flag = AL_bli_a_1
+	}
+	option = {
+		name = AL_event.55.b
+		trigger = {
+			not = {
+				has_country_leader_with_trait = AL_army_222
+			}
+		}
+		effect_tooltip = {
+			custom_effect_tooltip = bli_learn_get_1
+			if = {
+				limit = {
+					has_country_leader_with_trait = AL_army_2
+				}
+				swap_ruler_traits = { remove = AL_army_2 add = AL_army_22  } 
+			}
+			else_if = {
+				limit = {
+					has_country_leader_with_trait = AL_army_22
+				}
+				swap_ruler_traits = { remove = AL_army_22 add = AL_army_222  } 
+			}
+			else = {
+				add_country_leader_trait = AL_army_2
+			}			
+		}
+		set_country_flag = AL_bli_a_2
+	}
+	option = {
+		name = AL_event.55.c
+		trigger = {
+			not = {
+				has_country_leader_with_trait = AL_army_333
+			}
+		}
+		effect_tooltip = {
+			custom_effect_tooltip = bli_learn_get_1
+			if = {
+				limit = {
+					has_country_leader_with_trait = AL_army_3
+				}
+				swap_ruler_traits = { remove = AL_army_3 add = AL_army_33  } 
+			}
+			else_if = {
+				limit = {
+					has_country_leader_with_trait = AL_army_33
+				}
+				swap_ruler_traits = { remove = AL_army_33 add = AL_army_333  } 
+			}
+			else = {
+				add_country_leader_trait = AL_army_3
+			}			
+		}
+		set_country_flag = AL_bli_a_3
+	}
+	option = {
+		name = AL_event.52.e
+		country_event = AL_event.52
+	}
+}
+
+
+
+####完成学习
+country_event = {
+	id = AL_event.56
+	title = AL_event.56.t
+	desc = AL_event.56.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.56.a
+	}
+}
+
+####塞壬的内部袭扰
+country_event = {
+	id = AL_event.57
+	title = AL_event.57.t
+	desc = AL_event.57.d
+	picture = GFX_aze_sr1
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.57.a
+		add_stability = -0.15
+		add_war_support = -0.15
+	}
+	option = {
+		name = AL_event.57.b
+		add_stability = -0.05
+        add_war_support = -0.05
+		add_political_power = -60
+		custom_effect_tooltip = AL_next_xirao
+		SIR = {
+            add_to_variable = {
+				xirao_days_re_enable_cost = 5
+			}
+		}		
+	}
+}
+
+####将领被刺伤
+country_event = {
+	id = AL_event.58
+	title = AL_event.58.t
+	desc = AL_event.58.d
+	picture = GFX_aze_sr1
+	trigger = {
+		any_country = {
+			has_idea = AL_sir_powerful
+		}			
+		shijianniangguojia_trigger = yes
+	}
+	mean_time_to_happen = {
+		days = 60
+	}
+	option = {
+		name = AL_event.58.a
+		random_army_leader = {
+			add_timed_unit_leader_trait = {
+				trait = wounded
+				days = 90
+			}
+		}
+		random_army_leader = {
+			add_timed_unit_leader_trait = {
+				trait = wounded
+				days = 90
+			}
+		}
+		random_army_leader = {
+			add_timed_unit_leader_trait = {
+				trait = wounded
+				days = 90
+			}
+		}	
+		random_army_leader = {
+			add_timed_unit_leader_trait = {
+				trait = wounded
+				days = 90
+			}
+		}			
+		random_army_leader = {
+			add_timed_unit_leader_trait = {
+				trait = wounded
+				days = 90
+			}
+		}					
+	}
+}
+
+####军火库被毁
+country_event = {
+	id = AL_event.59
+	title = AL_event.59.t
+	desc = AL_event.59.d
+	picture = GFX_aze_sr1
+	trigger = {
+		any_country = {
+			has_idea = AL_sir_powerful
+		}			
+		shijianniangguojia_trigger = yes
+	}
+	mean_time_to_happen = {
+		days = 120
+	}
+	option = {
+		name = AL_event.59.a
+		custom_effect_tooltip = AL_junhuoku
+        hidden_effect = {
+		set_equipment_fraction = 0.7
+		}
+	}
+}
+
+####内乱
+country_event = {
+	id = AL_event.60
+	title = AL_event.60.t
+	desc = AL_event.60.d
+	picture = GFX_aze_sr1
+	trigger = {
+		any_country = {
+			has_idea = AL_sir_powerful
+		}			
+		shijianniangguojia_trigger = yes
+	}
+	mean_time_to_happen = {
+		days = 180
+	}
+	option = {
+		name = AL_event.59.a
+		custom_effect_tooltip = AL_neiluan
+        hidden_effect = {
+			transfer_units_fraction= {
+				target = SIR
+				army_ratio = 0.3
+				air_ratio = 0.3
+			}
+		}
+	}
+}
+
+####研究未知的坦克
+country_event = {
+	id = AL_event.61
+	title = AL_event.61.t
+	desc = AL_event.61.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes	
+	option = {
+		name = AL_event.56.a
+		unlock_decision_tooltip = { decision = AL_bfl_learn_engine  }
+        unlock_decision_tooltip = { decision = AL_bfl_learn_armor  }
+		unlock_decision_tooltip = { decision = AL_bfl_learn_suspension  }
+		unlock_decision_tooltip = { decision = AL_bfl_learn_turret  }
+		unlock_decision_tooltip = { decision = AL_bfl_learn_heavy_cannon  }
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###########彩蛋################
+#
+#add_namespace = URAPD_event
+#
+#！
+#country_event = {
+#    id = URAPD_event.0
+#    title = URAPD_event.0.t
+#    desc = URAPD_event.0.d
+#    picture = GFX_report_event_generic_read_write
+#	fire_only_once = yes
+#	is_triggered_only = yes
+#	option = {  
+#	    name = URAPD_event.0.a
+#		custom_effect_tooltip = URA_start
+#		set_country_flag = URA
+#		set_variable = { var = data_S value = 0 }
+#		set_variable = { var = data_N value = 0 }
+#		set_variable = { var = data_L value = 0 }
+#		set_variable = { var = data_G value = 0 }
+#		set_variable = { var = data_Z value = 0 }
+#		set_variable = { var = data_P value = 0 }
+#		set_variable = { var = data_X value = 1 }
+#		set_variable = { var = ex_level_S value = 1 }
+#		set_variable = { var = ex_level_N value = 1 }
+#		set_variable = { var = ex_level_L value = 1 }
+#		set_variable = { var = ex_level_G value = 1 }
+#		set_variable = { var = ex_level_Z value = 1 }
+#		set_variable = { var = basic_S_S value = 10 }
+#		set_variable = { var = basic_S_L value = 5 }
+#		set_variable = { var = basic_S_P value = 2 }
+#		set_variable = { var = basic_N_N value = 9 }
+#		set_variable = { var = basic_N_G value = 4 }
+#		set_variable = { var = basic_N_P value = 2 }
+#		set_variable = { var = basic_L_L value = 8 }
+#		set_variable = { var = basic_L_N value = 5 }
+#		set_variable = { var = basic_L_P value = 2 }
+#		set_variable = { var = basic_G_G value = 8 }
+#		set_variable = { var = basic_G_S value = 4 }
+#		set_variable = { var = basic_G_L value = 4 }
+#		set_variable = { var = basic_G_P value = 2 }
+#		set_variable = { var = basic_Z_S value = 2 }
+#		set_variable = { var = basic_Z_Z value = 9 }
+#		set_variable = { var = basic_Z_P value = 4 }
+#		clamp_variable = { var = data_X min = 0.8 max = 1.2 }
+#		clamp_variable = { var = data_S min = 0 max = 1200 }
+#		clamp_variable = { var = data_N min = 0 max = 1200 }
+#		clamp_variable = { var = data_L min = 0 max = 1200 }
+#		clamp_variable = { var = data_G min = 0 max = 1200 }
+#		clamp_variable = { var = data_Z min = 0 max = 1200 }
+#		
+#		hidden_effect = {
+#		
+#		}
+#		}
+#	}
+#	
+#	
+##选择马娘！	
+#country_event = {
+#    id = URAPD_event.1
+#    title = URAPD_event.1.t
+#    desc = URAPD_event.1.d
+#    picture = GFX_report_event_generic_read_write
+#	is_triggered_only = yes
+#	option = {  
+#	    name = URAPD_event.1.a
+#		set_country_flag = URA_xuanze
+#
+#	}
+#	}
+#	
+#	
+#	
+#	
+#	#评价奖励
+#	
+#    country_event = {
+#    id = URAPD_event.2
+#    title = URAPD_event.2.t
+#    desc = URAPD_event.2.d
+#    picture = GFX_report_event_generic_read_write
+#	is_triggered_only = yes
+#	option = {  
+#	    name = URAPD_event.2.a
+#		check_S = yes
+#		check_N = yes
+#		check_L = yes
+#		check_G = yes
+#		check_Z = yes
+#		custom_effect_tooltip = pingjia_183
+#		hidden_effect = {
+#		   country_event = { id = URAPD_event.2 days = 181 }		
+#		}
+#		
+#	}
+#	}
+#	
+#	
+##马娘心情不太好
+#country_event = {
+#    id = URAPD_event.3
+#    title = URAPD_event.3.t
+#    desc = URAPD_event.3.d
+#    picture = GFX_report_event_generic_read_write
+#	is_triggered_only = yes
+#	option = {  
+#	    name = URAPD_event.3.a
+#		set_country_flag = URA_no
+#        subtract_from_variable = { var = data_X value = 0.1 tooltip = level_X_DOWN }
+#		jiuzhen = yes
+#	}
+#	}
+#	
+#	
+##新技能！
+#country_event = {
+#    id = URAPD_event.13
+#    title = URAPD_event.13.t
+#    desc = URAPD_event.13.d
+#    picture = GFX_report_event_generic_read_write
+#	is_triggered_only = yes
+#	option = {  
+#	    name = URAPD_event.13.a
+#		skill_show = yes		
+#	}
+#	}
+#
+#
+#
+#
+##额外的领悟
+#country_event = {
+#    id = URAPD_event.14
+#    title = URAPD_event.14.t
+#    desc = URAPD_event.14.d
+#    picture = GFX_report_event_generic_read_write
+#	is_triggered_only = yes
+#	option = {  
+#	    name = URAPD_event.14.a
+#		add_to_variable = { var = data_Z value = 5 tooltip = data_Z_5 }	
+#	}
+#	}
+#	
+##适当的练习
+#country_event = {
+#    id = URAPD_event.15
+#    title = URAPD_event.15.t
+#    desc = URAPD_event.15.d
+#    picture = GFX_report_event_generic_read_write
+#	is_triggered_only = yes
+#	option = {  
+#	    name = URAPD_event.15.a
+#		add_to_variable = { var = data_L value = 5 tooltip = data_L_5 }		
+#	}
+#	}
+#	
+##更快！
+#country_event = {
+#    id = URAPD_event.16
+#    title = URAPD_event.16.t
+#    desc = URAPD_event.16.d
+#    picture = GFX_report_event_generic_read_write
+#	is_triggered_only = yes
+#	option = {  
+#	    name = URAPD_event.16.a
+#		add_to_variable = { var = data_S value = 5 tooltip = data_S_5 }		
+#	}
+#	}
+#
+##磨练意志
+#country_event = {
+#    id = URAPD_event.17
+#    title = URAPD_event.17.t
+#    desc = URAPD_event.17.d
+#    picture = GFX_report_event_generic_read_write
+#	is_triggered_only = yes
+#	option = {  
+#	    name = URAPD_event.17.a
+#		add_to_variable = { var = data_G value = 5 tooltip = data_G_5 }	
+#	}
+#	}
+#
+##马拉松
+#country_event = {
+#    id = URAPD_event.18
+#    title = URAPD_event.18.t
+#    desc = URAPD_event.18.d
+#    picture = GFX_report_event_generic_read_write
+#	is_triggered_only = yes
+#	option = {  
+#	    name = URAPD_event.18.a
+#		add_to_variable = { var = data_N value = 5 tooltip = data_N_5 }		
+#	}
+#}
+#
+##改变马娘头像
+#country_event = {
+#    id = URAPD_event.19
+#    title = URAPD_event.19.t
+#    desc = URAPD_event.19.d
+#    picture = GFX_report_event_generic_read_write
+#	is_triggered_only = yes
+#	option = {  
+#	    name = URAPD_event.19.a
+#		clr_country_flag = URA_evil	
+#		set_country_flag = URA_holy		
+#	}
+#	option = {  
+#	    name = URAPD_event.19.b
+#		clr_country_flag = URA_holy	
+#		set_country_flag = URA_evil	
+#	}
+#	option = {  
+#	    name = URAPD_event.19.c
+#		clr_country_flag = URA_evil	
+#		clr_country_flag = URA_holy		
+#	}
+#}
+#

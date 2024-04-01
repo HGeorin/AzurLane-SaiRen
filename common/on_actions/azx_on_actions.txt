@@ -1,0 +1,25 @@
+on_actions = {
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						shijianniangguojia_trigger = yes
+						NOT = { has_country_flag = toudisairen_get }
+					}
+					ROOT = {
+						has_country_flag = toudisairen_get
+					}
+				}
+				FROM = {
+					white_peace = ROOT
+					puppet = ROOT
+				}
+				ROOT = {
+					clr_country_flag = toudisairen_get
+					remove_Ideas = SIR_srkzg
+				}
+			}
+		}
+	}
+}

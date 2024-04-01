@@ -1,0 +1,50 @@
+﻿division_template = {
+	name = "强袭军团"
+	division_names_group = BYG_INF_01
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 0 y = 4 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+		motorized = { x = 1 y = 4 }
+		light_armor = { x = 2 y = 0 }
+		light_armor = { x = 2 y = 1 }
+		light_armor = { x = 2 y = 2 }
+		light_armor = { x = 2 y = 3 }
+		light_armor = { x = 2 y = 4 }
+		
+	}
+	support = {
+        mot_recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+}
+units = {
+	division= {	
+		name = "白鹰强袭师"
+		location = 1843
+		division_template = "强袭军团"
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "BYG" version_name = "M2A2" } }
+		start_experience_factor = 1
+	}
+	division= {	
+		name = "白鹰强袭师"
+		location = 1843
+		division_template = "强袭军团"
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "BYG" version_name = "M2A2" } }
+		start_experience_factor = 1
+	}
+	division= {	
+		name = "白鹰强袭师"
+		location = 1843
+		division_template = "强袭军团"
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "BYG" version_name = "M2A2" } }
+		start_experience_factor = 1
+	}
+}

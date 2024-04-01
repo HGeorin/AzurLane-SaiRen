@@ -1,0 +1,87 @@
+﻿division_template = {
+	name = "Infanterie-Division"
+
+	division_names_group = GER_Inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	
+	support = {
+        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "塞壬卫戍兵团"
+	division_names_group = GER_Inf_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+units = {
+	division= {	
+		name = "塞壬卫戍兵团"
+		location = 7617
+		division_template = "塞壬卫戍兵团"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "塞壬卫戍兵团"
+		location = 7617
+		division_template = "塞壬卫戍兵团"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "塞壬卫戍兵团"
+		location = 7617
+		division_template = "塞壬卫戍兵团"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "塞壬卫戍兵团"
+		location = 7617
+		division_template = "塞壬卫戍兵团"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "塞壬陆上兵团"
+		location = 10513
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "塞壬陆上兵团"
+		location = 10513
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "塞壬陆上兵团"
+		location = 10513
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.1
+	}
+}
+
+### Air oob
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+
+#####################

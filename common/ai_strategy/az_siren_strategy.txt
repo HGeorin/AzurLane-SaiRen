@@ -1,0 +1,282 @@
+az_jingongsiren_zhongyang = {
+	enable = {
+		OR = {
+			tag = TIX
+			tag = BYG
+			tag = BFL
+			tag = HUJ
+			tag = YUW
+			tag = SAD
+		}
+	}
+	
+	ai_strategy = {
+		type = prepare_for_war
+		id = "SIR"			
+		value = 200
+	}
+}
+az_jingongsiren_yazhou = {
+	enable = {
+		OR = {
+			tag = DOH
+			tag = CHY
+		}
+	}
+	
+	ai_strategy = {
+		type = prepare_for_war
+		id = "SR3"			
+		value = 200
+	}
+}
+az_jianniang_dont_join_war = {
+	enable = {
+		shijianniangguojia_trigger = yes
+	}
+	
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "TIX"			
+		target_country = SIR
+		value = 99999
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "BYG"			
+		target_country = SIR
+		value = 99999
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "DOH"			
+		target_country = SIR
+		value = 99999
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "CHY"			
+		target_country = SIR
+		value = 99999
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "BFL"			
+		target_country = SIR
+		value = 99999
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "HUJ"			
+		target_country = SIR
+		value = 99999
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "YUW"			
+		target_country = SIR
+		value = 99999
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "SAD"			
+		target_country = SIR
+		value = 99999
+	}
+
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "TIX"			
+		target_country = SR1
+		value = 99999
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "BYG"			
+		target_country = SR1
+		value = 99999
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "DOH"			
+		target_country = SR1
+		value = 99999
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "CHY"			
+		target_country = SR1
+		value = 99999
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "BFL"			
+		target_country = SR1
+		value = 99999
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "HUJ"			
+		target_country = SR1
+		value = 99999
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "YUW"			
+		target_country = SR1
+		value = 99999
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "SAD"			
+		target_country = SR1
+		value = 99999
+	}
+
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "TIX"			
+		target_country = SR2
+		value = 99999
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "BYG"			
+		target_country = SR2
+		value = 99999
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "DOH"			
+		target_country = SR2
+		value = 99999
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "CHY"			
+		target_country = SR2
+		value = 99999
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "BFL"			
+		target_country = SR2
+		value = 99999
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "HUJ"			
+		target_country = SR2
+		value = 99999
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "YUW"			
+		target_country = SR2
+		value = 99999
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "SAD"			
+		target_country = SR2
+		value = 99999
+	}
+
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "TIX"			
+		target_country = SR3
+		value = 99999
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "BYG"			
+		target_country = SR3
+		value = 99999
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "DOH"			
+		target_country = SR3
+		value = 99999
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "CHY"			
+		target_country = SR3
+		value = 99999
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "BFL"			
+		target_country = SR3
+		value = 99999
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "HUJ"			
+		target_country = SR3
+		value = 99999
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "YUW"			
+		target_country = SR3
+		value = 99999
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "SAD"			
+		target_country = SR3
+		value = 99999
+	}
+
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "TIX"			
+		target_country = SR4
+		value = 99999
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "BYG"			
+		target_country = SR4
+		value = 99999
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "DOH"			
+		target_country = SR4
+		value = 99999
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "CHY"			
+		target_country = SR4
+		value = 99999
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "BFL"			
+		target_country = SR4
+		value = 99999
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "HUJ"			
+		target_country = SR4
+		value = 99999
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "YUW"			
+		target_country = SR4
+		value = 99999
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "SAD"			
+		target_country = SR4
+		value = 99999
+	}
+}

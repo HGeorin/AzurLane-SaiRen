@@ -1,0 +1,2415 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+### search_filters = {FOCUS_FILTER_USA_CONGRESS}
+ 
+focus_tree = {
+	id = byg_focus
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = BYG
+		}
+	}
+	continuous_focus_position = { x = 50 y = 1600 }
+	default = no
+	
+	focus = {
+		id = BYG_baiyingzhanzhengbu
+		icon = GFX_focus_eng_special_air_service
+		x = 43
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			army_experience = 50
+			navy_experience = 50
+			air_experience = 50
+		}
+	}
+	focus = {
+		id = BYG_wujiaodalou
+		icon = GFX_focus_usa_build_the_pentagon
+		x = 0
+		y = 1
+		relative_position_id = BYG_baiyingzhanzhengbu
+		prerequisite = { focus = BYG_baiyingzhanzhengbu }
+		cost = 7
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = BYG_wjdl
+		}
+	}
+	focus = {
+		id = BYG_lujungaigeyantao
+		icon = GFX_goal_generic_air_doctrine
+		x = -10
+		y = 1
+		relative_position_id = BYG_wujiaodalou
+		prerequisite = { focus = BYG_wujiaodalou }
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = "陆军改革研讨"
+				cost_reduction = 0.25
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = BYG_danbingzhuangbei
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 2
+		y = 1
+		relative_position_id = BYG_lujungaigeyantao
+		prerequisite = { focus = BYG_lujungaigeyantao }
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+			}	
+			add_ideas = BYG_jldzb
+		}
+	}
+	focus = {
+		id = BYG_kuozhaoyouqibing
+		icon = GFX_focus_generic_little_entente
+		x = 0
+		y = 1
+		relative_position_id = BYG_danbingzhuangbei
+		prerequisite = { focus = BYG_danbingzhuangbei }
+		cost = 7
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			
+			add_ideas = BYG_yqb
+		}
+	}
+	
+	focus = {
+		id = BYG_youshihuolixueshuo
+		icon = GFX_goal_generic_army_artillery
+		x = 4
+		y = 1
+		relative_position_id = BYG_lujungaigeyantao
+		prerequisite = { focus = BYG_lujungaigeyantao }
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = "优势火力学说"
+				cost_reduction = 0.25
+				uses = 2
+				category = cat_superior_firepower
+			}
+		}
+	}
+	focus = {
+		id = BYG_xietongpaoji
+		icon = GFX_goal_generic_army_artillery2
+		x = 0
+		y = 1
+		relative_position_id = BYG_youshihuolixueshuo
+		prerequisite = { focus = BYG_youshihuolixueshuo }
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_tech_bonus = {
+				name = "协同炮击"
+				bonus = 1.5
+				uses = 1
+				category = artillery
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 1000
+			
+			}
+		}
+	}
+	focus = {
+		id = BYG_zhenshexingdong
+		icon = GFX_goal_generic_army_artillery
+		x = 0
+		y = 1
+		relative_position_id = BYG_xietongpaoji
+		prerequisite = { focus = BYG_xietongpaoji }
+		cost = 7
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = BYG_zsxd
+		}
+	}
+	focus = {
+		id = BYG_renshouyiganqiang
+		icon = GFX_focus_generic_manpower
+		x = -4
+		y = 1
+		relative_position_id = BYG_lujungaigeyantao
+		prerequisite = { focus = BYG_lujungaigeyantao }
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_tech_bonus = {
+				name = "人手一杆枪"
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+			}
+			add_ideas = BYG_qmjb
+		}
+	}
+	focus = {
+		id = BYG_baiyingjungongchang
+		icon = GFX_goal_generic_construct_mil_factory
+		x = -2
+		y = 1
+		relative_position_id = BYG_lujungaigeyantao
+		prerequisite = { focus = BYG_lujungaigeyantao }
+		cost = 7
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			capital_scope = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+					
+				}
+			}
+		}
+	}
+	focus = {
+		id = BYG_motuohuafangan
+		icon = GFX_goal_generic_army_motorized
+		x = -1
+		y = 1
+		relative_position_id = BYG_baiyingjungongchang
+		prerequisite = { focus = BYG_baiyingjungongchang }
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 1500
+			}
+			add_tech_bonus = {
+				name = "摩托化方案"
+				bonus = 1
+				ahead_reduction = 2
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+	focus = {
+		id = BYG_zhancheguilai
+		icon = GFX_goal_generic_army_tanks
+		x = 1
+		y = 1
+		relative_position_id = BYG_baiyingjungongchang
+		prerequisite = { focus = BYG_baiyingjungongchang }
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_tech_bonus = {
+				name = "战车归来"
+				bonus = 1
+				uses = 2
+				category = armor
+			}
+		}
+	}
+	focus = {
+		id = BYG_xiandaishandianzhan
+		icon = GFX_goal_generic_air_doctrine
+		x = -1
+		y = 1
+		relative_position_id = BYG_zhancheguilai
+		prerequisite = { focus = BYG_zhancheguilai }
+		prerequisite = { focus = BYG_motuohuafangan }
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			TY_lujunliluntupo = yes
+			add_doctrine_cost_reduction = {
+				name = "现代闪电战"
+				cost_reduction = 0.25
+				uses = 3
+				category = land_doctrine
+			}
+			custom_effect_tooltip = BYG_xiandaishandianzhan_effect_tooltip
+		}
+	}
+	focus = {
+		id = BYG_haijunyidengren
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 0
+		y = 1
+		relative_position_id = BYG_wujiaodalou
+		prerequisite = { focus = BYG_wujiaodalou }
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			TY_haijunliluntupo = yes
+			navy_experience = 50
+		}
+	}
+	focus = {
+		id = BYG_qianting
+		icon = GFX_goal_generic_navy_anti_submarine
+		x = 0
+		y = 1
+		relative_position_id = BYG_haijunyidengren
+		prerequisite = { focus = BYG_haijunyidengren }
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_tech_bonus = {
+				name = "潜艇"
+				bonus = 1.5
+				uses = 1
+				category = ss_tech
+			}
+		}
+	}
+	focus = {
+		id = BYG_yuanyangqianting
+		icon = GFX_goal_generic_navy_submarine
+		x = 0
+		y = 1
+		relative_position_id = BYG_qianting
+		prerequisite = { focus = BYG_qianting }
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = BYG_yyqt
+		}
+	}
+
+	focus = {
+		id = BYG_kongmujiqun
+		icon = GFX_goal_generic_navy_carrier
+		x = 3
+		y = 1
+		relative_position_id = BYG_haijunyidengren
+		prerequisite = { focus = BYG_haijunyidengren }
+		cost = 7
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_tech_bonus = {
+				name = "空母集群"
+				bonus = 1
+				uses = 2
+				category = cv_tech
+			}
+			
+		}
+	}
+	focus = {
+		id = BYG_gailianggongxingjianzhuang
+		icon = GFX_goal_generic_air_naval_bomber
+		x = 0
+		y = 1
+		relative_position_id = BYG_kongmujiqun
+		prerequisite = { focus = BYG_kongmujiqun }
+		cost = 7
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_tech_bonus = {
+				name = "改良舰装"
+				bonus = 1
+				uses = 2
+				technology = cv_fighter1
+				technology = cv_fighter2
+				technology = cv_naval_bomber2
+				technology = cv_CAS2
+			}
+		}
+	}
+	focus = {
+		id = BYG_dachujihua
+		icon = GFX_goal_continuous_naval_production
+		x = 2
+		y = 1
+		relative_position_id = BYG_kongmujiqun
+		prerequisite = { focus = BYG_kongmujiqun }
+		cost = 10
+		
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = BYG_hmjz
+		}
+	}
+	focus = {
+		id = BYG_jingquesheshou
+		icon = GFX_focus_generic_air_defense
+		x = 0
+		y = 1
+		relative_position_id = BYG_gailianggongxingjianzhuang
+		prerequisite = { focus = BYG_gailianggongxingjianzhuang }
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = BYG_hsgjs
+		}
+	}
+	focus = {
+		id = BYG_zhanliebiandui
+		icon = GFX_focus_generic_navy_battleship2
+		x = -3
+		y = 1
+		relative_position_id = BYG_haijunyidengren
+		prerequisite = { focus = BYG_haijunyidengren }
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_tech_bonus = {
+				name = "战列编队"
+				bonus = 1
+				uses = 1
+				category = bb_tech
+			}
+			navy_experience = 20
+		}
+	}
+	focus = {
+		id = BYG_huhangquzhu
+		icon = GFX_focus_generic_destroyer
+		x = 1
+		y = 1
+		relative_position_id = BYG_zhanliebiandui
+		prerequisite = { focus = BYG_zhanliebiandui }
+		cost = 7
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_tech_bonus = {
+				name = "护航驱逐"
+				bonus = 1.5
+				uses = 1
+				category = dd_tech
+			}
+		}
+	}
+	focus = {
+		id = BYG_fangkongxunyang
+		icon = GFX_focus_generic_cruiser2
+		x = 0
+		y = 1
+		relative_position_id = BYG_huhangquzhu
+		prerequisite = { focus = BYG_huhangquzhu }
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_tech_bonus = {
+				name = "防空巡洋"
+				bonus = 1.5
+				uses = 1
+				category = cl_tech
+			}
+			
+			add_tech_bonus = {
+				name = "防空炮"
+				bonus = 1
+				uses = 3
+				technology = nrm_improved_antiair
+				technology = nrm_advanced_antiair
+				technology = nrm_basic_antiair
+				technology = nrm_basic_heavy_antiair
+				technology = nrm_improved_heavy_antiair
+				technology = nrm_advanced_heavy_antiair
+			}
+		}
+	}
+	focus = {
+		id = BYG_feichengshiyan
+		icon = GFX_focus_generic_air_defense
+		x = 0
+		y = 1
+		relative_position_id = BYG_fangkongxunyang
+		prerequisite = { focus = BYG_fangkongxunyang }
+		cost = 7
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_tech_bonus = {
+				name = "费城实验"
+				bonus = 0.5
+				uses = 3
+				category = radar_tech
+			}
+		}
+	}
+	focus = {
+		id = BYG_zhongdianfanghu
+		icon = GFX_focus_generic_navy_battleship2
+		x = -1
+		y = 1
+		relative_position_id = BYG_zhanliebiandui
+		prerequisite = { focus = BYG_zhanliebiandui }
+		cost = 7
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_tech_bonus = {
+				name = "重点防护"
+				bonus = 2.5
+				uses = 1
+				technology = improved_heavy_armor_scheme
+			}
+			set_technology = { basic_heavy_armor_scheme = 1 }
+		}
+	}
+	focus = {
+		id = BYG_xinshichuanjiadan
+		icon = GFX_focus_chaozhongdan
+		x = 0
+		y = 1
+		relative_position_id = BYG_zhongdianfanghu
+		prerequisite = { focus = BYG_zhongdianfanghu }
+		cost = 10
+
+		ai_will_do = { 
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = BYG_czcjd 
+			set_technology = { improved_heavy_shell = 1 }
+			
+		}
+	}
+	focus = {
+		id = BYG_jianlikongjun 
+		icon = GFX_goal_generic_air_doctrine
+		x = 10
+		y = 1
+		relative_position_id = BYG_wujiaodalou
+		prerequisite = { focus = BYG_wujiaodalou }
+		cost = 7
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			air_experience = 50
+		}
+	}
+	focus = {
+		id = BYG_zhanshukongjun
+		icon = GFX_goal_generic_air_fighter
+		x = -2
+		y = 1
+		relative_position_id = BYG_jianlikongjun
+		prerequisite = { focus = BYG_jianlikongjun }
+		cost = 7
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_tech_bonus = {
+				name = "战术空军"
+				bonus = 0.5
+				uses = 3
+				category = light_air
+			}
+		}
+	}
+	focus = {
+		id = BYG_xinshifuchonghongzhaji
+		icon = GFX_goal_generic_air_naval_bomber
+		x = 0
+		y = 1
+		relative_position_id = BYG_zhanshukongjun
+		prerequisite = { focus = BYG_zhanshukongjun }
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_tech_bonus = {
+				name = "俯冲轰炸机"
+				bonus = 1.5
+				uses = 1
+				ahead_reduction = 2
+				category = cas_bomber
+				
+			}
+		}
+	}
+	focus = {
+		id = BYG_xinshihaijunhongzhaji
+		icon = GFX_goal_generic_air_naval_bomber
+		x = -2
+		y = 2
+		relative_position_id = BYG_zhanshukongjun
+		prerequisite = { focus = BYG_zhanshukongjun }
+		prerequisite = { focus = BYG_gailianggongxingjianzhuang }
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_tech_bonus = {
+				name = "海轰"
+				bonus = 1.5
+				uses = 1
+				ahead_reduction = 2
+				category = naval_bomber
+				
+			}
+		}
+	}
+	focus = {
+		id = BYG_zhanluekongjun
+		icon = GFX_goal_generic_air_bomber
+		x = 2
+		y = 1
+		relative_position_id = BYG_jianlikongjun
+		prerequisite = { focus = BYG_jianlikongjun }
+		cost = 7
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			
+			add_tech_bonus = {
+				name = "战略空军"
+				bonus = 1.5
+				uses = 2
+				category = medium_air
+				category = heavy_air
+				
+			}
+		}
+	}
+	focus = {
+		id = BYG_kongdixietong
+		icon = GFX_goal_generic_build_airforce
+		x = 0
+		y = 1
+		relative_position_id = BYG_zhanluekongjun
+		prerequisite = { focus = BYG_zhanluekongjun }
+	
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			
+			add_ideas = BYG_kdxt
+		}
+	}
+	focus = {
+		id = BYG_zhanluepohuai 
+		icon = GFX_goal_generic_CAS
+		x = 1
+		y = 1
+		relative_position_id = BYG_kongdixietong
+		prerequisite = { focus = BYG_kongdixietong }
+		mutually_exclusive = { focus = BYG_duidizhiyuan }
+	
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = "战略破坏"
+				cost_reduction = 0.25
+				uses = 2
+				category = strategic_destruction_tree
+			}
+			TY_kongjunliluntupo = yes
+		}
+	}
+	focus = {
+		id = BYG_duidizhiyuan
+		icon = GFX_goal_poland_goal
+		x = -1
+		y = 1
+		relative_position_id = BYG_kongdixietong
+		prerequisite = { focus = BYG_kongdixietong }
+		mutually_exclusive = { focus = BYG_zhanluepohuai }
+	
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = "对地支援"
+				cost_reduction = 0.25
+				uses = 2
+				category = battlefield_support_tree
+			}
+			TY_kongjunliluntupo = yes
+		}
+	}
+
+	focus = {
+		id = BYG_qinglimenting
+		icon = GFX_goal_generic_major_war
+		x = 5
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			transfer_state = 689
+			transfer_state = 693
+			transfer_state = 686
+			transfer_state = 694
+			transfer_state = 308
+			transfer_state = 690
+			hidden_effect = {
+				689 = { add_core_of = BYG }
+				693 = { add_core_of = BYG }
+				686 = { add_core_of = BYG }
+				694 = { add_core_of = BYG }
+				308 = { add_core_of = BYG }
+				690 = { add_core_of = BYG }
+			}
+		}
+	}
+	focus = {
+		id = BYG_zhunbeifangong
+		icon = GFX_goal_demand_sudetenland
+		x = 0
+		y = 1
+		prerequisite = { focus = BYG_qinglimenting }
+		relative_position_id = BYG_qinglimenting
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			set_country_flag = BYG_denglumaiami
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 3000
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 500
+			}
+			custom_effect_tooltip = "与塞壬开战时会有一支先遣部队登陆迈阿密。"
+		}
+	}
+	focus = {
+		id = BYG_xianhuashengkai
+		icon = GFX_goal_generic_special_forces
+		x = 0
+		y = 1
+		prerequisite = { focus = BYG_zhunbeifangong }
+		relative_position_id = BYG_zhunbeifangong
+		cost = 7
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				HUJ = { has_war = yes }
+				add = 100
+			}
+			modifier = {
+				TIX = { has_capitulated = yes }
+				add = 100
+			}
+			
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 150
+			}
+			add_timed_idea = { idea = BYG_cfbm days = 90 }
+			366 = { add_core_of = BYG }
+			365 = { add_core_of = BYG }
+			367 = { add_core_of = BYG }
+		}
+	}
+	focus = {
+		id = BYG_chongduozhiminling
+		icon = GFX_goal_generic_position_armies
+		x = 0
+		y = 1
+		prerequisite = { focus = BYG_xianhuashengkai }
+		relative_position_id = BYG_xianhuashengkai
+		cost = 7
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 300
+			}
+			custom_effect_tooltip = "获得东部沿海省份核心"
+			hidden_effect = {
+				364 = { add_core_of = BYG }
+				363 = { add_core_of = BYG }
+				362 = { add_core_of = BYG }
+				361 = { add_core_of = BYG }
+				360 = { add_core_of = BYG }
+				359 = { add_core_of = BYG }
+				358 = { add_core_of = BYG }
+				357 = { add_core_of = BYG }
+				if = {
+					limit = { has_idea = BYG_cfbm }
+					remove_ideas = BYG_cfbm
+					add_timed_idea = { idea = BYG_cfbm days = 120 }
+				}
+				else = { add_timed_idea = { idea = BYG_cfbm days = 120 } }
+				
+			}
+			custom_effect_tooltip = "另外重新设定“重返北美”民族精神的时间为120天"
+		}
+	}
+	focus = {
+		id = BYG_dongbutielu
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 0
+		y = 1
+		prerequisite = { focus = BYG_chongduozhiminling }
+		relative_position_id = BYG_chongduozhiminling
+		cost = 10
+		available = {
+			controls_state = 357
+			controls_state = 358
+			controls_state = 359
+			controls_state = 360
+			controls_state = 361
+			controls_state = 362
+			controls_state = 363
+			controls_state = 364
+		}
+		ai_will_do = {
+			factor = 7
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			357 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					province = 12221
+					instant_build = yes
+				}
+			}
+			358 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			359 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			360 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			361 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			362 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			363 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			364 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			build_railway = {
+				level = 1
+				start_province = 7202
+				target_province = 3957
+			}
+			build_railway = {
+				level = 1
+				start_province = 1132 
+				target_province = 3957
+			}
+			build_railway = {
+				level = 1
+				start_province = 788 
+				target_province = 3957
+			}
+			build_railway = {
+				level = 1
+				start_province = 6732
+				target_province = 3957
+			}
+			build_railway = {
+				path = { 6732 3712 733 6719 12202 12221 }
+			}
+		}
+	}
+	focus = {
+		id = BYG_shijiezhidu
+		icon = GFX_focus_generic_support_the_left_right
+		x = -1
+		y = 1
+		prerequisite = { focus = BYG_dongbutielu }
+		relative_position_id = BYG_dongbutielu
+		cost = 10
+		available = {
+			has_full_control_of_state = 358
+		}
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			358 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 5
+					instant_build = yes
+					province = 3878
+				}
+			}
+		}
+	}
+	focus = {
+		id = BYG_xiufunvshenxiang
+		icon = GFX_focus_generic_strike_at_democracy3
+		x = 0
+		y = 1
+		prerequisite = { focus = BYG_shijiezhidu }
+		relative_position_id = BYG_shijiezhidu
+		cost = 7
+
+		ai_will_do = {
+			factor = 7
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = BYG_zydgdygdjy
+		}
+	}
+	focus = {
+		id = BYG_dahugongyequ
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 1
+		y = 1
+		prerequisite = { focus = BYG_dongbutielu }
+		relative_position_id = BYG_dongbutielu
+		cost = 7
+		available = {
+			controls_state = 394
+			controls_state = 393
+			controls_state = 261
+		}
+		ai_will_do = {
+			factor = 7
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			394 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			393 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			261 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = BYG_kaifakuangchan
+		icon = GFX_focus_generic_steel
+		x = 0
+		y = 1
+		prerequisite = { focus = BYG_dahugongyequ }
+		relative_position_id = BYG_dahugongyequ
+		cost = 7
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			394 = {
+				add_resource = {
+					type = steel
+					amount = 45
+				}
+				add_resource = {
+					type = chromium
+					amount = 15
+				}
+			}
+			393 = {
+				add_resource = {
+					type = steel
+					amount = 35
+				}
+			}
+			261 = {
+				add_resource = {
+					type = steel
+					amount = 10
+				}
+				add_resource = {
+					type = aluminium
+					amount = 25
+				}
+			}
+		}
+	}
+	focus = {
+		id = BYG_tilianmofang
+		icon = GFX_focus_xinzhimofang
+		x = 0
+		y = 1
+		prerequisite = { focus = BYG_kaifakuangchan }
+		relative_position_id = BYG_kaifakuangchan
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			custom_effect_tooltip = BYG_tilianmofang_tooltip
+			add_to_variable = {
+				var = xzmf_sl
+				value = 7
+			}
+		}
+	}
+	focus = {
+		id = BYG_beimeigongshi
+		icon = GFX_goal_generic_position_armies
+		x = -3
+		y = 2
+		prerequisite = { focus = BYG_chongduozhiminling }
+		relative_position_id = BYG_chongduozhiminling
+		cost = 7
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 300
+			}
+			custom_effect_tooltip = "获得中部地区和北方地区的核心领土。"
+			hidden_effect = {
+				368 = { add_core_of = BYG }
+				369 = { add_core_of = BYG }
+				261 = { add_core_of = BYG }
+				276 = { add_core_of = BYG }
+				468 = { add_core_of = BYG }
+				393 = { add_core_of = BYG }
+				395 = { add_core_of = BYG }
+				394 = { add_core_of = BYG }
+				370 = { add_core_of = BYG }
+				371 = { add_core_of = BYG }
+				375 = { add_core_of = BYG }
+				372 = { add_core_of = BYG }
+				392 = { add_core_of = BYG }
+				391 = { add_core_of = BYG }
+				396 = { add_core_of = BYG }
+				376 = { add_core_of = BYG }
+				388 = { add_core_of = BYG }
+				389 = { add_core_of = BYG }
+				390 = { add_core_of = BYG }
+				374 = { add_core_of = BYG }
+				383 = { add_core_of = BYG }
+				373 = { add_core_of = BYG }
+				392 = { add_core_of = BYG }
+				384 = { add_core_of = BYG }
+				368 = { add_core_of = BYG }
+				381 = { add_core_of = BYG }
+				382 = { add_core_of = BYG }
+				if = {
+					limit = { has_idea = BYG_cfbm }
+					remove_ideas = BYG_cfbm
+					add_timed_idea = { idea = BYG_cfbm days = 150 }
+				}
+				else = { add_timed_idea = { idea = BYG_cfbm days = 150 } }
+			}
+			custom_effect_tooltip = "另外重新设定“重返北美”民族精神的时间为150天"
+		}
+	}
+	focus = {
+		id = BYG_xihaian
+		icon = GFX_goal_generic_political_pressure
+		x = 0
+		y = 1
+		prerequisite = { focus = BYG_beimeigongshi }
+		relative_position_id = BYG_beimeigongshi
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			387 = { add_core_of = BYG }
+			386 = { add_core_of = BYG }
+			385 = { add_core_of = BYG }
+			378 = { add_core_of = BYG }
+			379 = { add_core_of = BYG }
+			380 = { add_core_of = BYG }
+			378 = { add_core_of = BYG }
+			379 = { add_core_of = BYG }
+			377 = { add_core_of = BYG }
+		}
+	}
+	focus = {
+		id = BYG_taipingyangjidi
+		icon = GFX_goal_generic_amphibious_assault
+		x = -1
+		y = 1
+		prerequisite = { focus = BYG_xihaian }
+		relative_position_id = BYG_xihaian
+		cost = 5
+
+		ai_will_do = {
+			factor = 7
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			transfer_state = 629
+			629 = { add_core_of = BYG }
+		}
+	}
+	focus = {
+		id = BYG_wanzhengdewomen
+		icon = GFX_goal_support_democracy
+		x = 1
+		y = 1
+		prerequisite = { focus = BYG_xihaian }
+		prerequisite = { focus = BYG_xiufunvshenxiang }
+		relative_position_id = BYG_xihaian
+		cost = 10
+		available = {
+			has_full_control_of_state = 366
+			has_full_control_of_state = 361
+			has_full_control_of_state = 357
+			has_full_control_of_state = 395
+			has_full_control_of_state = 378
+			has_full_control_of_state = 375
+		}
+		ai_will_do = {
+			factor = 15
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = BYG_jrfs
+		}
+	}
+	focus = {
+		id = BYG_nanmeigongshi
+		icon = GFX_goal_generic_position_armies
+		x = 3
+		y = 2
+		prerequisite = { focus = BYG_chongduozhiminling }
+		relative_position_id = BYG_chongduozhiminling
+		cost = 7
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 600
+			}
+			transfer_state = 685
+			
+		}
+	}
+	focus = {
+		id = BYG_fenjiexianyibei
+		icon = GFX_goal_generic_major_war
+		x = 0
+		y = 1
+		prerequisite = { focus = BYG_nanmeigongshi }
+		relative_position_id = BYG_nanmeigongshi
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			custom_effect_tooltip = "获得巴拿马以北所有土地核心"
+			hidden_effect = {
+				304 = { add_core_of = BYG }
+				316 = { add_core_of = BYG }
+				317 = { add_core_of = BYG }
+				312 = { add_core_of = BYG }
+				314 = { add_core_of = BYG }
+				311 = { add_core_of = BYG }
+				313 = { add_core_of = BYG }
+				474 = { add_core_of = BYG }
+				475 = { add_core_of = BYG }
+				476 = { add_core_of = BYG }
+				477 = { add_core_of = BYG }
+				485 = { add_core_of = BYG }
+				277 = { add_core_of = BYG }
+				478 = { add_core_of = BYG }
+				479 = { add_core_of = BYG }
+				481 = { add_core_of = BYG }
+				482 = { add_core_of = BYG }
+				483 = { add_core_of = BYG }
+			}
+		}
+	}
+	focus = {
+		id = BYG_foudingfenjiexian
+		icon = GFX_goal_generic_demand_territory
+		x = 0
+		y = 1
+		prerequisite = { focus = BYG_fenjiexianyibei }
+		relative_position_id = BYG_fenjiexianyibei
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+			}
+			add_timed_idea = { idea = BYG_jfgs days = 180 }
+		}
+	}
+	focus = {
+		id = BYG_zuiqiangjianzhuang
+		icon = GFX_focus_generic_navy_battleship2
+		x = 5
+		y = 1
+		relative_position_id = BYG_ziyoudebian
+		cost = 5
+		available = {
+			has_completed_focus = BYG_xinshichuanjiadan
+			has_tech = advanced_heavy_battery_3
+		}
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = BYG_zxjzdqf
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	focus = {
+		id = BYG_xunzhaojianpaozhuren
+		icon = GFX_focus_lemon
+		x = 0
+		y = 1
+		relative_position_id = BYG_zuiqiangjianzhuang
+		prerequisite = { focus = BYG_zuiqiangjianzhuang }
+		allow_branch = {
+			has_completed_focus = BYG_zuiqiangjianzhuang
+		}
+		cost = 3
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			custom_effect_tooltip = BYG_xunzhaojianpaozhuren_tooltip
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	focus = {
+		id = BYG_heilongdengchang
+		icon = GFX_focus_huayuan 
+		x = 0
+		y = 1
+		relative_position_id = BYG_xunzhaojianpaozhuren
+		prerequisite = { focus = BYG_xunzhaojianpaozhuren }
+		allow_branch = {
+			has_completed_focus = BYG_xunzhaojianpaozhuren
+		}
+		cost = 3
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			country_event = BYG_event.4
+		}
+	}
+	
+	focus = {
+		id = BYG_ziyoudebian
+		icon = GFX_goal_support_democracy
+		x = 15
+		y = 0
+		mutually_exclusive = { focus = BYG_kuodaqishituanguimo }
+		cost = 10
+
+		ai_will_do = {
+			factor = 7
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = BYG_qiyedezhinangtuan
+		icon = GFX_focus_qiye
+		x = -2
+		y = 1
+		relative_position_id = BYG_ziyoudebian
+		prerequisite = { focus = BYG_ziyoudebian }
+		cost = 5
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = BYG_qydznt
+		}
+	}
+	focus = {
+		id = BYG_chongqiyiminzhengce
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 2
+		y = 1
+		relative_position_id = BYG_ziyoudebian
+		prerequisite = { focus = BYG_ziyoudebian }
+		cost = 7
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_manpower = 55000
+			add_political_power = 100
+			add_stability = -0.1
+		}
+	}
+	focus = {
+		id = BYG_lianbanggongchengshu
+		icon = GFX_goal_generic_construct_civilian
+		x = 0
+		y = 1
+		relative_position_id = BYG_chongqiyiminzhengce
+		prerequisite = { focus = BYG_chongqiyiminzhengce }
+		cost = 7
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = BYG_lbgcs
+		}
+	}
+	focus = {
+		id = BYG_xiyinrencai
+		icon = GFX_goal_generic_scientific_exchange
+		x = 2
+		y = 1
+		relative_position_id = BYG_qiyedezhinangtuan
+		prerequisite = { focus = BYG_qiyedezhinangtuan }
+		prerequisite = { focus = BYG_chongqiyiminzhengce }
+		cost = 7
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = BYG_gszym
+		}
+	}
+	focus = {
+		id = BYG_xueshujiaoliu
+		icon = GFX_goal_tfv_generic_tech_sharing
+		x = 0
+		y = 1
+		relative_position_id = BYG_xiyinrencai
+		prerequisite = { focus = BYG_xiyinrencai }
+		cost = 7
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 50
+			add_tech_bonus = {
+				name = "学术交流"
+				bonus = 1
+				uses = 3
+				category = industry
+				category = electronics
+			}
+		}
+	}
+	focus = {
+		id = BYG_manjiugongren
+		icon = GFX_focus_manjiu
+		x = 0
+		y = 1
+		relative_position_id = BYG_lianbanggongchengshu
+		prerequisite = { focus = BYG_lianbanggongchengshu }
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_manpower = 250000
+			add_stability = -0.18
+			add_offsite_building = { type = industrial_complex level = 2 }
+			add_offsite_building = { type = arms_factory level = 1 }
+			add_offsite_building = { type = dockyard level = 2 }
+		}
+	}
+	focus = {
+		id = BYG_manjiugonghui
+		icon = GFX_focus_usa_guarantee_the_american_dream
+		x = -2
+		y = 1
+		relative_position_id = BYG_manjiugongren
+		prerequisite = { focus = BYG_manjiugongren }
+		cost = 7
+
+		ai_will_do = {
+			factor = 7
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_stability = 0.25
+			
+		}
+	}
+	focus = {
+		id = BYG_minzhujungongchang
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 0
+		y = 1
+		relative_position_id = BYG_manjiugongren
+		prerequisite = { focus = BYG_manjiugongren }
+		cost = 15
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_stability = -0.1
+			add_war_support = 0.1
+			random_owned_controlled_state = {
+				limit = { is_core_of = BYG }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}			
+			}
+			random_owned_controlled_state = {
+				limit = { is_core_of = BYG }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}			
+			}
+			random_owned_controlled_state = {
+				limit = { is_core_of = BYG }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}		
+			}
+			random_owned_controlled_state = {
+				limit = { is_core_of = BYG }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}			
+			}
+			random_owned_controlled_state = {
+				limit = { is_core_of = BYG }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}			
+			}
+		}
+	}
+	focus = {
+		id = BYG_laiyingde
+		icon = GFX_focus_chaozhongdan
+		x = -1
+		y = 2
+		relative_position_id = BYG_minzhujungongchang
+		prerequisite = { focus =  BYG_minzhujungongchang }
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = BYG_lbdtq
+		}
+	}
+	focus = {
+		id = BYG_lianbangdeyingxiong
+		icon = GFX_focus_qiye
+		x = 0
+		y = 1
+		relative_position_id = BYG_laiyingde
+		prerequisite = { focus = BYG_laiyingde }
+		mutually_exclusive = { focus = BYG_baiyingdazongtong }
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+ 
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			custom_effect_tooltip = BYG_baiyingdazongtong_tooltip
+			add_country_leader_trait = bydyx
+		}
+	}
+	focus = {
+		id = BYG_zongtongqinshangzhen
+		icon = GFX_goal_generic_demand_territory
+		x = 0
+		y = 1
+		relative_position_id = BYG_lianbangdeyingxiong
+		prerequisite = { focus = BYG_lianbangdeyingxiong }
+		cost = 7
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			remove_country_leader_trait = kjzz
+			add_war_support = 0.3
+			add_ideas = BYG_qydgw
+		}
+	}
+	focus = {
+		id = BYG_kuodazhinangtuan
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 0
+		y = 2
+		relative_position_id = BYG_qiyedezhinangtuan
+		prerequisite = { focus = BYG_xiyinrencai }
+		prerequisite = { focus = BYG_qiyedezhinangtuan }
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			swap_ideas = {
+				add_idea = BYG_kddznt
+				remove_idea = BYG_qydznt
+			}
+		}
+	}
+	focus = {
+		id = BYG_tanchengxiangdai
+		icon = GFX_goal_generic_improve_relations
+		x = 0
+		y = 2
+		relative_position_id = BYG_kuodazhinangtuan
+		prerequisite = { focus = BYG_kuodazhinangtuan }
+		prerequisite = { focus = BYG_manjiugonghui }
+		mutually_exclusive = { focus = BYG_peiyangjiandie }
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_stability = 0.15
+			add_political_power = 250
+			add_timed_idea = {
+				idea = BYG_jjgzdym
+				days = 300
+			}
+		}
+	}
+	focus = {
+		id = BYG_peiyangjiandie
+		icon = GFX_goal_generic_propaganda
+		x = -2
+		y = 2
+		relative_position_id = BYG_kuodazhinangtuan
+		prerequisite = { focus = BYG_kuodazhinangtuan }
+		mutually_exclusive = { focus = BYG_tanchengxiangdai }
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = BYG_blydym 
+		}
+	}
+	focus = {
+		id = BYG_fazhanruanshili
+		icon = GFX_goal_generic_intelligence_exchange
+		x = -1
+		y = 1
+		relative_position_id = BYG_tanchengxiangdai
+		prerequisite = { focus = BYG_tanchengxiangdai focus = BYG_peiyangjiandie }
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_stability = 0.2
+			add_war_support = 0.1
+			every_country = {
+				limit = { 
+					AND = {
+						shijianniangguojia_trigger = yes
+						NOT = { tag = BYG }
+					}
+				}
+				add_opinion_modifier = {
+					target = BYG
+					modifier = BYG_xwdgj
+				}
+			}
+		}
+	}
+	focus = {
+		id = BYG_baiyingdazongtong
+		icon = GFX_focus_qiye2
+		x = 0
+		y = 1
+		relative_position_id = BYG_fazhanruanshili
+		prerequisite = { focus = BYG_fazhanruanshili }
+		mutually_exclusive = { focus = BYG_lianbangdeyingxiong }
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			custom_effect_tooltip = BYG_baiyingdazongtong_tooltip
+			add_country_leader_trait = bydzt
+		}
+	}
+	focus = {
+		id = BYG_tuijumuhou
+		icon = GFX_focus_generic_self_management
+		x = 2
+		y = 1
+		relative_position_id = BYG_baiyingdazongtong
+		prerequisite = { focus = BYG_baiyingdazongtong focus = BYG_lianbangdeyingxiong }
+		cost = 5
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BYG_tuijumuhou_trigger_tooltip
+				has_country_flag = BYG_huayuanzongtong_get
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			custom_effect_tooltip = BYG_tuijumuhou_effect_tooltip
+			
+			if = {
+				limit = {
+					has_country_flag = BYG_huayuanzongtong_get
+				}
+				create_country_leader = {
+					name = "花园"
+					picture = "huayuan.jpg"
+					expire = "1965.1.1"
+					ideology = liberalism
+					traits = {
+						lxzydph
+						bsldxzt
+					}
+				}
+				hidden_effect = {
+					news_event = {
+						id = aznews.43
+						days = 7
+					}
+				}
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = BYG_makebyggreatagian
+		icon = GFX_focus_baiying
+		x = 0
+		y = 1
+		relative_position_id = BYG_baiyingdazongtong
+		prerequisite = { focus = BYG_baiyingdazongtong }
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			remove_country_leader_trait = kjzz
+			add_research_slot = 1
+			add_stability = 0.2
+			add_ideas = BYG_qyxz
+		}
+	}
+	
+	
+	
+	focus = {
+		id = BYG_hangmuxinzhanshu
+		icon = GFX_goal_generic_navy_carrier
+		x = -1
+		y = 1
+		relative_position_id = BYG_zongtongqinshangzhen
+		prerequisite = { focus = BYG_zongtongqinshangzhen }
+		available = {
+			has_tech = advanced_ship_hull_carrier 
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			navy_experience = 100
+			add_doctrine_cost_reduction = {
+				name = "航母新战术"
+				cost_reduction = 0.3
+				uses = 5
+				category = naval_doctrine
+			}
+		
+		}
+	}
+	focus = {
+		id = BYG_qiyeqianbei
+		icon = GFX_focus_qiye
+		x = 1
+		y = 1
+		relative_position_id = BYG_zongtongqinshangzhen
+		prerequisite = { focus = BYG_zongtongqinshangzhen focus = BYG_fuzuoqiye }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BYG_qiyeqianbei_trigger_tooltip
+				any_unit_leader = {
+					AND = {
+						has_id = 08001
+						skill > 7
+					}
+				}
+			}
+			
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = BYG_zrscdqy
+		}
+	}
+	
+
+	
+	
+	
+	
+	 
+	focus = {
+		id = BYG_kuodaqishituanguimo
+		icon = GFX_goal_generic_propaganda
+		x = 9
+		y = 0
+		relative_position_id = BYG_ziyoudebian
+		mutually_exclusive = { focus = BYG_ziyoudebian }
+		cost = 10
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 100
+			BYG_kelifulan = {
+				add_unit_leader_trait = expert_delegator
+				add_unit_leader_trait = war_hero
+				promote_leader = yes
+			}
+			hidden_effect = { country_event = { id = BYG_event.2 days = 7 } }
+		}
+	}
+	focus = {
+		id = BYG_yindaoqiye
+		icon = GFX_focus_qiye2
+		x = -1
+		y = 1
+		relative_position_id = BYG_kuodaqishituanguimo
+		prerequisite = { focus = BYG_kuodaqishituanguimo }
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_war_support = 0.2
+			remove_country_leader_trait = kjzz
+		}
+	}
+	focus = {
+		id = BYG_jiaoaodebaiying
+		icon = GFX_focus_generic_support_the_left_right
+		x = 1
+		y = 1
+		relative_position_id = BYG_kuodaqishituanguimo
+		prerequisite = { focus = BYG_kuodaqishituanguimo }
+		cost = 7
+		ai_will_do = {
+			factor = 5
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = BYG_jadby
+		}
+	}
+	focus = {
+		id = BYG_lushangbaquan
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 1
+		relative_position_id = BYG_yindaoqiye
+		prerequisite = { focus = BYG_yindaoqiye }
+		prerequisite = { focus = BYG_jiaoaodebaiying }
+		available = {
+			has_army_manpower = {
+				size > 600000
+			}
+			num_of_military_factories > 60
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			army_experience = 100
+			air_experience = 50
+		}
+	}
+	focus = {
+		id = BYG_haishangbaquan
+		icon = GFX_goal_generic_navy_carrier
+		x = 2
+		y = 1
+		relative_position_id = BYG_yindaoqiye
+		prerequisite = { focus = BYG_yindaoqiye }
+		prerequisite = { focus = BYG_jiaoaodebaiying }
+		available = {
+			num_of_naval_factories > 30
+			has_navy_size = {
+				type = capital_ship
+				size > 24
+			}
+			has_navy_size = {
+				type = screen_ship
+				size > 199
+			}
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			navy_experience = 100
+			air_experience = 50
+		}
+	}
+	focus = {
+		id = BYG_quanqiuhaijunjidi
+		icon = GFX_goal_continuous_naval_production
+		x = 3
+		y = 1
+		relative_position_id = BYG_lushangbaquan
+		prerequisite = { focus = BYG_lushangbaquan }
+		prerequisite = { focus = BYG_haishangbaquan }
+		cost = 7
+		ai_will_do = {
+			factor = 4
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = BYG_hjjdsj
+		}
+	}
+	focus = {
+		id = BYG_wuliweishe
+		icon = GFX_focus_generic_combined_arms
+		x = -1
+		y = 1
+		relative_position_id = BYG_lushangbaquan
+		prerequisite = { focus = BYG_lushangbaquan }
+		prerequisite = { focus = BYG_haishangbaquan }
+		cost = 20
+		ai_will_do = {
+			factor = 11
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = -200
+			add_war_support = 0.35
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 30000
+				producer = BYG
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 1500
+				producer = BYG
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 2500
+				producer = BYG
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 4000
+				producer = BYG
+			}
+			if = {
+				limit = {
+					has_tech = basic_medium_tank_chassis
+				}
+				add_equipment_to_stockpile = {
+					type = medium_tank_chassis
+					amount = 800
+					producer = BYG
+				}
+			}
+			else = {
+				custom_effect_tooltip = BYG_wuliweishe_effect_tooltip
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis
+					amount = 1200
+					producer = BYG
+				}
+			}
+		}
+	}
+	focus = {
+		id = BYG_qishituanchuji
+		icon = GFX_focus_kelifulan
+		x = 1
+		y = 1
+		relative_position_id = BYG_lushangbaquan
+		prerequisite = { focus = BYG_lushangbaquan }
+		prerequisite = { focus = BYG_haishangbaquan }
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = BYG_bydlj
+			BYG_kelifulan = {
+				add_skill_level = 1
+			}
+			BYG_mengbiliai = {
+				add_skill_level = 1
+			}
+			BYG_hailunna = {
+				add_skill_level = 1
+			}
+		}
+	}
+
+	focus = {
+		id = BYG_fuzuoqiye
+		icon = GFX_focus_qiye
+		x = -1
+		y = 1
+		relative_position_id = BYG_qishituanchuji
+		prerequisite = { focus = BYG_qishituanchuji }
+		mutually_exclusive = { focus = BYG_qiyegaituixiule }
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = BYG_hepingkuozhang
+		icon = GFX_goal_continuous_restrict_freedom
+		x = -1
+		y = 1
+		relative_position_id = BYG_fuzuoqiye
+		prerequisite = { focus = BYG_fuzuoqiye }
+
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = BYG_hpjq
+		}
+	}
+	focus = {
+		id = BYG_jingjibaquan
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 1
+		y = 1
+		relative_position_id = BYG_fuzuoqiye
+		prerequisite = { focus = BYG_fuzuoqiye focus = BYG_qiyegaituixiule }
+		available = {
+			num_of_civilian_factories > 250
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = BYG_jjbq
+			if = {
+				limit = { has_idea = BYG_jjwjhyz }
+				remove_ideas = BYG_jjwjhyz
+			}
+		}
+	}
+	focus = {
+		id = BYG_zhengyidebaohu
+		icon = GFX_goal_generic_propaganda
+		x = -1
+		y = 1
+		relative_position_id = BYG_jingjibaquan
+		prerequisite = { focus = BYG_jingjibaquan }
+		prerequisite = { focus = BYG_quanqiugongshi }
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_research_slot = 1
+			add_offsite_building = { type = arms_factory level = 6 }
+			add_offsite_building = { type = industrial_complex level = 10 }
+		}
+	}
+	focus = {
+		id = BYG_qiyegaituixiule
+		icon = GFX_focus_qiye2
+		x = 1
+		y = 1
+		relative_position_id = BYG_qishituanchuji
+		prerequisite = { focus = BYG_qishituanchuji }
+		mutually_exclusive = { focus = BYG_fuzuoqiye }
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_stability = -0.1
+			add_political_power = 200
+			create_country_leader = {
+				name = "克利夫兰"
+				picture = "kelifulan.jpg"
+				expire = "1965.1.1"
+				ideology = fascism_ideology
+				traits = {
+					zyqs
+				}
+			}
+			
+			add_popularity = { ideology = fascism popularity = 1 } 
+			set_politics = {
+				ruling_party = fascism
+			}
+			
+		}
+	}
+	focus = {
+		id = BYG_quanqiugongshi
+		icon = GFX_goal_demand_sudetenland
+		x = 1
+		y = 1
+		relative_position_id = BYG_qiyegaituixiule
+		prerequisite = { focus = BYG_qiyegaituixiule }
+
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			create_faction = "新联邦"
+			every_country = {
+				limit = {
+					NOT = {
+						OR = {
+							tag = BYG
+							tag = SIR
+							tag = SR1
+							tag = SR2
+							tag = SR3
+							tag = SR4
+						}
+					}
+				}
+				add_ideas = BYG_bylbdgs
+			}
+		}
+	}
+	
+	
+
+}

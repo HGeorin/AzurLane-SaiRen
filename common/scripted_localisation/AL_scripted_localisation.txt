@@ -1,0 +1,118 @@
+
+defined_text = {
+	name = AL_chuizhi
+	text = { 
+		trigger = {
+			TAG = BLI
+		}
+		localization_key = AL_chuizhi_2
+	}
+	text = { 
+		trigger = {
+		    NOT = {
+			TAG = BLI
+			}
+		}
+		localization_key = AL_chuizhi_1
+	}
+}
+
+defined_text = {
+	name = AL_chuizhi_desc
+	text = { 
+		trigger = {
+			TAG = BLI
+		}
+		localization_key = AL_chuizhi_2_desc
+	}
+	text = { 
+		trigger = {
+		    NOT = {
+			TAG = BLI
+			}
+		}
+		localization_key = AL_chuizhi_1_desc
+	}
+}
+
+defined_text = {
+	name = AL_buli
+	text = { 
+		trigger = {
+			TAG = BLI
+		}
+		localization_key = AL_buli_2
+	}
+	text = { 
+		trigger = {
+		    NOT = {
+			TAG = BLI
+			}
+		}
+		localization_key = AL_buli_1
+	}
+}
+
+defined_text = {
+	name = AL_buli_desc
+	text = { 
+		trigger = {
+			TAG = BLI
+		}
+		localization_key = AL_buli_2_desc
+	}
+	text = { 
+		trigger = {
+		    NOT = {
+			TAG = BLI
+			}
+		}
+		localization_key = AL_buli_1_desc
+	}
+}
+
+
+defined_text = {
+	name = AL_dabao_moshi
+	text = { 
+		trigger = {
+			has_country_flag = AL_dabao_put
+		}
+		localization_key = AL_dabao_moshi_put
+	}
+	text = { 
+		trigger = {
+		    has_country_flag = AL_dabao_get
+		}
+		localization_key = AL_dabao_moshi_get
+	}
+	text = { 
+		trigger = {
+		    not = {
+			    AND = {
+			    has_country_flag = AL_dabao_put
+		        has_country_flag = AL_dabao_get
+			    }
+			}
+		}
+		localization_key = AL_dabao_moshi_no
+	}
+}
+
+defined_text = {
+	name = 094A_open
+	text = { 
+		trigger = {
+			has_country_flag = 094A_jiesuo
+		}
+		localization_key = 094A_open_1
+	}
+	text = { 
+		trigger = {
+			not = {
+		    has_country_flag = 094A_jiesuo
+			}
+		}
+		localization_key = 094A_open_2
+	}
+}

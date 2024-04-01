@@ -1,0 +1,353 @@
+characters={
+	alpt_xiaomeiyan = {
+		name = alpt_xiaomeiyan
+		portraits = { 
+			army = {
+				large="gfx/leaders/caidan/xiaomeiyan.jpg"
+				small="gfx/interface/ideas/caidan/idea_xiaomeiyan.png"
+			} 
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	alpt_xiaolimao = {
+		name = alpt_xiaolimao
+		portraits = { 
+			army = {
+				large="gfx/leaders/caidan/xiaolimao.jpg"
+				small="gfx/interface/ideas/caidan/idea_xiaolimao.png"
+			} 
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	alpt_kaluo = {
+		name = alpt_kaluo
+		portraits = { 
+			army = {
+				large="gfx/leaders/caidan/kaluo.png"
+				small="gfx/interface/ideas/caidan/idea_kaluo.png"
+			} 
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	alpt_qybl = {
+		name = alpt_qybl
+		portraits = { 
+			army = {
+				large="gfx/leaders/caidan/qybl.jpg"
+				small="gfx/interface/ideas/caidan/idea_qybl.png"
+			} 
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	alpt_yybl = {
+		name = alpt_yybl
+		portraits = { 
+			army = {
+				large="gfx/leaders/caidan/yybl.jpg"
+				small="gfx/interface/ideas/caidan/idea_yybl.png"
+			} 
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	alpt_decade = {
+		name = alpt_decade
+		portraits = { 
+			army = {
+				large="gfx/leaders/caidan/decade.jpg"
+				small="gfx/interface/ideas/caidan/idea_decade.png"
+			} 
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	alpt_build = {
+		name = alpt_build
+		portraits = { 
+			army = {
+				large="gfx/leaders/caidan/build.jpg"
+				small="gfx/interface/ideas/caidan/idea_build.png"
+			} 
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	alpt_sjyj = {
+		name = alpt_sjyj
+		portraits = { 
+			army = {
+				large="gfx/leaders/caidan/sjyj.jpg"
+				small="gfx/interface/ideas/caidan/idea_sjyj.png"
+			} 
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	alpt_hpym = {
+		name = alpt_hpym
+		portraits = { 
+			army = {
+				large="gfx/leaders/caidan/hpym.jpg"
+				small="gfx/interface/ideas/caidan/idea_hpym.png"
+			} 
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	alpt_sd = {
+		name = alpt_sd
+		portraits = { 
+			army = {
+				large="gfx/leaders/caidan/sd.png"
+				small="gfx/interface/ideas/caidan/idea_sd.png"
+			} 
+		}
+		corps_commander = {
+			traits = { hangmu_army xuexixunsu skilled_staffer adaptable  }
+			skill = 8
+			attack_skill = 9
+			defense_skill = 5
+			planning_skill = 7
+			logistics_skill = 7
+		}
+	}
+
+	alpt_ln = {
+		name = alpt_ln
+		portraits = { 
+			army = {
+				large="gfx/leaders/caidan/ln.jpg"
+				small="gfx/interface/ideas/caidan/idea_ln.png"
+			} 
+		}
+		corps_commander = {
+			traits = { hangmu_army xuexixunsu skilled_staffer adaptable }
+			skill = 7
+			attack_skill = 7
+			defense_skill = 5
+			planning_skill = 6
+			logistics_skill = 6
+		}
+	}
+	
+	
+	alpt_052Dchangsha = {
+		name = alpt_052Dchangsha
+		portraits = { 
+			army = {
+				large="gfx/leaders/caidan/052Dchangsha.png"
+				small="gfx/interface/ideas/caidan/idea_052Dchangsha.png"
+			} 
+		}
+		corps_commander = {
+			traits = { quzhu_army xuexixunsu skilled_staffer adaptable  }
+			skill = 6
+			attack_skill = 5
+			defense_skill = 6
+			planning_skill = 5
+			logistics_skill = 5
+		}
+	}
+	
+	alpt_052Dkunming = {
+		name = alpt_052Dkunming
+		portraits = { 
+			army = {
+				large="gfx/leaders/caidan/052Dkunming.png"
+				small="gfx/interface/ideas/caidan/idea_052Dkunming.png"
+			} 
+		}
+		corps_commander = {
+			traits = { quzhu_army xuexixunsu skilled_staffer adaptable  }
+			skill = 6
+			attack_skill = 5
+			defense_skill = 6
+			planning_skill = 5
+			logistics_skill = 5
+		}
+	}
+	
+	alpt_054Azhoushan = {
+		name = alpt_054Azhoushan
+		portraits = { 
+			army = {
+				large="gfx/leaders/caidan/054Azhoushan.png"
+				small="gfx/interface/ideas/caidan/idea_054Azhoushan.png"
+			} 
+		}
+		corps_commander = {
+			traits = { quzhu_army xuexixunsu skilled_staffer adaptable  }
+			skill = 6
+			attack_skill = 6
+			defense_skill = 6
+			planning_skill = 6
+			logistics_skill = 6
+		}
+	}
+	
+	alpt_055nanchang = {
+		name = alpt_055nanchang
+		portraits = { 
+			army = {
+				large="gfx/leaders/caidan/055nanchang.png"
+				small="gfx/interface/ideas/caidan/idea_055nanchang.png"
+			} 
+		}
+		corps_commander = {
+			traits = { quzhu_army xuexixunsu skilled_staffer adaptable  }
+			skill = 7
+			attack_skill = 7
+			defense_skill = 7
+			planning_skill = 7
+			logistics_skill = 7
+		}
+	}
+	
+	alpt_075 = {
+		name = alpt_075
+		portraits = { 
+			army = {
+				large="gfx/leaders/caidan/075.png"
+				small="gfx/interface/ideas/caidan/idea_075.png"
+			} 
+		}
+		corps_commander = {
+			traits = { hangmu_army xuexixunsu skilled_staffer adaptable  }
+			skill = 6
+			attack_skill = 8
+			defense_skill = 4
+			planning_skill = 6
+			logistics_skill = 7
+		}
+	}
+	
+	alpt_094A = {
+		name = alpt_094A
+		portraits = { 
+			army = {
+				large="gfx/leaders/caidan/094A.png"
+				small="gfx/interface/ideas/caidan/idea_094A.png"
+			} 
+		}
+		navy_leader = {
+			traits = { qianting_navy spotter seawolf }
+			skill = 8
+			attack_skill = 6
+			defense_skill = 6
+			maneuvering_skill = 6
+			coordination_skill = 6
+		}
+		
+	}
+	alpt_094A_super = {
+		name = alpt_094A_super
+		portraits = { 
+			army = {
+				large="gfx/leaders/caidan/094A.png"
+				small="gfx/interface/ideas/caidan/idea_lianchui.png"
+			} 
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = alpt_094A_super
+			on_add = {
+				set_country_flag = 094A_get_1
+			}
+			on_remove = {
+                clr_country_flag = 094A_get_1
+			}
+			visible = {
+				has_country_flag = AL_event_17
+			}
+			available = {				
+				custom_trigger_tooltip = {
+					tooltip = AL_094A_jiesuo
+					has_country_flag = 094A_jiesuo
+				}
+			}
+			traits = { nuke_fire }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	
+	alpt_dsd = {
+		name = alpt_dsd
+		portraits = { 
+			army = {
+				large="gfx/leaders/caidan/dsd.png"
+				small="gfx/interface/ideas/caidan/idea_dsd.png"
+			} 
+		}
+		corps_commander = {
+			traits = { xuexixunsu skilled_staffer adaptable  }
+			skill = 8
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 7
+			logistics_skill = 7
+		}
+	}
+	############
+}

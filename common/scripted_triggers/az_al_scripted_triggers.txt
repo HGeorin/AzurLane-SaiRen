@@ -1,0 +1,53 @@
+#	Example:
+# 
+#	example_trigger = {
+#		tag = GER
+#		is_ai = no
+#	}
+#
+#
+#	In a script file:
+#
+#	trigger = {
+#		exampel_trigger = yes
+#	}
+#
+
+state_is_important_trigger = {
+	OR = {
+		state = 37    #丹麦海峡
+		state = 195   #列宁格勒
+		state = 127   #伦敦附近
+		state = 119   #爱尔兰
+		state = 1     #科西嘉
+		state = 137   #克里米亚
+		state = 797   #君士坦丁堡
+		state = 182   #克里特（希腊南边的岛）
+		state = 115   #西西里
+		state = 118   #直布罗陀
+		state = 446   #开罗
+		state = 429   #孟买
+		state = 672   #苏门塔纳（东南亚群岛）
+		state = 285   #悉尼
+		state = 378   #加利福利亚
+		state = 468   #圣劳伦斯（渥太华旁边）
+		state = 500   #里约热内卢
+		state = 525   #南朝鲜
+		state = 609   #北京
+		state = 532   #东海道
+		state = 681   #开普
+		
+		state = 524   #台湾
+		state = 595   #福建
+		state = 336   #新加坡
+		state = 591   #海南
+		state = 523   #巴布亚
+		state = 413   #胡齐斯坦
+		state = 213   #摩尔曼斯克
+		state = 695   #库拉索
+		state = 685   #巴拿马
+		state = 187   #爱琴群岛
+		state = 635   
+		
+	}
+}

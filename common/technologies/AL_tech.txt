@@ -1,0 +1,66 @@
+technologies = {
+
+	tank_apocalypse_engine = {     
+        
+		show_effect_as_desc = yes
+		research_cost = 1
+		categories = {
+			armor
+		}
+		enable_equipment_modules = {
+			tank_apocalypse_engine
+		}
+	}
+
+	tank_apocalypse_armor = {     
+        
+		show_effect_as_desc = yes
+		research_cost = 1
+		categories = {
+			armor
+		}
+		enable_equipment_modules = {
+			tank_apocalypse_armor
+		}
+	}
+
+	tank_apocalypse_heavy_cannon = {     
+        
+		show_effect_as_desc = yes
+		research_cost = 1
+		categories = {
+			armor
+		}
+		enable_equipment_modules = {
+		
+			tank_apocalypse_heavy_cannon
+			
+		}
+	}
+
+	tank_apocalypse_turret = {     
+        
+		show_effect_as_desc = yes
+		research_cost = 1
+		categories = {
+			armor
+		}
+		enable_equipment_modules = {
+			tank_apocalypse_turret
+		}
+	}
+
+	tank_apocalypse_suspension = {     
+        
+		show_effect_as_desc = yes
+		research_cost = 1
+		categories = {
+			armor
+		}
+		enable_equipment_modules = {
+			tank_apocalypse_suspension
+		}
+	}
+	
+	
+}

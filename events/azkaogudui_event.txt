@@ -1,0 +1,16 @@
+﻿add_namespace = azkaogudui
+country_event = {
+	id = azkaogudui.1
+	title = azkaogudui.1.t
+	desc = azkaogudui.1.d
+	picture = GFX_aze_txbsm
+	is_triggered_only = yes	
+	option = {
+		name = azkaogudui.1.a
+		ai_chance = {
+			factor = 5
+		}
+		
+	}
+}
+

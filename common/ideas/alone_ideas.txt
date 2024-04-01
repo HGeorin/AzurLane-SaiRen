@@ -1,0 +1,2456 @@
+ideas = {
+
+	hidden_ideas = {
+		AL_sir_powerful_1 = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				weekly_manpower = 1000000
+				army_fuel_consumption_factor = -0.5
+				experience_gain_army_unit_factor = 1.0
+				pocket_penalty = -0.8
+				out_of_supply_factor = -0.8
+				local_supplies = 4
+				supply_node_range = 7
+				industrial_capacity_factory = 3
+				enemy_operative_detection_chance_factor = 0.75
+				airforce_intel_factor = 0.75
+				army_intel_factor = 0.75
+				civilian_intel_factor = 0.75
+				navy_intel_factor = 0.75
+			}
+
+			equipment_bonus = {
+				infantry_equipment = {       
+					instant = yes					
+					build_cost_ic = -0.5   
+				}
+				artillery_equipment = {    
+					instant = yes			
+					build_cost_ic = -0.5  
+				}
+				motorized_equipment = {   
+					instant = yes				
+					build_cost_ic = -0.5    
+				}
+				armor = {
+					build_cost_ic = -0.5    
+					instant = yes
+				}
+				
+			}
+		}
+
+		AL_sir_powerful_2 = {
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				local_supplies = 1
+				supply_node_range = 2
+			}
+			equipment_bonus = {
+				infantry_equipment = {       
+					instant = yes					
+					build_cost_ic = -0.1  
+				}
+				artillery_equipment = {    
+					instant = yes			
+					build_cost_ic = -0.1   
+				}
+				motorized_equipment = {   
+					instant = yes				
+					build_cost_ic = -0.1    
+				}
+				armor = {
+					build_cost_ic = -0.1    
+					instant = yes
+				}				
+			}
+		}
+
+	}
+
+	# Special ones that can be applied on other countries through focus system.
+	country = {
+        az_pt_1 = {
+			picture = generic_constitutional_guarantees
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = 0.1
+				
+			}
+		}
+
+		az_pt_2 = {
+			picture = generic_infantry_bonus
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				planning_speed = 0.5
+				
+			}
+		}
+
+		az_pt_3 = {
+			picture = air_support_focus
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_weekly = 0.005
+				war_support_weekly = 0.005				
+			}
+		}
+
+		az_pt_4 = {
+			picture = generic_victors_of_ww1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+               consumer_goods_factor = -0.05
+
+			}
+		}
+
+		az_pt_5 = {
+			picture = generic_infantry_bonus
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_attack_factor = 0.15			
+			}
+		}
+
+		az_pt_6 = {
+			picture = generic_disjointed_gov
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				dig_in_speed_factor = 1.0
+				max_dig_in = 20
+			}
+		}
+
+		az_pt_7 = {
+			picture = generic_secret_police
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				max_command_power = 200
+				
+			}
+		}
+
+		az_pt_8 = {
+			picture = generic_build_infrastructure
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+                production_speed_buildings_factor = 0.15
+			}
+		}
+
+		az_pt_9 = {
+			picture = generic_research_bonus
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				research_speed_factor = 0.1
+				
+			}
+		}
+
+		az_pt_10 = {
+			picture = TY_jiaoguanzhidaozhong
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				naval_speed_factor = 0.15
+				naval_damage_factor = 0.10
+			}
+		}
+		######################		
+		AL_sir_full_armor = {
+			picture = generic_acquire_tanks
+
+			allowed_civil_war = {
+				always = yes
+			}
+			equipment_bonus = {
+				armor = {     
+					reliability = 0.15       
+					armor_value = 0.50      
+					instant = yes
+				}
+		    }
+			modifier = {
+				planning_speed = 0.5
+			    max_planning = 0.3
+			}
+		}
+		
+		AL_sir_low_armor = {
+			picture = great_depression
+
+			allowed_civil_war = {
+				always = yes
+			}
+			equipment_bonus = {
+				armor = {            
+					armor_value = -0.05      
+					instant = yes
+				}
+		    }
+			modifier = {
+		     army_armor_attack_factor= -0.05
+		     army_armor_defence_factor= -0.05
+		 
+			}
+		}
+		
+		AL_sir_powerful = {
+			picture = SIR_darksiren
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				ai_focus_aggressive_factor = 0.5
+				army_attack_factor = 0.15
+                breakthrough_factor = 0.15
+			}
+		}
+		
+		AL_defend_1 = {
+			picture = FRA_fortification_focus
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+		      max_dig_in = 3
+		      recon_factor_while_entrenched = 0.10
+			  dig_in_speed_factor = 0.25
+			}
+		}
+		
+		AL_defend_2 = {
+			picture = FRA_fortification_focus
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+		      max_dig_in = 6
+		      recon_factor_while_entrenched = 0.25
+			  dig_in_speed_factor = 0.5
+			}
+		}
+		
+		AL_jundui_0 = {
+			picture = generic_infantry_bonus
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+		       training_time_factor = 0.25
+			   max_command_power = 200
+			}
+		}
+		
+		AL_jundui_1_1 = {
+			picture = generic_infantry_bonus
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+		      training_time_factor = 1.0
+			  minimum_training_level = 0.4
+			  max_command_power = 200
+			  stability_factor = -0.55
+			}
+		}
+		
+		AL_jundui_1_2 = {
+			picture = generic_infantry_bonus
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+		      training_time_factor = 0.75
+			  minimum_training_level = 0.4
+			  max_command_power = 300
+			  stability_factor = -0.20
+			  war_support_factor = 0.10
+			}
+		}
+		
+		AL_jundui_1_3 = {
+			picture = generic_infantry_bonus
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+		      training_time_factor = 0.50
+			  minimum_training_level = 0.2
+			  max_command_power = 600
+			  command_power_gain_mult = 2
+			  war_support_factor = 0.15
+			  	
+			  
+			}
+		}
+		
+		AL_jundui_2_1 = {
+			picture = generic_infantry_bonus
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+		      training_time_factor = 0.15
+			  max_command_power = 200
+			  war_support_factor = 0.15
+			  stability_factor = -0.15
+			}
+		}
+		
+		AL_jundui_2_2 = {
+			picture = generic_infantry_bonus
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+		      training_time_factor = -0.10
+			  max_command_power = 300
+			  war_support_factor = 0.25
+			  stability_factor = 0.20
+			}
+		}
+		
+		AL_jundui_2_3 = {
+			picture = generic_infantry_bonus
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+		      training_time_factor = -0.25
+			  max_command_power = 300
+			  war_support_factor = 0.25
+			  command_power_gain_mult = 0.25
+			  stability_factor = 0.30
+			  max_planning = 0.05		  	  
+			}
+		}
+		
+		AL_lianhejun_0 = {
+			picture = SPR_torchbearers_of_tomorrow
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+		      experience_gain_army = 0.05
+		      experience_gain_navy = 0.05
+		      experience_gain_air = 0.05		  
+			}
+		}
+		
+		AL_lianhejun_1 = {
+			picture = SPR_torchbearers_of_tomorrow
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+		      experience_gain_army = 0.1
+		      experience_gain_navy = 0.1
+		      experience_gain_air = 0.1
+			  army_defence_factor = 0.05    
+			  army_attack_factor = 0.05	  
+			}
+		}
+		
+		AL_lianhejun_2 = {
+			picture = SPR_torchbearers_of_tomorrow
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+		      experience_gain_army = 0.1
+		      experience_gain_navy = 0.1
+		      experience_gain_air = 0.1
+			  army_defence_factor = 0.05    
+			  army_attack_factor = 0.05
+		      max_planning = 0.05                  
+		      land_reinforce_rate = 0.01  
+			  attrition = -0.05	  
+			}
+		}
+		
+		AL_lianhejun_3 = {
+			picture = SPR_torchbearers_of_tomorrow
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+		      experience_gain_army = 0.1
+		      experience_gain_navy = 0.1
+		      experience_gain_air = 0.1
+			  army_defence_factor = 0.10    
+			  army_attack_factor = 0.10
+		      max_planning = 0.10                  
+		      land_reinforce_rate = 0.02    
+		      equipment_capture = 0.01 
+			  attrition = -0.05	       		      			  
+			}
+		}
+		
+		AL_lianhejun_4 = {
+			picture = SPR_torchbearers_of_tomorrow
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+		      experience_gain_army = 0.15
+		      experience_gain_navy = 0.15
+		      experience_gain_air = 0.15
+			  army_defence_factor = 0.10    
+			  army_attack_factor = 0.10
+		      max_planning = 0.10                  
+		      land_reinforce_rate = 0.02    
+		      equipment_capture = 0.01        		      
+		      local_supplies = 0.05              
+		      army_org_factor = 0.05  
+			  attrition = -0.10	          		  
+			}
+		}
+		
+		AL_lianhejun_5 = {
+			picture = SPR_torchbearers_of_tomorrow
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+		      experience_gain_army = 0.15
+		      experience_gain_navy = 0.15
+		      experience_gain_air = 0.15
+			  army_defence_factor = 0.15    
+			  army_attack_factor = 0.15
+		      max_planning = 0.10                  
+		      land_reinforce_rate = 0.02    
+		      equipment_capture = 0.02        		      
+		      local_supplies = 0.10              
+		      army_org_factor = 0.05            
+		      army_speed_factor = 0.05 
+			  no_supply_grace = 24  
+			  attrition = -0.10	     			  
+			}
+		}
+		
+		AL_lianhejun_6 = {
+			picture = SPR_torchbearers_of_tomorrow
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+		      experience_gain_army = 0.2
+		      experience_gain_navy = 0.2
+		      experience_gain_air = 0.2
+			  army_defence_factor = 0.15    
+			  army_attack_factor = 0.15
+		      max_planning = 0.10                  
+		      land_reinforce_rate = 0.03    
+		      equipment_capture = 0.03        		      
+		      local_supplies = 0.10              
+		      army_org_factor = 0.10            
+		      army_speed_factor = 0.05        
+		      no_supply_grace = 48
+              attrition = -0.10			  
+			}
+		}
+		
+		AL_lianhejun_7 = {
+			picture = SPR_torchbearers_of_tomorrow
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+		      experience_gain_army = 0.2
+		      experience_gain_navy = 0.2
+		      experience_gain_air = 0.2
+			  army_defence_factor = 0.2    
+			  army_attack_factor = 0.2
+		      max_planning = 0.10                  
+		      land_reinforce_rate = 0.03    
+		      equipment_capture = 0.04        		      
+		      local_supplies = 0.10              
+		      army_org_factor = 0.15            
+		      army_speed_factor = 0.10        
+		      no_supply_grace = 72
+              attrition = -0.10			  
+			}
+		}
+				
+		AL_lianhejun_8 = {
+			picture = SPR_torchbearers_of_tomorrow
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+		      experience_gain_army = 0.25
+		      experience_gain_navy = 0.25
+		      experience_gain_air = 0.25
+			  army_defence_factor = 0.20    
+			  army_attack_factor = 0.20
+		      max_planning = 0.10                  
+		      land_reinforce_rate = 0.03    
+		      equipment_capture = 0.05        		      
+		      local_supplies = 0.10              
+		      army_org_factor = 0.20            
+		      army_speed_factor = 0.15        
+		      no_supply_grace = 96
+              attrition = -0.15			  
+			}
+		}
+
+		AL_guojizongdui_back = {
+			picture = great_depression
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+		     	  
+			}
+		}
+		
+	}	
+	
+	# TECHNOLOGY
+	tank_manufacturer = { 
+	
+		designer = yes
+		
+		AL_tank_all = {  #完全体坦克制造商
+
+			picture = ideas_tank_all
+			
+			allowed = {  }
+			visible = {
+				has_completed_focus = AL_zhenghe2
+				has_country_flag = AL_alone
+			}
+			available = {
+		    	custom_trigger_tooltip = {
+		    	    tooltip = tank_zhenghe_all
+		            check_variable = { AL_zhenghe_tank = 8 }
+		        }
+				
+			}
+			cost = 150
+			removal_cost = 0
+			
+			research_bonus = {
+				armor = 0.2                 #4重樱设计
+			}
+			
+						
+			traits = { AL_tank_all }
+		}
+		
+		AL_tank_YUW = {  #鸢尾制造商
+			picture = ideas_tank_YUW			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_tank_YUW
+				}
+				has_country_flag = AL_alone
+				
+			}
+			available = {
+			    OR = {
+			    TAG = YUW
+				custom_trigger_tooltip = {
+				tooltip = tank_zhuanyi_1
+				has_country_flag = AL_YUW_tank
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				armor = 0.15                
+			}			
+						
+			traits = { AL_tank_YUW }
+		}
+		
+		AL_tank_BYG = {  #白鹰制造商
+			picture = ideas_tank_BYG			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_tank_BYG
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = BYG
+				custom_trigger_tooltip = {
+				tooltip = tank_zhuanyi_2
+				has_country_flag = AL_BYG_tank
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				armor = 0.15                
+			}			
+					
+			traits = { AL_tank_BYG }
+		}
+		
+		AL_tank_SAD = {  #撒丁制造商
+			picture = ideas_tank_SAD			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_tank_SAD
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = SAD
+				custom_trigger_tooltip = {
+				tooltip = tank_zhuanyi_3
+				has_country_flag = AL_SAD_tank
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				armor = 0.15                
+			}			
+						
+			traits = { AL_tank_SAD }
+		}
+		
+		AL_tank_BFL = {  
+			picture = ideas_tank_BFL			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_tank_BFL
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = BFL
+				custom_trigger_tooltip = {
+				tooltip = tank_zhuanyi_4
+				AND = {
+				    has_country_flag = AL_BFL_tank
+				}
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				armor = 0.15                
+			}			
+			
+			traits = { AL_tank_BFL }
+		}
+		
+		AL_tank_DOH = {  #东煌制造商
+			picture = ideas_tank_DOH			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_tank_DOH
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = DOH
+				custom_trigger_tooltip = {
+				tooltip = tank_zhuanyi_5
+				AND = {
+				    has_country_flag = AL_DOH_tank
+				}
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				armor = 0.20                
+			}			
+	
+			traits = { AL_tank_DOH }
+		}
+		
+		AL_tank_HUJ = {  #皇家制造商
+			picture = ideas_tank_HUJ			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_tank_HUJ
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = HUJ
+				custom_trigger_tooltip = {
+				tooltip = tank_zhuanyi_6
+				AND = {
+				    has_country_flag = AL_HUJ_tank
+				}
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				armor = 0.15                
+			}			
+	
+			traits = { AL_tank_HUJ }
+		}
+		
+		AL_tank_TIX = {  #铁血制造商
+			picture = ideas_tank_TIX			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_tank_TIX
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = TIX
+				custom_trigger_tooltip = {
+				tooltip = tank_zhuanyi_7
+				AND = {
+				    has_country_flag = AL_TIX_tank
+				}
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				armor = 0.15                
+			}			
+			
+			traits = { AL_tank_TIX }
+		}
+		
+		AL_tank_CHY = {  #重樱制造商
+			picture = ideas_tank_CHY			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_tank_CHY
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = CHY
+				custom_trigger_tooltip = {
+				tooltip = tank_zhuanyi_8
+				AND = {
+				    has_country_flag = AL_CHY_tank
+				}
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				armor = 0.15                
+			}						
+			traits = { AL_tank_CHY }
+		}		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	naval_manufacturer = { 
+	
+		designer = yes
+	
+		AL_ship_all = {  #完全体舰船制造商
+
+			picture = ideas_ship_all
+			
+			allowed = {  }
+			visible = {
+			    has_completed_focus = AL_zhenghe5
+				has_country_flag = AL_alone
+			}
+			available = {
+				custom_trigger_tooltip = {
+		    	    tooltip = ship_zhenghe_all
+		            check_variable = { AL_zhenghe_ship = 8 }
+		        }
+			}
+			cost = 150
+			removal_cost = 0
+			
+			research_bonus = {
+				naval_equipment = 0.25                 #皇家设计
+				
+			}
+			
+			modifier = {
+				
+			}
+			
+						
+			traits = { AL_ship_all }
+		}
+		
+		AL_ship_YUW = {  #鸢尾制造商
+			picture = ideas_ship_YUW			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_ship_YUW
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = YUW
+				custom_trigger_tooltip = {
+				tooltip = ship_zhuanyi_1
+				has_country_flag = AL_YUW_ship
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				naval_equipment = 0.15                
+			}			
+			
+			traits = { AL_ship_YUW }
+		}
+		
+		AL_ship_BYG = {  #白鹰制造商
+			picture = ideas_ship_BYG			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_ship_BYG
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = BYG
+				custom_trigger_tooltip = {
+				tooltip = ship_zhuanyi_2
+				has_country_flag = AL_BYG_ship
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				naval_equipment = 0.15             
+			}			
+			modifier = {
+				
+			}
+			
+			
+			traits = { AL_ship_BYG }
+		}
+		
+		AL_ship_SAD = {  #撒丁制造商
+			picture = ideas_ship_SAD			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_ship_SAD
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = SAD
+				custom_trigger_tooltip = {
+				tooltip = ship_zhuanyi_3
+				has_country_flag = AL_SAD_ship
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				naval_equipment = 0.15                
+			}			
+			modifier = {
+				
+			}
+			
+			
+			traits = { AL_ship_SAD }
+		}
+		
+		AL_ship_BFL = {  
+			picture = ideas_ship_BFL			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_ship_BFL
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = BFL
+				custom_trigger_tooltip = {
+				tooltip = ship_zhuanyi_4
+				AND = {
+				    has_country_flag = AL_BFL_ship
+				}
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				naval_equipment = 0.15                
+			}			
+			modifier = {
+				
+			}
+			
+			equipment_bonus = {
+				
+			}			
+			traits = { AL_ship_BFL }
+		}
+		
+		AL_ship_DOH = {  #东煌制造商
+			picture = ideas_ship_DOH			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_ship_DOH
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = DOH
+				custom_trigger_tooltip = {
+				tooltip = ship_zhuanyi_5
+				AND = {
+				    has_country_flag = AL_DOH_ship
+				}
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				naval_equipment = 0.15               
+			}			
+			modifier = {
+				
+			}
+			
+			
+			traits = { AL_ship_DOH }
+		}
+		
+		AL_ship_HUJ = {  #皇家制造商
+			picture = ideas_ship_HUJ			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_ship_HUJ
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = HUJ
+				custom_trigger_tooltip = {
+				tooltip = ship_zhuanyi_6
+				AND = {
+				    has_country_flag = AL_HUJ_ship
+				}
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				naval_equipment = 0.20               
+			}			
+			modifier = {
+				
+			}
+			
+			equipment_bonus = {
+				
+			}			
+			traits = { AL_ship_HUJ }
+		}
+		
+		AL_ship_TIX = {  #铁血制造商
+			picture = ideas_ship_TIX			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_ship_TIX
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = TIX
+				custom_trigger_tooltip = {
+				tooltip = ship_zhuanyi_7
+				AND = {
+				    has_country_flag = AL_TIX_ship
+				}
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				naval_equipment = 0.15                
+			}			
+			modifier = {
+				
+			}
+			
+						
+			traits = { AL_ship_TIX }
+		}
+		
+		AL_ship_CHY = {  #重樱制造商
+			picture = ideas_ship_CHY			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_ship_CHY
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = CHY
+				custom_trigger_tooltip = {
+				tooltip = ship_zhuanyi_8
+				AND = {
+				    has_country_flag = AL_CHY_ship
+				}
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				naval_equipment = 0.15                
+			}
+            modifier = {
+				
+			}
+			
+			equipment_bonus = {
+				
+			}			
+			traits = { AL_ship_CHY }
+		}	
+		
+	
+	}
+
+
+
+
+
+
+
+
+	aircraft_manufacturer = { 
+	
+		designer = yes
+	    AL_plane_all = {  #完全体飞机制造商
+
+			picture = ideas_plane_all
+			
+			allowed = {  }
+			visible = {  
+			    has_completed_focus = AL_zhenghe4
+				has_country_flag = AL_alone
+			}
+			available = {
+				custom_trigger_tooltip = {
+		    	    tooltip = plane_zhenghe_all
+		            check_variable = { AL_zhenghe_plane = 8 }
+		        }
+			}
+			cost = 150
+			removal_cost = 0
+			
+			research_bonus = {
+				air_equipment = 0.25
+			}
+			
+			modifier = {
+				
+			}
+			
+			equipment_bonus = {
+				
+			}			
+			traits = { AL_plane_all }
+		}
+		
+		AL_plane_YUW = {  #鸢尾制造商
+			picture = ideas_plane_YUW			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_plane_YUW
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = YUW
+				custom_trigger_tooltip = {
+				tooltip = plane_zhuanyi_1
+				has_country_flag = AL_YUW_plane
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				air_equipment = 0.15                
+			}			
+					
+			traits = { AL_plane_YUW }
+		}
+		
+		AL_plane_BYG = {  #白鹰制造商
+			picture = ideas_plane_BYG			
+			allowed = { }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_plane_BYG
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = BYG
+				custom_trigger_tooltip = {
+				tooltip = plane_zhuanyi_2
+				has_country_flag = AL_BYG_plane
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				air_equipment = 0.15                
+			}			
+						
+			traits = { AL_plane_BYG }
+		}
+		
+		AL_plane_SAD = {  #撒丁制造商
+			picture = ideas_plane_SAD			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_plane_SAD
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = SAD
+				custom_trigger_tooltip = {
+				tooltip = plane_zhuanyi_3
+				has_country_flag = AL_SAD_plane
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				air_equipment = 0.15              
+			}			
+						
+			traits = { AL_plane_SAD }
+		}
+		
+		AL_plane_BFL = {  
+			picture = ideas_plane_BFL			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_plane_BFL
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = BFL
+				custom_trigger_tooltip = {
+				tooltip = plane_zhuanyi_4
+				AND = {
+				    has_country_flag = AL_BFL_plane
+				}
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				air_equipment = 0.15               
+			}			
+						
+			traits = { AL_plane_BFL }
+		}
+		
+		AL_plane_DOH = {  #东煌制造商
+			picture = ideas_plane_DOH			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_plane_DOH
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = DOH
+				custom_trigger_tooltip = {
+				tooltip = plane_zhuanyi_5
+				AND = {
+				    has_country_flag = AL_DOH_plane
+				}
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				air_equipment = 0.15                
+			}			
+						
+			traits = { AL_plane_DOH }
+		}
+		
+		AL_plane_HUJ = {  #皇家制造商
+			picture = ideas_plane_HUJ			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_plane_HUJ
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = HUJ
+				custom_trigger_tooltip = {
+				tooltip = plane_zhuanyi_6
+				AND = {
+				    has_country_flag = AL_HUJ_plane
+				}
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				air_equipment = 0.15                
+			}			
+						
+			traits = { AL_plane_HUJ }
+		}
+		
+		AL_plane_TIX = {  #铁血制造商
+			picture = ideas_plane_TIX			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_plane_TIX
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = TIX
+				custom_trigger_tooltip = {
+				tooltip = plane_zhuanyi_7
+				AND = {
+				    has_country_flag = AL_TIX_plane
+				}
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				air_equipment = 0.15               
+			}			
+						
+			traits = { AL_plane_TIX }
+		}
+		
+		AL_plane_CHY = {  #重樱制造商
+			picture = ideas_plane_CHY			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_plane_CHY
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = CHY
+				custom_trigger_tooltip = {
+				tooltip = plane_zhuanyi_8
+				AND = {
+				    has_country_flag = AL_CHY_plane
+				}
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				air_equipment = 0.15              
+			}						
+			traits = { AL_plane_CHY }
+		}	
+		
+	}
+
+
+
+
+
+	industrial_concern = {
+	    AL_gongye_all = {  #完全体工业制造商
+
+			picture = ideas_gongye_all
+			
+			allowed = {  }
+			visible = {
+			    has_completed_focus = AL_zhenghe1				
+				has_country_flag = AL_alone
+			}
+			available = {
+				custom_trigger_tooltip = {
+		    	    tooltip = gongye_zhenghe_all
+		            check_variable = { AL_zhenghe_gongye = 8 }
+		        }
+			}
+			cost = 150
+			removal_cost = 0
+			
+			research_bonus = {
+				industry = 0.2
+				electronics = 0.2
+				synth_resources = 0.1
+			}
+						
+			traits = { AL_gongye_all }
+		}
+		
+		AL_gongye_YUW = {  #鸢尾制造商
+			picture = ideas_gongye_YUW			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_gongye_YUW
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = YUW
+				custom_trigger_tooltip = {
+				tooltip = gongye_zhuanyi_1
+				has_country_flag = AL_YUW_gongye
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				industry = 0.15              
+			}			
+						
+			traits = { AL_gongye_YUW }
+		}
+		
+		AL_gongye_BYG = {  #白鹰制造商
+			picture = ideas_gongye_BYG			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_gongye_BYG
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = BYG
+				custom_trigger_tooltip = {
+				tooltip = gongye_zhuanyi_2
+				has_country_flag = AL_BYG_gongye
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				electronics = 0.15               
+			}			
+						
+			traits = { AL_gongye_BYG }
+		}
+		
+		AL_gongye_SAD = {  #撒丁制造商
+			picture = ideas_gongye_SAD			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_gongye_SAD
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = SAD
+				custom_trigger_tooltip = {
+				tooltip = gongye_zhuanyi_3
+				has_country_flag = AL_SAD_gongye
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				industry = 0.15                
+			}			
+						
+			traits = { AL_gongye_SAD }
+		}
+		
+		AL_gongye_BFL = {  
+			picture = ideas_gongye_BFL			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_gongye_BFL
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = BFL
+				custom_trigger_tooltip = {
+				tooltip = gongye_zhuanyi_4
+				AND = {
+				    has_country_flag = AL_BFL_gongye
+				}
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				industry = 0.1
+				synth_resources = 0.05                
+			}						
+			traits = { AL_gongye_BFL }
+		}
+		
+		AL_gongye_DOH = {  #东煌制造商
+			picture = ideas_gongye_DOH			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_gongye_DOH
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = DOH
+				custom_trigger_tooltip = {
+				tooltip = gongye_zhuanyi_5
+				AND = {
+				    has_country_flag = AL_DOH_gongye
+				}
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				electronics = 0.1
+				synth_resources = 0.05                
+			}			
+						
+			traits = { AL_gongye_DOH }
+		}
+		
+		AL_gongye_HUJ = {  #皇家制造商
+			picture = ideas_gongye_HUJ			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_gongye_HUJ
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = HUJ
+				custom_trigger_tooltip = {
+				tooltip = gongye_zhuanyi_6
+				AND = {
+				    has_country_flag = AL_HUJ_gongye
+				}
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				industry = 0.15             
+			}						
+			traits = { AL_gongye_HUJ }
+		}
+		
+		AL_gongye_TIX = {  #铁血制造商
+			picture = ideas_gongye_TIX			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_gongye_TIX
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = TIX
+				custom_trigger_tooltip = {
+				tooltip = gongye_zhuanyi_7
+				AND = {
+				    has_country_flag = AL_TIX_gongye
+				}
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				industry = 0.15               
+			}			
+						
+			traits = { AL_gongye_TIX }
+		}
+		
+		AL_gongye_CHY = {  #重樱制造商
+			picture = ideas_gongye_CHY			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_gongye_CHY
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = CHY
+				custom_trigger_tooltip = {
+				tooltip = gongye_zhuanyi_8
+				AND = {
+				    has_country_flag = AL_CHY_gongye
+				}
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				industry = 0.15                
+			}						
+			traits = { AL_gongye_CHY }
+		}	
+		
+	}
+
+
+
+
+	materiel_manufacturer = {
+	
+		designer = yes
+	    AL_junxu_all = {  #完全体军需制造商
+
+			picture = ideas_junxu_all
+			
+			allowed = {  }
+			visible = {
+			    has_completed_focus = AL_zhenghe3
+				has_country_flag = AL_alone
+			}
+			available = {
+				custom_trigger_tooltip = {
+		    	    tooltip = junxu_zhenghe_all
+		            check_variable = { AL_zhenghe_junxu = 8 }
+		        }
+			}
+			cost = 150
+			removal_cost = 0
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+				artillery = 0.15
+				motorized_equipment = 0.2
+				mot_rockets = 0.50
+			}
+						
+			traits = { AL_junxu_all }
+		}
+		
+		AL_junxu_YUW = {  #鸢尾制造商
+			picture = ideas_junxu_YUW			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_junxu_YUW
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = YUW
+				custom_trigger_tooltip = {
+				tooltip = junxu_zhuanyi_1
+				has_country_flag = AL_YUW_junxu
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				infantry_weapons = 0.15            
+			}			
+						
+			traits = { AL_junxu_YUW }
+		}
+		
+		AL_junxu_BYG = {  #白鹰制造商
+			picture = ideas_junxu_BYG			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_junxu_BYG
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = BYG
+				custom_trigger_tooltip = {
+				tooltip = junxu_zhuanyi_2
+				has_country_flag = AL_BYG_junxu
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				artillery = 0.15           
+			}						
+			traits = { AL_junxu_BYG }
+		}
+		
+		AL_junxu_SAD = {  #撒丁制造商
+			picture = ideas_junxu_SAD			
+			allowed = { }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_junxu_SAD
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = SAD
+				custom_trigger_tooltip = {
+				tooltip = junxu_zhuanyi_3
+				has_country_flag = AL_SAD_junxu
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				motorized_equipment = 0.2             
+			}			
+						
+			traits = { AL_junxu_SAD }
+		}
+		
+		AL_junxu_BFL = {  
+			picture = ideas_junxu_BFL			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_junxu_BFL
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = BFL
+				custom_trigger_tooltip = {
+				tooltip = junxu_zhuanyi_4
+				AND = {
+				    has_country_flag = AL_BFL_junxu
+				}
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				motorized_equipment = 0.15
+				mot_rockets = 0.50               
+			}			
+						
+			traits = { AL_junxu_BFL }
+		}
+		
+		AL_junxu_DOH = {  #东煌制造商
+			picture = ideas_junxu_DOH			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_junxu_DOH
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = DOH
+				custom_trigger_tooltip = {
+				tooltip = junxu_zhuanyi_5
+				AND = {
+				    has_country_flag = AL_DOH_junxu
+				}
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				infantry_weapons = 0.15              
+			}						
+			traits = { AL_junxu_DOH }
+		}
+		
+		AL_junxu_HUJ = {  #皇家制造商
+			picture = ideas_junxu_HUJ			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_junxu_HUJ
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = HUJ
+				custom_trigger_tooltip = {
+				tooltip = junxu_zhuanyi_6
+				AND = {
+				    has_country_flag = AL_HUJ_junxu
+				}
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				artillery = 0.15			              
+			}			
+						
+			traits = { AL_junxu_HUJ }
+		}
+		
+		AL_junxu_TIX = {  #铁血制造商
+			picture = ideas_junxu_TIX			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_junxu_TIX
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = TIX
+				custom_trigger_tooltip = {
+				tooltip = junxu_zhuanyi_7
+				has_country_flag = AL_TIX_junxu
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				motorized_equipment = 0.2             
+			}						
+			traits = { AL_junxu_TIX }
+		}
+		
+		AL_junxu_CHY = {  #重樱制造商
+			picture = ideas_junxu_CHY			
+			allowed = {  }
+			visible = {
+				not = {
+				    has_country_flag = AL_zhenghe_junxu_CHY
+				}
+				has_country_flag = AL_alone
+			}
+			available = {
+			    OR = {
+			    TAG = CHY
+				custom_trigger_tooltip = {
+				tooltip = junxu_zhuanyi_8
+				has_country_flag = AL_CHY_junxu
+		        }
+				}
+			}
+			cost = 25
+			removal_cost = 0			
+			research_bonus = {
+				infantry_weapons = 0.15               
+			}						
+			traits = { AL_junxu_CHY }
+		}	
+		
+	}
+
+
+#################彩蛋#############
+
+    country = {
+	
+		pingjia_S_D = {
+			picture = pingjia_S_D
+			removal_cost = -1
+			modifier = {
+			  army_speed_factor = 0.02
+			  planning_speed = 0.05
+			  naval_speed_factor = 0.02
+			}
+		}
+		
+		pingjia_S_C = {
+			picture = pingjia_S_C
+					 
+			removal_cost = -1
+			modifier = {
+			  army_speed_factor = 0.05
+			  planning_speed = 0.1
+			  naval_speed_factor = 0.05
+			}
+		}
+		
+		pingjia_S_B = {
+			picture = pingjia_S_B
+			 
+				
+			
+			removal_cost = -1
+			modifier = {
+			  army_speed_factor = 0.09
+			  planning_speed = 0.15
+			  naval_speed_factor = 0.09
+			}
+		}
+		
+		pingjia_S_A = {
+			picture = pingjia_S_A
+			 
+				
+			
+			removal_cost = -1
+			modifier = {
+			  army_speed_factor = 0.14
+			  planning_speed = 0.20
+			  naval_speed_factor = 0.14
+			}
+		}
+		
+		pingjia_S_S = {
+			picture = pingjia_S_S
+			 
+				
+			
+			removal_cost = -1
+			modifier = {
+			  army_speed_factor = 0.2
+			  planning_speed = 0.25
+			  naval_speed_factor = 0.2
+			}
+		}
+		
+		pingjia_S_SS = {
+			picture = pingjia_S_SS
+			 
+				
+			
+			removal_cost = -1
+			modifier = {
+			  army_speed_factor = 0.27
+			  planning_speed = 0.30
+			  naval_speed_factor = 0.27
+			}
+		}
+		
+		
+		pingjia_S_SSS = {
+			picture = pingjia_S_SSS
+			 
+				
+			
+			removal_cost = -1
+			modifier = {
+			  army_speed_factor = 0.35
+			  planning_speed = 0.35
+			  naval_speed_factor = 0.35
+			}
+		}
+		
+		
+		pingjia_N_D = {
+			picture = pingjia_N_D
+			 
+				
+			
+			removal_cost = -1
+			modifier = {
+			  supply_consumption_factor = -0.1
+			  land_reinforce_rate = 0.02
+			}
+		}
+		
+		pingjia_N_C = {
+			picture = pingjia_N_C
+			 
+				
+			
+			removal_cost = -1
+			modifier = {
+			  supply_consumption_factor = -0.2
+			  land_reinforce_rate = 0.05
+			}
+		}
+		
+		pingjia_N_B = {
+			picture = pingjia_N_B 
+			 
+				
+			
+			removal_cost = -1
+			modifier = {
+			  supply_consumption_factor = -0.3
+			  land_reinforce_rate = 0.1
+			}
+		}
+		
+		pingjia_N_A = {
+			picture = pingjia_N_A
+			 
+				
+			
+			removal_cost = -1
+			modifier = {
+			  supply_consumption_factor = -0.4
+			  land_reinforce_rate = 0.15
+			}
+		}
+		
+		pingjia_N_S = {
+			picture = pingjia_N_S
+			 
+				
+			
+			removal_cost = -1
+			modifier = {
+			  supply_consumption_factor = -0.5
+			  land_reinforce_rate = 0.2
+			}
+		}
+		
+		pingjia_N_SS = {
+			picture = pingjia_N_SS
+			 
+				
+			
+			removal_cost = -1
+			modifier = {
+			  supply_consumption_factor = -0.6
+			  land_reinforce_rate = 0.25
+			}
+		}
+		
+		
+		pingjia_N_SSS = {
+			picture = pingjia_N_SSS
+			 
+				
+			
+			removal_cost = -1
+			modifier = {
+			  supply_consumption_factor = -0.7
+			  land_reinforce_rate = 0.3
+			}
+		}
+		
+		
+		
+		pingjia_L_D = {
+			picture = pingjia_L_D
+			 
+				
+			
+			removal_cost = -1
+			modifier = {
+			  army_attack_factor = 0.05
+			  army_defence_factor = 0.05
+			}
+		}
+		
+		pingjia_L_C = {
+			picture = pingjia_L_C
+			 
+				
+			
+			removal_cost = -1
+			modifier = {
+			  army_attack_factor = 0.1
+			  army_defence_factor = 0.1
+			}
+		}
+		
+		pingjia_L_B = {
+			picture = pingjia_L_B
+			 
+				
+			
+			removal_cost = -1
+			modifier = {
+			  army_attack_factor = 0.2
+			  army_defence_factor = 0.2
+			}
+		}
+		
+		pingjia_L_A = {
+			picture = pingjia_L_A
+			 
+				
+			
+			removal_cost = -1
+			modifier = {
+			  army_attack_factor = 0.3
+			  army_defence_factor = 0.3
+			}
+		}
+		
+		pingjia_L_S = {
+			picture = pingjia_L_S
+			 
+				
+			
+			removal_cost = -1
+			modifier = {
+			  army_attack_factor = 0.4
+			  army_defence_factor = 0.4
+			}
+		}
+		
+		pingjia_L_SS = {
+			picture = pingjia_L_SS
+			 
+				
+			
+			removal_cost = -1
+			modifier = {
+			  army_attack_factor = 0.5
+			  army_defence_factor = 0.5
+			}
+		}
+		
+		
+		pingjia_L_SSS = {
+			picture = pingjia_L_SSS
+			 
+				
+			
+			removal_cost = -1
+			modifier = {
+			  army_attack_factor = 0.6
+			  army_defence_factor = 0.6
+			}
+		}
+		
+		
+		pingjia_G_D = {
+			picture = pingjia_G_D
+			 
+				
+			
+			removal_cost = -1
+			modifier = {
+			  army_org_factor = 0.05
+			  production_lack_of_resource_penalty_factor = -0.1
+			  surrender_limit = 0.05
+			}
+		}
+		
+		pingjia_G_C = {
+			picture = pingjia_G_C
+			 
+				
+			
+			removal_cost = -1
+			modifier = {
+			  army_org_factor = 0.1
+			  production_lack_of_resource_penalty_factor = -0.2
+			  surrender_limit = 0.1
+			}
+		}
+		
+		pingjia_G_B = {
+			picture = pingjia_G_B
+			 
+				
+			
+			removal_cost = -1
+			modifier = {
+			  army_org_factor = 0.15
+			  production_lack_of_resource_penalty_factor = -0.3
+			  surrender_limit = 0.15
+			}
+		}
+		
+		pingjia_G_A = {
+			picture = pingjia_G_A
+			 
+				
+			
+			removal_cost = -1
+			modifier = {
+			  army_org_factor = 0.2
+			  production_lack_of_resource_penalty_factor = -0.4
+			  surrender_limit = 0.2
+			}
+		}
+		
+		pingjia_G_S = {
+			picture = pingjia_G_S
+			 
+				
+			
+			removal_cost = -1
+			modifier = {
+			  army_org_factor = 0.25
+			  production_lack_of_resource_penalty_factor = -0.6
+			  surrender_limit = 0.25
+			}
+		}
+		
+		pingjia_G_SS = {
+			picture = pingjia_G_SS
+			 
+				
+			
+			removal_cost = -1
+			modifier = {
+			  army_org_factor = 0.3
+			  production_lack_of_resource_penalty_factor = -0.8
+			  surrender_limit = 0.3
+			}
+		}
+		
+		
+		pingjia_G_SSS = {
+			picture = pingjia_G_SSS
+			 
+				
+			
+			removal_cost = -1
+			modifier = {
+			  army_org_factor = 0.35
+			  production_lack_of_resource_penalty_factor = -1
+			  surrender_limit = 0.35
+			}
+		}
+		
+		
+		pingjia_Z_D = {
+			picture = pingjia_Z_D
+			 
+				
+			
+			removal_cost = -1
+			modifier = {
+			  send_volunteer_size = 2
+			  political_power_factor = 0.05
+			  max_planning = 0.01
+			  research_speed_factor = 0.1
+			}
+		}
+		
+		pingjia_Z_C = {
+			picture = pingjia_Z_C
+			 
+				
+			
+			removal_cost = -1
+			modifier = {
+			  send_volunteer_size = 4
+			  political_power_factor = 0.1
+			  max_planning = 0.05
+			  research_speed_factor = 0.2
+			}
+		}
+		
+		pingjia_Z_B = {
+			picture = pingjia_Z_B
+			 
+				
+			
+			removal_cost = -1
+			modifier = {
+			  send_volunteer_size = 8
+			  political_power_factor = 0.2
+			  max_planning = 0.1
+			  research_speed_factor = 0.3
+			}
+		}
+		
+		pingjia_Z_A = {
+			picture = pingjia_Z_A
+			 
+				
+			
+			removal_cost = -1
+			modifier = {
+			  send_volunteer_size = 12
+			  political_power_factor = 0.4
+			  max_planning = 0.2
+			  research_speed_factor = 0.4
+			}
+		}
+		
+		pingjia_Z_S = {
+			picture = pingjia_Z_S
+			 
+				
+			
+			removal_cost = -1
+			modifier = {
+			  send_volunteer_size = 16
+			  political_power_factor = 0.6
+			  max_planning = 0.3
+			  research_speed_factor = 0.6
+			}
+		}
+		
+		pingjia_Z_SS = {
+			picture = pingjia_Z_SS
+			 
+				
+			
+			removal_cost = -1
+			modifier = {
+			  send_volunteer_size = 20
+			  political_power_factor = 0.8
+			  max_planning = 0.4
+			  research_speed_factor = 0.8
+			}
+		}
+		
+		
+		pingjia_Z_SSS = {
+			picture = pingjia_Z_SSS
+			removal_cost = -1
+			modifier = {
+			  send_volunteer_size = 24
+			  political_power_factor = 1
+			  max_planning = 0.5
+			  research_speed_factor = 1
+			}
+		}
+		
+		jineng_maniang_4 = {
+			picture = char_4
+			removal_cost = -1
+			equipment_bonus = {
+				armor = {
+				  maximum_speed = 0.35
+				  instant = yes
+				}
+			}
+		}
+		
+		jineng_maniang_9 = {
+			picture = char_9
+			removal_cost = -1
+			equipment_bonus = {
+				armor = {
+				   soft_attack = 0.35
+				   instant = yes
+				}
+			}
+		}
+		
+		jineng_maniang_15 = {
+			picture = char_15
+			removal_cost = -1
+			equipment_bonus = {
+			   fighter_equipment = {
+				air_agility = 0.15 
+				instant = yes
+				}
+			}
+		}
+		
+		jineng_maniang_16 = {
+			picture = char_16
+			removal_cost = -1
+			equipment_bonus = {
+				 armor = {
+				   armor_value = 0.15
+				   ap_attack = 0.2
+				   hard_attack = 0.15
+				   instant = yes
+				}  
+			}
+		}
+		
+		jineng_maniang_33 = {
+			picture = char_33
+			removal_cost = -1
+			equipment_bonus = {
+				infantry_equipment = {
+						build_cost_ic = -0.25
+						instant = yes
+				}	
+				artillery_equipment	= {
+						build_cost_ic = -0.25
+						instant = yes
+				}
+			}
+		}
+		
+		jineng_maniang_34 = {
+			picture = char_34
+			removal_cost = -1
+			equipment_bonus = {
+				infantry_equipment	= {
+						reliability = 0.15 
+						instant = yes
+				}
+				artillery_equipment	= {
+						reliability = 0.15 
+						instant = yes
+				}			
+				armor = {
+						reliability = 0.15 
+						instant = yes
+				}
+				fighter_equipment = {
+						reliability = 0.15 
+						instant = yes
+				}
+			}
+		}
+	}
+
+
+
+
+
+
+}

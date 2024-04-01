@@ -1,0 +1,3211 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = huangjia_focus
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = HUJ
+		}
+	}
+	default = no
+
+	focus = {
+		id = HUJ_aierlangongye
+		icon = GFX_goal_generic_construct_civilian
+		x = 18
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			113 = {
+				add_extra_state_shared_building_slots = 5
+			}
+			119 = {
+				add_extra_state_shared_building_slots = 5
+			}
+			134 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes		
+				}
+			}
+			135 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes	
+				}
+			}
+		}
+	}
+	focus = {
+		id = HUJ_jingjijianshe
+		icon = GFX_goal_generic_construct_civ_factory
+		x = -2
+		y = 1
+		relative_position_id = HUJ_aierlangongye
+		prerequisite = { focus = HUJ_aierlangongye }
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			113 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes		
+				}
+			}
+			119 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes	
+				}
+			}
+		}
+	}
+	focus = {
+		id = HUJ_nvpucanting
+		icon = GFX_goal_generic_propaganda
+		x = -1
+		y = 1
+		relative_position_id = HUJ_neiwunvpu
+		prerequisite = { focus = HUJ_neiwunvpu }
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = HUJ_npct
+		}
+	}
+	focus = {
+		id = HUJ_hongchagongying
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		relative_position_id = HUJ_jingjijianshe
+		prerequisite = { focus = HUJ_jingjijianshe }
+		cost = 7
+
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_stability = 0.2
+		}
+	}
+	focus = {
+		id = HUJ_chayejinkou
+		icon = GFX_goal_generic_trade
+		x = -1
+		y = 1
+		relative_position_id = HUJ_hongchagongying
+		prerequisite = { focus = HUJ_hongchagongying }
+		mutually_exclusive = { focus = HUJ_zhongzhichaye }
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = HUJ_jkdcy
+		}
+	}
+	focus = {
+		id = HUJ_zhongzhichaye
+		icon = GFX_focus_generic_industry_3
+		x = 1
+		y = 1
+		relative_position_id = HUJ_hongchagongying
+		prerequisite = { focus = HUJ_hongchagongying }
+		mutually_exclusive = { focus = HUJ_chayejinkou }
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = HUJ_zzcy
+		}
+	}
+	focus = {
+		id = HUJ_zhiyouhongcha
+		icon = GFX_focus_rom_parties_end
+		x = 1
+		y = 1
+		relative_position_id = HUJ_chayejinkou
+		prerequisite = { focus = HUJ_zhongzhichaye focus = HUJ_chayejinkou}
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = HUJ_qxhc
+		}
+	}
+	focus = {
+		id = HUJ_jungongqiye
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 2
+		y = 1
+		relative_position_id = HUJ_aierlangongye
+		prerequisite = { focus = HUJ_aierlangongye }
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			134 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes		
+				}
+			}
+			135 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes	
+				}
+			}
+		}
+	}
+	focus = {
+		id = HUJ_zhuzhonglujun
+		icon = GFX_focus_generic_manpower
+		x = 12
+		y = 6
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 7
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			army_experience = 50
+			add_doctrine_cost_reduction = {
+				name = "注重陆军"
+				cost_reduction = 0.25
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = HUJ_bubingzhuangbei
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 1
+		relative_position_id = HUJ_zhuzhonglujun
+		prerequisite = { focus = HUJ_zhuzhonglujun }
+		cost = 7
+
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_tech_bonus = {
+				name = "步兵装备"
+				bonus = 1.25
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+	focus = {
+		id = HUJ_fuzhuzhuangbei
+		icon = GFX_goal_continuous_repairments
+		x = 0
+		y = 1
+		relative_position_id = HUJ_bubingzhuangbei
+		prerequisite = { focus = HUJ_bubingzhuangbei }
+		cost = 7
+
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_tech_bonus = {
+				name = "辅助装备"
+				bonus = 2
+				uses = 2
+				category = support_tech
+				ahead_reduction = 1.5
+			}
+		}
+	}
+	focus = {
+		id = HUJ_qingwuqigongchang
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 0
+		y = 1
+		relative_position_id = HUJ_fuzhuzhuangbei
+		prerequisite = { focus = HUJ_fuzhuzhuangbei }
+		mutually_exclusive = { focus = HUJ_zhongwuqigongchang }
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = { 
+			num_of_military_factories > 30
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}	
+			add_ideas = HUJ_qwqsc
+		}
+	}
+	focus = {
+		id = HUJ_lilunyanjiu
+		icon = GFX_goal_generic_army_doctrines
+		x = -2
+		y = 1
+		relative_position_id = HUJ_zhuzhonglujun
+		prerequisite = { focus = HUJ_zhuzhonglujun }
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = "理论研究"
+				cost_reduction = 0.25
+				uses = 3
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = HUJ_liluntupo
+		icon = GFX_goal_generic_army_doctrines
+		x = 0
+		y = 1
+		relative_position_id = HUJ_lilunyanjiu
+		prerequisite = { focus = HUJ_lilunyanjiu }
+		cost = 15
+
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			army_experience = 50
+			custom_effect_tooltip = "允许解锁第二条陆军学说路线"
+			set_country_flag = TY_army_liluntupo
+		}
+	}
+	focus = {
+		id = HUJ_youshihuoli
+		icon = GFX_goal_generic_army_artillery2
+		x = 0
+		y = 1
+		relative_position_id = HUJ_liluntupo
+		prerequisite = { focus = HUJ_liluntupo }
+		prerequisite = { focus = HUJ_fuzhuzhuangbei }
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = { 
+			has_tech = superior_firepower
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = HUJ_khlz
+		}
+	}
+	focus = {
+		id = HUJ_jidonghuabudui
+		icon = GFX_goal_generic_army_motorized
+		x = 2
+		y = 1
+		relative_position_id = HUJ_zhuzhonglujun
+		prerequisite = { focus = HUJ_zhuzhonglujun }
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_tech_bonus = {
+				name = "机动化部队"
+				bonus = 1.5
+				uses = 2
+				category = motorized_equipment
+			}
+		}
+	}
+	focus = {
+		id = HUJ_huangjiatanketuan
+		icon = GFX_goal_generic_army_tanks
+		x = 0
+		y = 1
+		relative_position_id = HUJ_jidonghuabudui
+		prerequisite = { focus = HUJ_jidonghuabudui }
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_tech_bonus = {
+				name = "皇家坦克团"
+				bonus = 1.5
+				uses = 2
+				category = armor
+			}
+		}
+	}
+	focus = {
+		id = HUJ_zhongwuqigongchang
+		icon = GFX_goal_generic_army_tanks
+		x = 0
+		y = 1
+		relative_position_id = HUJ_huangjiatanketuan
+		prerequisite = { focus = HUJ_huangjiatanketuan }
+		mutually_exclusive = { focus = HUJ_qingwuqigongchang }
+		cost = 7
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		available = { 
+			num_of_military_factories > 50
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = HUJ_zwqsc 
+			add_ideas = HUJ_zydp 
+			
+		}
+	}
+	focus = {
+		id = HUJ_bubingtanke
+		icon = GFX_goal_generic_army_tanks
+		x = 2
+		y = 1
+		relative_position_id = HUJ_huangjiatanketuan
+		prerequisite = { focus = HUJ_huangjiatanketuan }
+		cost = 7
+
+		ai_will_do = {
+			factor = 7
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = HUJ_bbtk
+		}
+	}
+	focus = {
+		id = HUJ_jiadakaicai
+		icon = GFX_goal_generic_construction2
+		x = 0
+		y = 1
+		relative_position_id = HUJ_jungongqiye
+		prerequisite = { focus = HUJ_jungongqiye }
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			119 = {
+				add_resource = {
+					type = steel
+					amount = 28
+				}
+			}
+			113 = {
+				add_resource = {
+					type = steel
+					amount = 40
+				}
+			}
+			134 = {
+				add_resource = {
+					type = chromium
+					amount = 35
+				}
+			}
+		}
+	}
+	focus = {
+		id = HUJ_youhuagongyinglian
+		icon = GFX_goal_continuous_non_factory_construct
+		x = 0
+		y = 2
+		relative_position_id = HUJ_jiadakaicai
+		prerequisite = { focus = HUJ_jiadakaicai }
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = { 
+			OR = {
+				has_completed_focus = HUJ_qingwuqigongchang
+				has_completed_focus = HUJ_zhongwuqigongchang
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			if = {
+				limit = { has_idea = HUJ_zydp }
+				swap_ideas = {
+					add_idea = HUJ_hjzz
+					remove_idea = HUJ_zydp
+				}
+				
+			}
+			else = { add_ideas = HUJ_hjzz }
+		}
+	}
+	focus = {
+		id = HUJ_sousuomofang
+		icon = GFX_focus_xinzhimofang
+		x = -1
+		y = 1
+		relative_position_id = HUJ_jiadakaicai
+		prerequisite = { focus = HUJ_jiadakaicai }
+		cost = 7
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			custom_effect_tooltip = HUJ_sousuomofang_tooltip
+			add_to_variable = {
+				var = xzmf_sl
+				value = 5
+			}
+		}
+	}
+	focus = {
+		id = HUJ_haishangyooutian
+		icon = GFX_goal_generic_oil_refinery
+		x = 1
+		y = 1
+		relative_position_id = HUJ_jiadakaicai
+		prerequisite = { focus = HUJ_jiadakaicai }
+		cost = 15
+
+		ai_will_do = {
+			factor = 8
+		}
+
+
+		available = { 
+			has_navy_size = {
+				type = screen_ship
+				size > 249
+			}
+			has_full_control_of_state = 119
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			119 = {
+			add_resource = {
+				type = oil
+				amount = 120
+			}
+		}
+		}
+	}
+	focus = {
+		id = HUJ_huangjiajihuabu
+		icon = GFX_goal_generic_position_armies
+		x = 11
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = HUJ_hjjhb
+		}
+	}
+	focus = {
+		id = HUJ_buliedianjihua
+		icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
+		x = 0
+		y = 1
+		relative_position_id = HUJ_huangjiajihuabu
+		prerequisite = { focus = HUJ_huangjiajihuabu }
+		cost = 5
+
+		ai_will_do = {
+			factor = 15
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			hidden_effect = {
+				120 = { add_core_of = HUJ }
+				121 = { add_core_of = HUJ }
+				133 = { add_core_of = HUJ }
+				136 = { add_core_of = HUJ }
+				130 = { add_core_of = HUJ }
+				131 = { add_core_of = HUJ }
+				132 = { add_core_of = HUJ }
+				122 = { add_core_of = HUJ }
+				128 = { add_core_of = HUJ }
+				129 = { add_core_of = HUJ }
+				338 = { add_core_of = HUJ }
+				123 = { add_core_of = HUJ }
+				125 = { add_core_of = HUJ }
+				126 = { add_core_of = HUJ }
+				127 = { add_core_of = HUJ }
+			}
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 300
+			}
+			custom_effect_tooltip = "与塞壬进入战争时可以直接登陆不列颠岛。"
+			set_country_flag = HUJ_denglubuliedian
+		}
+	}
+	focus = {
+		id = HUJ_zhanqianchoubei
+		icon = GFX_focus_secret_rearmament
+		x = 0
+		y = 1
+		relative_position_id = HUJ_buliedianjihua
+		prerequisite = { focus = HUJ_buliedianjihua }
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				TIX = { has_war_with = SIR }
+				add = 100
+			}
+			modifier = {
+				TIX = { has_capitulated = yes }
+				add = 100
+			}
+			modifier = {
+				date > 1940.6.1
+				add = 100
+			}
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_war_support = 0.2
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+			}
+			custom_effect_tooltip = "如果我们和白鹰联邦或者鸢尾的关系大于100，那也会得到她们的武器资助。"
+			if = {
+				limit = {
+					BYG = { has_opinion = { target = HUJ value > 99 } }			
+				}		
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 3000
+					producer = BYG
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 500
+					producer = BYG
+				}
+			}
+			if = {
+				limit = {
+					YUW = { has_opinion = { target = HUJ value > 99 } }			
+				}		
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 1000
+					producer = YUW
+				}
+			}
+		}
+	}
+	focus = {
+		id = HUJ_chongjiangongye
+		icon = GFX_goal_generic_construction
+		x = -1
+		y = 2
+		relative_position_id = HUJ_buliedianjihua
+		prerequisite = { focus = HUJ_buliedianjihua }
+		cost = 15
+
+		ai_will_do = {
+			factor = 8
+		}
+
+
+		available = { controls_state = 126 controls_state = 127 controls_state = 123 controls_state = 338 controls_state = 125 }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			126 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes		
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes		
+				}
+			}
+			127 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes		
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes		
+				}
+			}
+			338 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes		
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes		
+				}
+			}
+			125 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes		
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes		
+				}
+			}
+		}
+	}
+	focus = {
+		id = HUJ_kuojianchuanwu
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 1
+		y = 2
+		relative_position_id = HUJ_buliedianjihua
+		prerequisite = { focus = HUJ_buliedianjihua }
+		cost = 15
+
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = { controls_state = 132 controls_state = 130 }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			132 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = dockyard
+					level = 5
+					instant_build = yes		
+				}
+			}
+			130 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = dockyard
+					level = 4
+					instant_build = yes		
+				}
+			}
+		}
+	}
+	focus = {
+		id = HUJ_dizhonghaijihua
+		icon = GFX_goal_generic_political_pressure
+		x = -2
+		y = 1
+		relative_position_id = HUJ_buliedianjihua
+		prerequisite = { focus = HUJ_buliedianjihua }
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = {  }
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_manpower = -15000
+			hidden_effect = {
+				118 = { add_core_of = HUJ }
+				290 = { add_core_of = HUJ }
+			}
+			if = {
+				limit = {
+					SIR = { controls_state = 118 }
+				}
+				transfer_state = 118
+			}
+			if = {
+				limit = {
+					SR2 = { controls_state = 290 }
+				}
+				transfer_state = 290
+			}
+		}
+	}
+	focus = {
+		id = HUJ_sikandenaweiyajihua
+		icon = GFX_goal_generic_political_pressure
+		x = 2
+		y = 1
+		relative_position_id = HUJ_buliedianjihua
+		prerequisite = { focus = HUJ_buliedianjihua }
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_manpower = -15000
+			hidden_effect = {
+				110 = { add_core_of = HUJ }
+				142 = { add_core_of = HUJ }
+				143 = { add_core_of = HUJ }
+				144 = { add_core_of = HUJ }
+			}
+			if = {
+				limit = {
+					SIR = { controls_state = 142 }
+				}
+				transfer_state = 142
+			}
+		}
+	}
+	focus = {
+		id = HUJ_huangjiahaijun
+		icon = GFX_goal_generic_navy_battleship
+		x = 20
+		y = 6
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			TY_haijunliluntupo = yes
+			add_tech_bonus = {
+				name = "皇家海军"
+				bonus = 0.5
+				uses = 6
+				category = naval_equipment
+			}
+		}
+	}
+	focus = {
+		id = HUJ_youyadezhanjian
+		icon = GFX_focus_hude
+		x = -2
+		y = 1
+		relative_position_id = HUJ_huangjiahaijun
+		prerequisite = { focus = HUJ_huangjiahaijun }
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			HUJ_hude = {
+				add_logistics = 2
+				add_planning = 2
+			}
+			add_tech_bonus = {
+				name = "优雅的战舰"
+				bonus = 2.5
+				uses = 1
+				category = bb_tech
+			}
+		}
+	}
+	focus = {
+		id = HUJ_cunzaijiandui
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 1
+		y = 1
+		relative_position_id = HUJ_youyadezhanjian
+		prerequisite = { focus = HUJ_youyadezhanjian }
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = "存在舰队"
+				cost_reduction = 0.5
+				uses = 3
+				category = fleet_in_being_tree
+			}
+			
+		}
+	}
+	focus = {
+		id = HUJ_koujingyuzhuangjia
+		icon = GFX_goal_generic_navy_battleship
+		x = -1
+		y = 1
+		relative_position_id = HUJ_youyadezhanjian
+		prerequisite = { focus = HUJ_youyadezhanjian }
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_tech_bonus = {
+				name = "口径与装甲"
+				bonus = 1.5
+				ahead_reduction = 1
+				uses = 3
+				category = naval_equipment
+			}
+		}
+	}
+	focus = {
+		id = HUJ_haijunrongyao
+		icon = GFX_goal_generic_navy_battleship
+		x = 1
+		y = 1
+		relative_position_id = HUJ_koujingyuzhuangjia
+		prerequisite = { focus = HUJ_cunzaijiandui }
+		prerequisite = { focus = HUJ_koujingyuzhuangjia }
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = HUJ_hjhjdry
+		}
+	}
+	focus = {
+		id = HUJ_duanzhuangdehangmu
+		icon = GFX_focus_guanghui
+		x = 2
+		y = 1
+		relative_position_id = HUJ_huangjiahaijun
+		prerequisite = { focus = HUJ_huangjiahaijun }
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			
+			every_army_leader = {
+				limit = { has_trait = hangmu_army }
+				add_logistics = 1
+			}
+			every_navy_leader = {
+
+				limit = { has_trait = hangmu_navy }
+				add_coordination = 1
+				
+			}
+			add_tech_bonus = {
+				name = "端庄的航母"
+				bonus = 2
+				uses = 1
+				category = cv_tech
+			}
+		}
+	}
+	focus = {
+		id = HUJ_jianzaiji
+		icon = GFX_goal_generic_air_fighter2
+		x = -1
+		y = 1
+		relative_position_id = HUJ_duanzhuangdehangmu
+		prerequisite = { focus = HUJ_duanzhuangdehangmu }
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_tech_bonus = {
+				name = "航母舰载机"
+				uses = 3
+				bonus = 1.0
+				technology = cv_fighter1
+				technology = cv_fighter2
+				technology = cv_naval_bomber2
+				technology = cv_CAS2
+			}
+		}
+	}
+	focus = {
+		id = HUJ_salatuojialaoshi
+		icon = GFX_focus_salatuojia
+		x = 1
+		y = 1
+		relative_position_id = HUJ_duanzhuangdehangmu
+		prerequisite = { focus = HUJ_duanzhuangdehangmu }
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			navy_experience = 60
+			custom_effect_tooltip = "萨拉托加给我们留下了一艘她自己的量产级航母。"
+			hidden_effect = {
+				create_equipment_variant = {
+					name = "列克星敦级"
+					type = ship_hull_carrier_conversion_bb
+					name_group = USA_CV_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_deck_slot_1 = ship_deck_space
+						fixed_ship_deck_slot_2 = ship_deck_space
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = heavy_ship_engine_1
+						fixed_ship_secondaries_slot = ship_secondaries_1
+						mid_1_custom_slot = ship_deck_space
+					}
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_carrier_conversion_bb
+						creator = ROOT 
+						version_name = "列克星敦级"
+					}
+					requested_factories = 1
+					progress = 1
+					amount = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = HUJ_feixingyuan
+		icon = GFX_goal_generic_air_fighter
+		x = 1
+		y = 1
+		relative_position_id = HUJ_jianzaiji
+		prerequisite = { focus = HUJ_jianzaiji }
+		prerequisite = { focus = HUJ_salatuojialaoshi }
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = HUJ_hjfxy
+		}
+	}
+	focus = {
+		id = HUJ_zhongchengdehuwei
+		icon = GFX_focus_generic_destroyer
+		x = 0
+		y = 1
+		relative_position_id = HUJ_huangjiahaijun
+		prerequisite = { focus = HUJ_huangjiahaijun }
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_tech_bonus = {
+				name = "忠诚的护卫"
+				bonus = 1
+				uses = 2
+				category = dd_tech
+				category = cl_tech
+				category = ca_tech
+			}
+		}
+	}
+	focus = {
+		id = HUJ_dajianpingweijian
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 0
+		y = 2
+		relative_position_id = HUJ_zhongchengdehuwei
+		prerequisite = { focus = HUJ_zhongchengdehuwei }
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = HUJ_jtjz
+		}
+	}
+	focus = {
+		id = HUJ_haijunjindaihua
+		icon = GFX_goal_continuous_naval_production
+		x = 1
+		y = 1
+		relative_position_id = HUJ_haijunrongyao
+		prerequisite = { focus = HUJ_haijunrongyao }
+		prerequisite = { focus = HUJ_dajianpingweijian }
+		prerequisite = { focus = HUJ_feixingyuan }
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			navy_experience = 250
+			add_ideas = HUJ_sjdyhj
+		}
+	}
+	focus = {
+		id = HUJ_chongxianribuluo 
+		icon = GFX_focus_chongxianribuluo
+		x = 1
+		y = 2
+		relative_position_id = HUJ_haijunjindaihua
+		prerequisite = { focus = HUJ_haijunjindaihua }
+		prerequisite = { focus = HUJ_zaochuanjishu }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 20
+		}
+
+
+		available = { 
+			has_completed_focus = HUJ_youshihuoli
+			has_completed_focus = HUJ_bubingtanke
+			has_completed_focus = HUJ_huangjialieying
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			navy_experience = 100
+			army_experience = 50
+			air_experience = 50
+			add_war_support = 0.2
+			add_ideas = HUJ_cxrbl
+		}
+	}
+	focus = {
+		id = HUJ_zaochuanjishu
+		icon = GFX_goal_generic_navy_cruiser
+		x = 3
+		y = 1
+		relative_position_id = HUJ_haijunrongyao
+		prerequisite = { focus = HUJ_haijunrongyao }
+		prerequisite = { focus = HUJ_dajianpingweijian }
+		prerequisite = { focus = HUJ_feixingyuan }
+		available = { num_of_naval_factories > 30 num_of_factories > 150 }
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			swap_ideas = {
+				add_idea = HUJ_hjzcc
+				remove_idea = HUJ_jtjz
+			}		
+		}
+	}
+	focus = {
+		id = HUJ_nvpuxunlian
+		icon = GFX_focus_beifa
+		x = 4
+		y = 0
+
+		cost = 6
+
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 150
+			
+		}
+	}
+	focus = {
+		id = HUJ_chuanshouzhandouzhishi
+		icon = GFX_goal_generic_build_airforce
+		x = 1
+		y = 1
+		relative_position_id = HUJ_tegongnvpu
+		prerequisite = { focus = HUJ_tegongnvpu }
+		cost = 6
+
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			every_unit_leader = {
+				limit = { 
+					or = {
+						has_id = 01007
+						has_id = 01012
+						has_id = 01018
+						has_id = 01024
+						has_id = 01026
+						has_id = 01028
+						has_id = 01030
+					}
+				}
+				add_skill_level = 1
+			}
+			army_experience = 30
+			navy_experience = 25
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = HUJ_nvpukeyanzu
+		icon = GFX_goal_continuous_research
+		x = 0
+		y = 1
+		relative_position_id = HUJ_neiwuweizhu
+		prerequisite = { focus = HUJ_neiwuweizhu }
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = HUJ_neiwunvpu
+		icon = GFX_goal_tripartite_pact
+		x = -2
+		y = 1
+		relative_position_id = HUJ_nvpuxunlian
+		prerequisite = { focus = HUJ_nvpuxunlian }
+		cost = 7
+
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+	focus = {
+		id = HUJ_tegongnvpu
+		icon = GFX_focus_generic_air_defense
+		x = 2
+		y = 1
+		relative_position_id = HUJ_nvpuxunlian
+		prerequisite = { focus = HUJ_nvpuxunlian }
+		cost = 7
+
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = HUJ_nptg
+		}
+	}
+	focus = {
+		id = HUJ_neiwuweizhu
+		icon = GFX_focus_generic_monarchy_2
+		x = 1
+		y = 1
+		relative_position_id = HUJ_neiwunvpu
+		prerequisite = { focus = HUJ_neiwunvpu }
+		mutually_exclusive = { focus = HUJ_tegongweizhu }
+		cost = 7
+
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			swap_ideas = {
+				add_idea = HUJ_hjnwnpd
+				remove_idea = HUJ_hjnpd
+			}
+			hidden_effect = { news_event = aznews.35 }
+		}
+	}
+	focus = {
+		id = HUJ_tegongweizhu
+		icon = GFX_focus_generic_military_mission
+		x = 3
+		y = 1
+		relative_position_id = HUJ_neiwunvpu
+		prerequisite = { focus = HUJ_tegongnvpu }
+		mutually_exclusive = { focus = HUJ_neiwuweizhu }
+		cost = 7
+
+		ai_will_do = {
+			factor = 0
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			swap_ideas = {
+				add_idea = HUJ_hjtgnpd
+				remove_idea = HUJ_hjnpd
+			}
+			hidden_effect = { news_event = aznews.35 }
+		}
+	}
+	focus = {
+		id = HUJ_huimiekeji
+		icon = GFX_goal_generic_secret_weapon
+		x = 0
+		y = 1
+		relative_position_id = HUJ_tegongweizhu
+		prerequisite = { focus = HUJ_tegongweizhu }
+		mutually_exclusive = { focus = HUJ_neiwuweizhu }
+		cost = 7
+
+		ai_will_do = {
+			factor = 0
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_tech_bonus = {
+				name = "毁灭科技"
+				bonus = 1.5
+				ahead_reduction = 2
+				uses = 3
+				category = electronics
+			}
+			add_tech_bonus = {
+				name = "毁灭科技"
+				bonus = 2
+				ahead_reduction = 3
+				uses = 2
+				category = nuclear
+			}
+		}
+	}
+	focus = {
+		id = HUJ_jixuyihuizhi
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 27
+		y = 0
+		cost = 10
+		mutually_exclusive = { focus = HUJ_daposhufu }
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				date > 1938.1.1
+				add = 10
+			}
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.1
+			custom_effect_tooltip = HUJ_jixuyihuizhi_tooltip
+		}
+	}
+	focus = {
+		id = HUJ_youyakebushihuaping
+		icon = GFX_goal_generic_demand_territory
+		x = -2
+		y = 1
+		cost = 7
+		prerequisite = { focus = HUJ_jixuyihuizhi }
+		relative_position_id = HUJ_jixuyihuizhi
+		ai_will_do = {
+			factor = 3
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 100
+			add_war_support = 0.15
+		}
+	}
+	focus = {
+		id = HUJ_guofangjianshe
+		icon = GFX_goal_continuous_reduce_training_time
+		x = -1
+		y = 1
+		cost = 25
+		prerequisite = { focus = HUJ_youyakebushihuaping }
+		relative_position_id = HUJ_youyakebushihuaping
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		available = { 
+			has_country_leader = {
+				name = "厌战"
+				ruling_only = yes
+			}
+		}
+
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		select_effect = {
+			country_event = HUJ_event.2
+		}
+		completion_reward = {
+			custom_effect_tooltip = HUJ_guofangjianshe_tooltip
+			add_war_support = 0.2
+			army_experience = 30
+			navy_experience = 50
+			air_experience = 30
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+			capital_scope = {
+				add_building_construction = {
+					type = air_base
+					level = 8
+					instant_build = yes
+				}
+			}
+			
+		}
+	}
+	focus = {
+		id = HUJ_huangjiaqishituan
+		icon = GFX_focus_qiaozhiwushi
+		x = 0
+		y = 1
+		cost = 15
+		prerequisite = { focus = HUJ_guofangjianshe }
+		relative_position_id = HUJ_guofangjianshe
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		complete_tooltip = {
+		
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			random_unit_leader = {
+				limit = { has_id = 01002 }
+				add_skill_level = 1
+				add_unit_leader_trait = panzer_leader
+				add_unit_leader_trait = cavalry_leader
+				add_unit_leader_trait = skilled_staffer
+			}
+			custom_effect_tooltip = HUJ_huangjiaqishituan_tooltip
+			division_template = {
+				name = "皇家骑士军团"
+				#is_locked = yes
+				priority = 2
+				regiments = {
+					motorized = { x = 0 y = 0 }
+					motorized = { x = 0 y = 1 }
+					motorized = { x = 0 y = 2 }
+					motorized = { x = 0 y = 3 }
+					motorized = { x = 0 y = 4 }
+					motorized = { x = 1 y = 0 }
+					motorized = { x = 1 y = 1 }
+					motorized = { x = 1 y = 2 }
+					motorized = { x = 1 y = 3 }
+					motorized = { x = 1 y = 4 }
+					light_armor = { x = 2 y = 0 }
+					light_armor = { x = 2 y = 1 }
+				}
+				support = { 
+					mot_recon = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+				} 
+			}
+			hidden_effect = {
+				capital_scope = {
+					create_unit = {
+						division = "name = \"女王亲卫师\" division_template = \"皇家骑士军团\" start_experience_factor = 0.5"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"女王亲卫师\" division_template = \"皇家骑士军团\" start_experience_factor = 0.5"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"女王亲卫师\" division_template = \"皇家骑士军团\" start_experience_factor = 0.5"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"女王亲卫师\" division_template = \"皇家骑士军团\" start_experience_factor = 0.5"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"女王亲卫师\" division_template = \"皇家骑士军团\" start_experience_factor = 0.5"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"女王亲卫师\" division_template = \"皇家骑士军团\" start_experience_factor = 0.5"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"女王亲卫师\" division_template = \"皇家骑士军团\" start_experience_factor = 0.5"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"女王亲卫师\" division_template = \"皇家骑士军团\" start_experience_factor = 0.5"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"女王亲卫师\" division_template = \"皇家骑士军团\" start_experience_factor = 0.5"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"女王亲卫师\" division_template = \"皇家骑士军团\" start_experience_factor = 0.5"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"女王亲卫师\" division_template = \"皇家骑士军团\" start_experience_factor = 0.5"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"女王亲卫师\" division_template = \"皇家骑士军团\" start_experience_factor = 0.5"
+						owner = ROOT
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = HUJ_tiaojiaonvwang
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 1
+		y = 1
+		cost = 20
+		prerequisite = { focus = HUJ_youyakebushihuaping }
+		relative_position_id = HUJ_youyakebushihuaping
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		available = { 
+			has_country_leader = {
+				name = "贝尔法斯特"
+				ruling_only = yes
+			}
+		}
+
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+
+		completion_reward = {
+			add_political_power = 500		
+			
+			swap_ideas = {
+				remove_idea = HUJ_yilishabainvwang
+				add_idea = HUJ_yilishabainvwang_xianming
+			}
+		}
+	}
+	focus = {
+		id = HUJ_qinjianjieyue
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		cost = 7
+		prerequisite = { focus = HUJ_tiaojiaonvwang }
+		relative_position_id = HUJ_tiaojiaonvwang
+		ai_will_do = {
+			factor = 10
+		}
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+
+		completion_reward = {
+			add_ideas = { HUJ_qjjy }
+		}
+	}
+	focus = {
+		id = HUJ_hongchawaijiao
+		icon = GFX_goal_generic_improve_relations
+		x = 2
+		y = 1
+		cost = 10
+		prerequisite = { focus = HUJ_jixuyihuizhi }
+		relative_position_id = HUJ_jixuyihuizhi
+		ai_will_do = {
+			factor = 3
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 100
+			add_tech_bonus = {
+				name = "红茶外交"
+				bonus = 0.75
+				uses = 3
+				category = synth_resources
+			}
+			custom_effect_tooltip = "（不要问我为什么红茶会加资源合成）"
+		}
+	}
+	focus = {
+		id = HUJ_bangzhuyuanwei
+		icon = GFX_fflag_YUW
+		x = -1
+		y = 1
+		cost = 10
+		prerequisite = { focus = HUJ_hongchawaijiao }
+
+		relative_position_id = HUJ_hongchawaijiao
+		ai_will_do = {
+			factor = 3
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+
+			add_offsite_building = { type = industrial_complex level = 2 }
+			add_offsite_building = { type = arms_factory level = 1 }
+			add_offsite_building = { type = dockyard level = 2 }
+			YUW = {
+				add_tech_bonus = {
+					name = "皇家的帮助"
+					bonus = 1
+					uses = 2
+					category = naval_doctrine
+				}
+			}
+		}
+	}
+	focus = {
+		id = HUJ_biandepengyou
+		icon = GFX_fflag_BYG
+		x = 1
+		y = 1
+		cost = 10
+		prerequisite = { focus = HUJ_hongchawaijiao }
+		relative_position_id = HUJ_hongchawaijiao
+		ai_will_do = {
+			factor = 3
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_tech_bonus = {
+				name = "白鹰的帮助"
+				bonus = 1
+				uses = 3
+				category = industry
+			}
+			BYG = {
+				add_offsite_building = { type = industrial_complex level = 1 }
+				add_offsite_building = { type = dockyard level = 2 }
+			}
+		}
+	}
+	focus = {
+		id = HUJ_lianhesading
+		icon = GFX_fflag_SAD
+		x = 1
+		y = 1
+		cost = 10
+		prerequisite = { focus = HUJ_junminpingdeng focus = HUJ_wangquanzhizun }
+		relative_position_id = HUJ_junminpingdeng
+		mutually_exclusive = { focus = HUJ_xiangtiexueshihao }
+		ai_will_do = {
+			factor = 3
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			
+			SAD = {
+				add_offsite_building = { type = industrial_complex level = 2 }
+				add_offsite_building = { type = dockyard level = 2 }
+			}
+		}
+	}
+	focus = {
+		id = HUJ_xiangtiexueshihao
+		icon = GFX_fflag_TIX
+		x = 3
+		y = 1
+		cost = 10
+		prerequisite = { focus = HUJ_junminpingdeng focus = HUJ_wangquanzhizun }
+		relative_position_id = HUJ_junminpingdeng
+		mutually_exclusive = { focus = HUJ_lianhesading }
+		ai_will_do = {
+			factor = 3
+		}
+
+
+		available = {}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			
+			TIX = {
+				add_offsite_building = { type = industrial_complex level = 2 }
+				add_offsite_building = { type = dockyard level = 2 }
+			}
+		}
+	}
+	focus = {
+		id = HUJ_bilanhangxiankeyanzu
+		icon = GFX_goal_generic_scientific_exchange
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = HUJ_bangzhuyuanwei }
+		prerequisite = { focus = HUJ_biandepengyou }
+		relative_position_id = HUJ_bangzhuyuanwei
+		ai_will_do = {
+			factor = 7
+		}
+
+			
+		available = {
+			BYG = { is_in_faction_with = HUJ }
+			YUW = { is_in_faction_with = HUJ }
+		}
+		bypass = {
+			date > 1942.1.1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_to_tech_sharing_group = HUJ_bilanhangxian
+			YUW = { add_to_tech_sharing_group = HUJ_bilanhangxian }
+			BYG = { add_to_tech_sharing_group = HUJ_bilanhangxian }
+			custom_effect_tooltip = "其他在碧蓝航线阵营内的国家也会加入科研组"
+			every_other_country = {
+				limit = { 
+					AND = {
+						is_in_faction_with = HUJ 
+						NOT = { tag = YUW }
+						NOT = { tag = BYG }
+					}
+				}
+				add_to_tech_sharing_group = HUJ_bilanhangxian
+			}
+			
+		}
+	}
+	focus = {
+		id = HUJ_zhudaokeyanxiaozu
+		icon = GFX_focus_research
+		x = 1
+		y = 1
+		cost = 7
+		prerequisite = { focus = HUJ_bilanhangxiankeyanzu }
+		relative_position_id = HUJ_bilanhangxiankeyanzu
+		mutually_exclusive = { focus = HUJ_qixinxieli }
+		ai_will_do = {
+			factor = 5
+		}
+
+		bypass = {
+			
+		}
+		available = {
+		
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_timed_idea = { days = 120 idea = HUJ_hjzdkyz }
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = HUJ_qixinxieli
+		icon = GFX_focus_research2
+		x = -1
+		y = 1
+		cost = 7
+		prerequisite = { focus = HUJ_bilanhangxiankeyanzu }
+		relative_position_id = HUJ_bilanhangxiankeyanzu
+		mutually_exclusive = { focus = HUJ_zhudaokeyanxiaozu }
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		available = {
+		
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = HUJ_xsjl
+		}
+	}
+	focus = {
+		id = HUJ_daposhufu
+		icon = GFX_focus_yilishabai
+		x = 10
+		y = 0
+		cost = 7
+		relative_position_id = HUJ_jixuyihuizhi
+		mutually_exclusive = { focus = HUJ_jixuyihuizhi }
+		available = { 
+			
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 150
+			add_popularity = { ideology = democratic popularity = -0.15 }
+		}
+	}
+	focus = {
+		id = HUJ_nvwanghuweijun
+		icon = GFX_focus_yanzhan
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = HUJ_daposhufu
+		prerequisite = { focus = HUJ_daposhufu }
+
+		available = { 
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			set_party_name = { 
+				ideology = fascism
+				long_name = "女王护卫军"
+				name = "女王护卫军" 
+			}
+			add_ideas = HUJ_nwhwj
+			add_popularity = { ideology = fascism popularity = 0.15 }
+			add_popularity = { ideology = democratic popularity = -0.1 }
+		}
+	}
+	focus = {
+		id = HUJ_gaizaoyanzhan
+		icon = GFX_focus_yanzhangai
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = HUJ_nvwanghuweijun
+		prerequisite = { focus = HUJ_nvwanghuweijun }
+
+		available = { 
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			HUJ_yanzhan = {
+				set_portraits = { 
+					army = {
+						large="gfx/leaders/HUJ/yanzhangai.png"
+					}
+		
+				}
+				add_skill_level = 2
+				add_unit_leader_trait = brilliant_strategist
+				add_unit_leader_trait = politically_connected
+			}
+			army_experience = 20
+			navy_experience = 40
+		}
+	}
+	focus = {
+		id = HUJ_nvwangqinzheng
+		icon = GFX_focus_eng_imperial_federation
+		x = 0
+		y = 2
+		cost = 5
+		relative_position_id = HUJ_daposhufu
+		prerequisite = { focus = HUJ_nvwanghuweijun }
+		prerequisite = { focus = HUJ_zhongyonghuangshi }
+		available = { 
+			
+		}
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			news_event = aznews.40
+			set_politics = {
+				ruling_party = neutrality
+			}
+			add_popularity = { ideology = neutrality popularity = 0.1 }
+		}
+	}
+	focus = {
+		id = HUJ_jinchidewang
+		icon = GFX_focus_yilishabai2
+		x = 0
+		y = 1
+		cost = 7
+		relative_position_id = HUJ_nvwangqinzheng
+		prerequisite = { focus = HUJ_nvwangqinzheng }
+		available = { 
+			
+		}
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		available = { 
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			HUJ_yilishabai = {
+				add_country_leader_trait = rgnw
+			}
+			remove_ideas = HUJ_yilishabainvwang
+		}
+	}
+	focus = {
+		id = HUJ_junminpingdeng
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = -2
+		y = 1
+		cost = 7
+		relative_position_id = HUJ_jinchidewang
+		prerequisite = { focus = HUJ_jinchidewang }
+		prerequisite = { focus = HUJ_gaizaoyanzhan }
+		mutually_exclusive = { focus = HUJ_wangquanzhizun }
+		available = { 
+			
+		}
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		available = { 
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = HUJ_yilishabainvwang_nwdbw
+			add_popularity = { ideology = fascism popularity = 0.15 }
+		}
+	}
+	focus = {
+		id = HUJ_nvwangdeguwu
+		icon = GFX_focus_rom_royal_dictatorship
+		x = -1
+		y = 1
+		cost = 7
+		relative_position_id = HUJ_junminpingdeng
+		prerequisite = { focus = HUJ_junminpingdeng }
+		available = { 
+			
+		}
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		available = { 
+			fascism > 0.6
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_country_leader_role = {
+				Character = HUJ_yilishabai
+				Promote_leader = yes
+				Country_leader = {
+					ideology = fascism_ideology
+					expire = 2000.1.1.1
+					traits = {
+						nwdhl
+						rgnw
+					}
+				}
+			}
+			set_politics = {
+				ruling_party = fascism
+			}
+			swap_ideas = {
+				remove_idea = HUJ_nwhwj
+				add_idea = HUJ_nwhwj2
+			}
+		}
+	}
+	focus = {
+		id = HUJ_wangquanzhizun
+		icon = GFX_focus_generic_home_defense
+		x = 2
+		y = 1
+		cost = 7
+		relative_position_id = HUJ_jinchidewang
+		prerequisite = { focus = HUJ_jinchidewang }
+		prerequisite = { focus = HUJ_huangjiadezhanshi }
+		mutually_exclusive = { focus = HUJ_junminpingdeng }
+		available = { 
+			
+		}
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		available = { 
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = HUJ_yilishabainvwang_zszt
+			add_popularity = { ideology = neutrality popularity = 0.15 }
+			
+		}
+	}
+	focus = {
+		id = HUJ_wanguolaichao
+		icon = GFX_focus_generic_monarchy_2
+		x = 1
+		y = 1
+		cost = 7
+		relative_position_id = HUJ_wangquanzhizun
+		prerequisite = { focus = HUJ_wangquanzhizun }
+
+		available = { 
+			
+		}
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		available = { 
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = HUJ_wglc
+
+			
+		}
+	}
+	focus = {
+		id = HUJ_zhongyonghuangshi
+		icon = GFX_focus_qiaozhiwushi
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = HUJ_daposhufu
+		prerequisite = { focus = HUJ_daposhufu }
+		available = { 
+			
+		}
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = HUJ_weiershi
+			random_unit_leader = {
+				limit = { has_id = 01002 }
+				add_planning = 1
+				add_logistics = 1
+				add_unit_leader_trait = politically_connected
+			}
+			add_political_power = 50
+			add_popularity = { ideology = neutrality popularity = 0.15 }
+			add_popularity = { ideology = democratic popularity = -0.1 }
+		}
+	}
+	focus = {
+		id = HUJ_huangjiadezhanshi
+		icon = GFX_focus_generic_little_entente
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = HUJ_zhongyonghuangshi
+		prerequisite = { focus = HUJ_zhongyonghuangshi }
+		available = { 
+			
+		}
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = HUJ_hsjg
+		}
+	}
+	focus = {
+		id = HUJ_tiankongqishi
+		icon = GFX_goal_generic_air_fighter
+		x = 27
+		y = 6
+		cost = 5
+	
+		available = { 
+		
+		}
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			air_experience = 80
+		}
+	}
+	focus = {
+		id = HUJ_zhandoujiyanfa
+		icon = GFX_goal_generic_air_fighter
+		relative_position_id = HUJ_tiankongqishi
+		prerequisite = { focus = HUJ_tiankongqishi }
+		
+	
+		x = -1
+		y = 1
+		cost = 10
+	
+		available = { 
+		
+		}
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_tech_bonus = {
+				name = "战斗机研发"
+				bonus = 1
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+				category = naval_air
+			}
+		}
+	}
+	focus = {
+		id = HUJ_zhengyidejuedou
+		icon = GFX_goal_generic_air_fighter2
+		x = -1
+		y = 1
+		relative_position_id = HUJ_zhandoujiyanfa
+		prerequisite = { focus = HUJ_zhandoujiyanfa }
+		mutually_exclusive = { focus = HUJ_qishidezhize }
+		cost = 10
+	
+		available = { 
+		
+		}
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			air_experience = 30
+			add_tech_bonus = {
+				name = "正义的决斗"
+				bonus = 1.5
+				uses = 1
+				category = light_fighter
+				ahead_reduction = 2
+			}
+			add_tech_bonus = {
+				name = "正义的决斗"
+				bonus = 0.75
+				uses = 1
+				category = air_equipment
+			}
+		}
+	}
+	focus = {
+		id = HUJ_qishidezhize
+		icon = GFX_goal_generic_air_fighter2
+		x = 1
+		y = 1
+		relative_position_id = HUJ_zhandoujiyanfa
+		prerequisite = { focus = HUJ_zhandoujiyanfa }
+		mutually_exclusive = { focus = HUJ_zhengyidejuedou }
+		cost = 10
+	
+		available = { 
+		
+		}
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			air_experience = 30
+			add_tech_bonus = {
+				name = "骑士的职责"
+				bonus = 1.5
+				uses = 1
+				category = cat_heavy_fighter
+				ahead_reduction = 2
+			}
+			add_tech_bonus = {
+				name = "骑士的职责"
+				bonus = 0.75
+				uses = 1
+				category = air_equipment
+			}
+		}
+	}
+	focus = {
+		id = HUJ_dabingbao
+		icon = GFX_goal_generic_air_bomber
+		x = 1
+		y = 1
+		relative_position_id = HUJ_tiankongqishi
+		prerequisite = { focus = HUJ_tiankongqishi }
+		cost = 10
+	
+		available = { 
+		
+		}
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			air_experience = 50
+			add_tech_bonus = {
+				name = "天空骑士"
+				bonus = 1.5
+				uses = 1
+				category = tactical_bomber
+				ahead_reduction = 2
+			}
+			add_tech_bonus = {
+				name = "天空骑士"
+				bonus = 1.5
+				uses = 1
+				category = cat_strategic_bomber
+				ahead_reduction = 2
+			}
+		}
+	}
+	focus = {
+		id = HUJ_hongzhaxueshuo
+		icon = GFX_goal_generic_air_fighter
+		x = 1
+		y = 1
+		relative_position_id = HUJ_dabingbao
+		prerequisite = { focus = HUJ_dabingbao }
+		cost = 7
+	
+		available = { 
+		
+		}
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			air_experience = 25
+			add_doctrine_cost_reduction = {
+				name = "轰炸学说"
+				cost_reduction = 0.5
+				uses = 2
+				category = strategic_destruction_tree
+			}
+		
+			
+		}
+	}
+	focus = {
+		id = HUJ_huangjialieying
+		icon = GFX_goal_generic_air_fighter2
+		x = 2
+		y = 1
+		relative_position_id = HUJ_zhengyidejuedou
+		prerequisite = { focus = HUJ_zhengyidejuedou focus = HUJ_qishidezhize}
+		prerequisite = { focus = HUJ_hongzhaxueshuo }
+		cost = 10
+	
+		available = { 
+		
+		}
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		available = {  }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			TY_kongjunliluntupo = yes
+			add_ideas = HUJ_hjly
+		}
+	}
+}
+

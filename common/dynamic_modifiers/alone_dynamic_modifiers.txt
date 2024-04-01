@@ -1,0 +1,175 @@
+#	Example:
+# 
+#	example_dynamic_modifier = {
+#		icon = "GFX_idea_unknown" # optional, will show up in guis if icon is specified
+#		enable = { always = yes } #optional, the modifier won't apply if not enabled
+#		remove_trigger = { always = no } #optional, will remove the modifier if true
+#
+#		# list of modifiers
+#		fuel_cost = 321
+#		max_fuel = var_max_fuel # will be taken from a variable
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		add_dynamic_modifier = {
+#			modifier = example_dynamic_modifier
+#			scope = GER # optional, if you specify this your dynamic modifier scoped to this scope (root is the effect scope)
+#			days = 14 # optional, will be removed after this many days passes
+#		}
+#	}
+#
+#	can be added to countries, states or unit leaders
+#	will only updated daily, unless forced by force_update_dynamic_modifier effect
+
+############草，动态修正做不了装备的########
+
+AL_tank_all_modifier = {
+    icon = GFX_idea_ideas_tank_all
+	enable = { always = yes }	
+	tank_manufacturer_cost_factor = -0.75
+	
+		#armor = {
+		#	maximum_speed = 0.15              #5铁血设计 AL_maximum_speed
+		#	soft_attack = AL_soft_attack      #2白鹰设计
+		#	hard_attack = AL_hard_attack      #3撒丁设计
+		#	reliability = AL_reliability      #8东煌设计#8重樱设计 
+		#	armor_value = AL_armor_value      #1鸢尾设计
+		#	ap_attack = AL_ap_attack        #7皇家设计
+		#	build_cost_ic = AL_armor_build_cost_ic    #6北联设计
+		#	instant = yes
+		#}
+}
+
+AL_ship_all_modifier = {
+    icon = GFX_idea_ideas_ship_all
+	enable = { always = yes }
+	naval_manufacturer_cost_factor = -0.75
+	    
+		#industrial_capacity_dockyard = AL_industrial_capacity_dockyard    #北联设计
+		#navy_fuel_consumption_factor = AL_navy_fuel_consumption_factor   #重樱设计
+		#experience_gain_navy_factor = AL_experience_gain_navy_factor      #重樱设计
+		#navy_max_range_factor = AL_navy_max_range_factor           #白鹰设计
+		#naval_coordination = AL_naval_coordination            #皇家设计
+		#equipment_bonus = {
+		#		ship_hull_light = {                #东煌设计
+		#			build_cost_ic = AL_light_build_cost_ic
+		#			instant = yes
+		#		}
+		#		ship_hull_cruiser = {             #撒丁设计 
+		#			build_cost_ic = AL_cruiser_build_cost_ic
+		#			instant = yes
+		#		}
+		#		ship_hull_submarine = {           #铁血设计
+		#			build_cost_ic = AL_submarine_build_cost_ic
+		#			instant = yes
+		#		}
+		#		ship_hull_heavy = {               #鸢尾设计
+		#			build_cost_ic = AL_heavy_build_cost_ic
+		#			instant = yes
+		#		}
+		#		ship_hull_carrier = {             #白鹰设计
+		#			build_cost_ic = AL_carrier_build_cost_ic
+		#			instant = yes
+		#		}
+		#}
+		
+}       
+        
+AL_plane_all_modifier = {
+    icon = GFX_idea_ideas_plane_all
+	enable = { always = yes }
+	aircraft_manufacturer_cost_factor = -0.75
+	    
+		#air_mission_efficiency = AL_air_mission_efficiency              #撒丁设计
+		#army_bonus_air_superiority_factor = AL_army_bonus_air_superiority_factor    #鸢尾设计
+		#air_weather_penalty = AL_air_weather_penalty                 #北联设计
+		#experience_gain_air_factor = AL_experience_gain_air_factor          #东煌设计
+		#air_range_factor = AL_air_range_factor                    #白鹰设计
+		#equipment_bonus = {
+		#	fighter_equipment = {       
+		#		instant = yes			
+		#		build_cost_ic = AL_fighter_build_cost_ic   #重樱设计
+		#		reliability = AL_fighter_reliability       #铁血设计
+		#	}
+		#	cv_fighter_equipment = {    
+		#		instant = yes			
+		#		build_cost_ic = AL_cv_fighter_build_cost_ic   #重樱设计
+		#		reliability = AL_cv_fighter_reliability
+		#	}
+		#	heavy_fighter_equipment = {   
+		#		instant = yes				
+		#		build_cost_ic = AL_heavy_fighter_build_cost_ic   #皇家设计
+		#		reliability = AL_heavy_fighter_reliability
+		#	}
+		#	strat_bomber_equipment = {   
+		#		instant = yes				
+		#		build_cost_ic = AL_strat_bomber_build_cost_ic    #皇家设计
+		#		reliability = AL_strat_bomber_reliability        #铁血设计
+		#	}
+		#	CAS_equipment = {   
+		#		instant = yes				
+		#		build_cost_ic = AL_CAS_build_cost_ic    #重樱设计
+		#		reliability = AL_CAS_reliability        #铁血设计
+		#	}
+		#	tac_bomber_equipment = {   
+		#		instant = yes
+		#		build_cost_ic = AL_tac_bomber_build_cost_ic    #皇家设计
+		#		reliability = AL_tac_bomber_reliability
+		#	}
+		#}
+		
+}
+
+AL_junxu_all_modifier = {
+    icon = GFX_idea_ideas_junxu_all
+	enable = { always = yes }
+	materiel_manufacturer_cost_factor = -0.75
+	
+	    #experience_gain_army_factor = AL_experience_gain_army_factor   #重樱设计
+		#equipment_bonus = {
+		#	infantry_equipment = {       
+		#		instant = yes					
+		#		build_cost_ic = AL_infantry_build_cost_ic  #东煌设计
+		#		soft_attack = AL_infantry_soft_attack      #鸢尾设计
+		#		reliability = AL_infantry_reliability      #皇家设计
+		#	}
+		#	artillery_equipment = {    
+		#		instant = yes			
+		#		build_cost_ic = AL_artillery_build_cost_ic   #白鹰设计
+		#		soft_attack = AL_artillery_soft_attack      #白鹰设计
+		#		reliability = AL_artillery_reliability     #皇家设计
+		#	}
+		#	motorized_equipment = {   
+		#		instant = yes				
+		#		build_cost_ic = AL_motorized_build_cost_ic    #铁血设计#撒丁设计
+		#		reliability = AL_motorized_reliability     #撒丁设计
+		#		maximum_speed = AL_motorized_maximum_speed    #铁血设计
+		#	}
+		#	mot_rockets = {   
+		#		instant = yes				
+		#		build_cost_ic = AL_mot_build_cost_ic   #北联设计
+		#		soft_attack = AL_mot_soft_attack      #北联设计
+		#	}
+		#	
+		#}
+}
+
+AL_gongye_all_modifier = {
+    icon = GFX_idea_ideas_gongye_all
+	enable = { always = yes }
+	industrial_concern_cost_factor = -0.75
+	
+	    #economy_cost_factor = AL_economy_cost_factor                                                 #重樱设计
+		#production_lack_of_resource_penalty_factor = AL_production_lack_of_resource_penalty_factor   #东煌设计
+		#production_factory_start_efficiency_factor = AL_production_factory_start_efficiency_factor   #铁血设计 
+		#production_factory_efficiency_gain_factor = AL_production_factory_efficiency_gain_factor     #北联设计
+		#industrial_capacity_factory = AL_industrial_capacity_factory                                 #铁血设计 #北联设计
+		#production_speed_industrial_complex_factor = AL_production_speed_industrial_complex_factor   #白鹰设计
+		#consumer_goods_factor = AL_consumer_goods_factor                                             #撒丁设计
+		#production_speed_bunker_factor = AL_production_speed_bunker_factor                           #鸢尾设计
+		#production_speed_coastal_bunker_factor = AL_production_speed_coastal_bunker_factor           #皇家设计
+}
+

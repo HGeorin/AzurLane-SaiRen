@@ -1,0 +1,42 @@
+﻿##### Division Templates #####
+
+division_template = {
+	name = "撒丁青年军"
+	division_names_group = ITA_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+##### OOB #####
+units = {
+	division= {	
+		name = "撒丁青年第一兵团"	
+		location = 4159
+		division_template = "撒丁青年军" 
+	}
+	division= {	
+		name = "撒丁青年第二兵团"	
+		location = 4159
+		division_template = "撒丁青年军" 
+	}
+	division= {	
+		name = "撒丁青年第三兵团"	
+		location = 4159
+		division_template = "撒丁青年军" 
+	}
+	division= {	
+		name = "撒丁青年第四兵团"	
+		location = 4159
+		division_template = "撒丁青年军" 
+	}
+	division= {	
+		name = "撒丁青年第五兵团"	
+		location = 4159
+		division_template = "撒丁青年军" 
+	}
+}

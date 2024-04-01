@@ -1,0 +1,159 @@
+﻿units = {
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "塞壬战舰舰队"			
+		naval_base = 12512
+		task_force = {
+			name = "塞壬战列舰"
+			location = 12512
+			ship = { definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SIR version_name = "塞壬I型战舰" } } }
+			ship = { definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SIR version_name = "塞壬I型战舰" } } }
+			ship = { definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SIR version_name = "塞壬I型战舰" } } }
+			ship = { definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SIR version_name = "塞壬I型战舰" } } }
+			ship = { definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SIR version_name = "塞壬I型战舰" } } }
+			ship = { definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SIR version_name = "塞壬I型战舰" } } }
+			ship = { definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SIR version_name = "塞壬I型战舰" } } }
+			ship = { definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SIR version_name = "塞壬I型战舰" } } }
+			ship = { definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SIR version_name = "塞壬I型战舰" } } }
+			ship = { definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SIR version_name = "塞壬I型战舰" } } }
+			ship = { definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SIR version_name = "塞壬I型战舰" } } }
+			ship = { definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SIR version_name = "塞壬I型战舰" } } }
+			ship = { definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SIR version_name = "塞壬I型战舰" } } }
+			ship = { definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SIR version_name = "塞壬I型战舰" } } }
+			ship = { definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SIR version_name = "塞壬I型战舰" } } }
+			ship = { definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SIR version_name = "塞壬I型战舰" } } }
+			ship = { definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SIR version_name = "塞壬I型战舰" } } }
+			ship = { definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SIR version_name = "塞壬I型战舰" } } }
+			ship = { definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SIR version_name = "塞壬I型战舰" } } }
+			ship = { definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SIR version_name = "塞壬I型战舰" } } }
+		}
+	}
+	fleet = {
+		name = "塞壬航母舰队"			
+		naval_base = 12512
+		task_force = {
+			name = "塞壬航母"
+			location = 12512
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SIR version_name = "塞壬I型装甲航母"} } 				
+				a
+			}
+		}
+	}
+}

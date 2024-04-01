@@ -1,0 +1,91 @@
+﻿
+units= {
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "北美塞壬舰队"			
+		naval_base = 241  # Wilhemshaven
+		task_force = {
+			name = "佛罗里达舰队"
+			location = 1843
+			ship = { definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = SR1 version_name = "塞壬I型装甲航母"} } 				
+				
+			}
+			ship = { definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SR1 version_name = "塞壬I型战舰" } } }
+			ship = { definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SR1 version_name = "塞壬I型战舰" } } }
+			ship = { definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SR1 version_name = "塞壬I型战舰" } } }
+			ship = { definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = SR1 version_name = "塞壬I型装甲舰" } } }	
+			ship = { definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = SR1 version_name = "塞壬I型装甲舰" } } }
+			ship = { definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = SR1 version_name = "塞壬I型装甲舰" } } }
+			ship = { definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = SR1 version_name = "塞壬I型装甲舰" } } }
+			ship = { definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = SR1 version_name = "塞壬I型装甲舰" } } }
+			ship = { definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = SR1 version_name = "塞壬I型装甲舰" } } }
+			ship = { definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = SR1 version_name = "塞壬I型装甲舰" } } }	
+			ship = { definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = SR1 version_name = "塞壬I型装甲舰" } } }
+			ship = { definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = SR1 version_name = "塞壬I型装甲舰" } } }
+			ship = { definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = SR1 version_name = "塞壬I型装甲舰" } } }
+			ship = { definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = SR1 version_name = "塞壬I型装甲舰" } } }
+			ship = { definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = SR1 version_name = "塞壬I型装甲舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SR1 version_name = "塞壬I型轻炮舰" } } }		
+		}
+	}
+	
+}
+
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+
+
+#####################

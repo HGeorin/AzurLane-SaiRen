@@ -1,0 +1,1052 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+# contain
+# area_priority
+# building_target
+
+siren_zhongyang_join_war = {
+	enable = {
+		tag = SIR
+	}
+
+	ai_strategy = { type = dont_join_wars_with id = SR1
+		target_country = BFL value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR1
+		target_country = CHY value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR1
+		target_country = DOH value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR1
+		target_country = HUJ value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR1
+		target_country = SAD value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR1
+		target_country = TIX value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR1
+		target_country = YUW value = 500
+	}
+
+	ai_strategy = { type = dont_join_wars_with id = SR2
+		target_country = BYG value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR2
+		target_country = BFL value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR2
+		target_country = CHY value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR2
+		target_country = DOH value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR2
+		target_country = HUJ value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR2
+		target_country = TIX value = 500
+	}
+
+	ai_strategy = { type = dont_join_wars_with id = SR3
+		target_country = BYG value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR3
+		target_country = HUJ value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR3
+		target_country = SAD value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR3
+		target_country = TIX value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR3
+		target_country = YUW value = 500
+	}
+
+	ai_strategy = { type = dont_join_wars_with id = SR4
+		target_country = BYG value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR4
+		target_country = BFL value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR4
+		target_country = CHY value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR4
+		target_country = DOH value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR4
+		target_country = HUJ value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR4
+		target_country = SAD value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR4
+		target_country = TIX value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR4
+		target_country = YUW value = 500
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SR1			
+		value = 500
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SR2			
+		value = 500
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SR3			
+		value = 500
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SR4			
+		value = 500
+	}
+
+	ai_strategy = {
+		type = diplo_action_desire id = SR1		
+		target = call_allies value = -500
+	}
+	ai_strategy = {
+		type = diplo_action_desire id = SR2	
+		target = call_allies value = -500
+	}
+	ai_strategy = {
+		type = diplo_action_desire id = SR3		
+		target = call_allies value = -500
+	}
+	ai_strategy = {
+		type = diplo_action_desire id = SR4		
+		target = call_allies value = -500
+	}
+	
+}
+siren_meizhou_join_war = {
+	enable = {
+		tag = SR1
+	}
+	ai_strategy = { type = dont_join_wars_with id = SIR
+		target_country = BFL value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SIR
+		target_country = CHY value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SIR
+		target_country = DOH value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SIR
+		target_country = HUJ value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SIR
+		target_country = SAD value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SIR
+		target_country = TIX value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SIR
+		target_country = YUW value = 500
+	}
+
+    ai_strategy = { type = dont_join_wars_with id = SR2
+		target_country = BYG value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR2
+		target_country = BFL value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR2
+		target_country = CHY value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR2
+		target_country = DOH value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR2
+		target_country = HUJ value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR2
+		target_country = SAD value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR2
+		target_country = TIX value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR2
+		target_country = YUW value = 500
+	}
+
+	ai_strategy = { type = dont_join_wars_with id = SR3
+		target_country = BYG value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR3
+		target_country = BFL value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR3
+		target_country = CHY value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR3
+		target_country = DOH value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR3
+		target_country = HUJ value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR3
+		target_country = SAD value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR3
+		target_country = TIX value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR3
+		target_country = YUW value = 500
+	}
+
+	ai_strategy = { type = dont_join_wars_with id = SR4
+		target_country = BYG value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR4
+		target_country = BFL value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR4
+		target_country = HUJ value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR4
+		target_country = SAD value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR4
+		target_country = TIX value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR4
+		target_country = YUW value = 500
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SIR			
+		value = 500
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SR1			
+		value = 500
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SR3			
+		value = 500
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SR4			
+		value = 500
+	}
+
+	ai_strategy = {
+		type = diplo_action_desire id = SIR		
+		target = call_allies value = -500
+	}
+	ai_strategy = {
+		type = diplo_action_desire id = SR2	
+		target = call_allies value = -500
+	}
+	ai_strategy = {
+		type = diplo_action_desire id = SR3		
+		target = call_allies value = -500
+	}
+	ai_strategy = {
+		type = diplo_action_desire id = SR4		
+		target = call_allies value = -500
+	}
+	
+}
+siren_feizhou_join_war = {
+	enable = {
+		tag = SR2
+	}
+
+	ai_strategy = { type = dont_join_wars_with id = SIR
+		target_country = BYG value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SIR
+		target_country = BFL value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SIR
+		target_country = CHY value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SIR
+		target_country = DOH value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SIR
+		target_country = HUJ value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SIR
+		target_country = TIX value = 500
+	}
+
+	ai_strategy = { type = dont_join_wars_with id = SR1
+		target_country = BYG value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR1
+		target_country = BFL value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR1
+		target_country = CHY value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR1
+		target_country = DOH value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR1
+		target_country = HUJ value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR1
+		target_country = SAD value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR1
+		target_country = TIX value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR1
+		target_country = YUW value = 500
+	}
+
+	ai_strategy = { type = dont_join_wars_with id = SR3
+		target_country = BYG value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR3
+		target_country = BFL value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR3
+		target_country = CHY value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR3
+		target_country = DOH value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR3
+		target_country = HUJ value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR3
+		target_country = SAD value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR3
+		target_country = TIX value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR3
+		target_country = YUW value = 500
+	}
+
+	ai_strategy = { type = dont_join_wars_with id = SR4
+		target_country = BYG value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR4
+		target_country = BFL value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR4
+		target_country = CHY value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR4
+		target_country = DOH value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR4
+		target_country = HUJ value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR4
+		target_country = SAD value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR4
+		target_country = TIX value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR4
+		target_country = YUW value = 500
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SIR			
+		value = 500
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SR1			
+		value = 500
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SR3			
+		value = 500
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SR4			
+		value = 500
+	}
+
+	ai_strategy = {
+		type = diplo_action_desire id = SR1		
+		target = call_allies value = -500
+	}
+	ai_strategy = {
+		type = diplo_action_desire id = SIR	
+		target = call_allies value = -500
+	}
+	ai_strategy = {
+		type = diplo_action_desire id = SR3		
+		target = call_allies value = -500
+	}
+	ai_strategy = {
+		type = diplo_action_desire id = SR4		
+		target = call_allies value = -500
+	}
+}
+siren_yazhou_join_war = {
+	enable = {
+		tag = SR3
+	}
+	
+	ai_strategy = { type = dont_join_wars_with id = SIR
+		target_country = BYG value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SIR
+		target_country = CHY value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SIR
+		target_country = DOH value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SIR
+		target_country = HUJ value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SIR
+		target_country = SAD value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SIR
+		target_country = TIX value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SIR
+		target_country = YUW value = 500
+	}
+
+	ai_strategy = { type = dont_join_wars_with id = SR1
+		target_country = BYG value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR1
+		target_country = BFL value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR1
+		target_country = CHY value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR1
+		target_country = DOH value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR1
+		target_country = HUJ value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR1
+		target_country = SAD value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR1
+		target_country = TIX value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR1
+		target_country = YUW value = 500
+	}
+
+	ai_strategy = { type = dont_join_wars_with id = SR2
+		target_country = BYG value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR2
+		target_country = BFL value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR2
+		target_country = CHY value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR2
+		target_country = DOH value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR2
+		target_country = HUJ value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR2
+		target_country = SAD value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR2
+		target_country = TIX value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR2
+		target_country = YUW value = 500
+	}
+
+	ai_strategy = { type = dont_join_wars_with id = SR4
+		target_country = BYG value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR4
+		target_country = BFL value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR4
+		target_country = HUJ value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR4
+		target_country = SAD value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR4
+		target_country = TIX value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR4
+		target_country = YUW value = 500
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SIR			
+		value = 500
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SR2			
+		value = 500
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SR1			
+		value = 500
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SR4			
+		value = 500
+	}
+
+	ai_strategy = {
+		type = diplo_action_desire id = SR1		
+		target = call_allies value = -500
+	}
+	ai_strategy = {
+		type = diplo_action_desire id = SR2	
+		target = call_allies value = -500
+	}
+	ai_strategy = {
+		type = diplo_action_desire id = SIR		
+		target = call_allies value = -500
+	}
+	ai_strategy = {
+		type = diplo_action_desire id = SR4		
+		target = call_allies value = -500
+	}
+}
+siren_aozhou_join_war = {
+	enable = {
+		tag = SR4
+	}
+	
+	ai_strategy = { type = dont_join_wars_with id = SIR
+		target_country = BYG value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SIR
+		target_country = BFL value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SIR
+		target_country = CHY value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SIR
+		target_country = DOH value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SIR
+		target_country = HUJ value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SIR
+		target_country = SAD value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SIR
+		target_country = TIX value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SIR
+		target_country = YUW value = 500
+	}
+
+	ai_strategy = { type = dont_join_wars_with id = SR1
+		target_country = BYG value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR1
+		target_country = BFL value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR1
+		target_country = CHY value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR1
+		target_country = DOH value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR1
+		target_country = HUJ value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR1
+		target_country = SAD value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR1
+		target_country = TIX value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR1
+		target_country = YUW value = 500
+	}
+
+	ai_strategy = { type = dont_join_wars_with id = SR2
+		target_country = BYG value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR2
+		target_country = BFL value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR2
+		target_country = CHY value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR2
+		target_country = DOH value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR2
+		target_country = HUJ value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR2
+		target_country = SAD value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR2
+		target_country = TIX value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR2
+		target_country = YUW value = 500
+	}
+
+	ai_strategy = { type = dont_join_wars_with id = SR3
+		target_country = BYG value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR3
+		target_country = BFL value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR3
+		target_country = HUJ value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR3
+		target_country = SAD value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR3
+		target_country = TIX value = 500
+	}
+	ai_strategy = { type = dont_join_wars_with id = SR3
+		target_country = YUW value = 500
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SIR			
+		value = 500
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SR2			
+		value = 500
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SR3			
+		value = 500
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SR1			
+		value = 500
+	}
+
+	ai_strategy = {
+		type = diplo_action_desire id = SR1		
+		target = call_allies value = -500
+	}
+	ai_strategy = {
+		type = diplo_action_desire id = SR2	
+		target = call_allies value = -500
+	}
+	ai_strategy = {
+		type = diplo_action_desire id = SR3		
+		target = call_allies value = -500
+	}
+	ai_strategy = {
+		type = diplo_action_desire id = SIR		
+		target = call_allies value = -500
+	}
+}
+siren_didui = {
+	enable = {
+		OR = { 
+			tag = SIR
+			tag = SR1
+			tag = SR2
+			tag = SR3
+			tag = SR4
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = BYG			
+		value = 500
+	}
+	ai_strategy = {
+		type = antagonize
+		id = BFL			
+		value = 500
+	}
+	ai_strategy = {
+		type = antagonize
+		id = CHY			
+		value = 500
+	}
+	ai_strategy = {
+		type = antagonize
+		id = DOH			
+		value = 500
+	}
+	ai_strategy = {
+		type = antagonize
+		id = YUW			
+		value = 500
+	}
+	ai_strategy = {
+		type = antagonize
+		id = TIX			
+		value = 500
+	}
+	ai_strategy = {
+		type = antagonize
+		id = HUJ			
+		value = 500
+	}
+	ai_strategy = {
+		type = antagonize
+		id = SAD			
+		value = 500
+	}
+}
+SIR_unit_production = {
+	enable = {
+		OR = { 
+			tag = SIR
+			tag = SR1
+			tag = SR2
+			tag = SR3
+			tag = SR4
+		}
+	}
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = paratroopers
+		value = -100
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = -100
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry
+		value = -100
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = motorized
+		value = 10
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mechanized
+		value = 10
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 10
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = marines
+		value = 1
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 40 #because doctrine 70
+	}
+	
+	#Air unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = 40
+	}
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = cas
+		value = 10
+	}
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = tactical_bomber
+		value = 10
+	}
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = 5
+	}
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = naval_bomber
+		value = 5
+	}
+	
+	
+	# Naval unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = 15
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = carrier
+		value = 15
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = 20 
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = 40
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 10
+	}
+	
+
+}
+siren_armor_production = {
+	enable = {
+		AND = {
+			OR = {
+				tag = SIR
+				tag = SR1
+				tag = SR2
+				tag = SR3
+				tag = SR4
+			}
+			date > 1939.1.1
+			
+		}
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 50
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = motorized
+		value = 5
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mechanized
+		value = 25
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = -50
+	}
+	
+}
+SIR_template_design = {
+	enable = {
+		OR = { 
+			tag = SIR
+			tag = SR1
+			tag = SR2
+			tag = SR3
+			tag = SR4
+		}
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = motorized
+		value = 10
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = cavalry
+		value = -100
+	}
+	
+	ai_strategy = {
+		type = template_prio
+		id = light_armor
+		value = 30
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = medium_armor
+		value = 50
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = heavy_armor
+		value = 50
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = paratroopers
+		value = -50
+	}
+}
+SIR_naval_role_ratios_historical = {
+	enable = {
+		OR = { 
+			tag = SIR
+			tag = SR1
+			tag = SR2
+			tag = SR3
+			tag = SR4
+		}
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bb
+		value = 5
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_shbb
+		value = 3
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_carrier_light
+		value = 5
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_carrier
+		value = 15
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_submarine
+		value = 5
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_screen
+		value = 110
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_escort 
+		value = 30
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_light
+		value = 35
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_heavy
+		value = -5
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_sweeper
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_layer
+		value = 0
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = 5
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = carrier
+		value = 5
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = 5
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = 45
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 3
+	}
+}
